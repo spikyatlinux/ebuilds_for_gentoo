@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DEPEND=app-arch/unzip
+DESCRIPTION=Official prebuilt nightly Jameica Online Banking Software, written in Java
+EAPI=7
+HOMEPAGE=http://www.jameica.org
+LICENSE=GPL-3
+RDEPEND=app-arch/unzip >=virtual/jre-1.6.0 =app-office/hibiscus-9999
+SLOT=0
+SRC_URI=x86? ( http://www.willuhn.de/products/jameica/releases/nightly/jameica-linux-2.11.0-nightly.zip -> jameica-9999.zip ) amd64? ( http://www.willuhn.de/products/jameica/releases/nightly/jameica-linux64-2.11.0-nightly.zip -> jameica-9999-linux64.zip )
+_md5_=ac0f1935dc6f29238d184cd85ef1f103

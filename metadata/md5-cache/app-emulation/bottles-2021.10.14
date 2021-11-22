@@ -1,0 +1,17 @@
+BDEPEND=>=dev-util/meson-0.58.2-r1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND=python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) python_single_target_python3_10? ( dev-lang/python:3.10 >=dev-lang/python-exec-2:=[python_targets_python3_10] ) >=x11-libs/gtk+-3.24.10[introspection] dev-libs/appstream-glib[introspection] python_single_target_python3_8? ( dev-python/pygobject:3[python_targets_python3_8(-),cairo] ) python_single_target_python3_9? ( dev-python/pygobject:3[python_targets_python3_9(-),cairo] ) python_single_target_python3_10? ( dev-python/pygobject:3[python_targets_python3_10(-),cairo] ) dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=Easily manage WINE prefixes in a new way
+EAPI=7
+HOMEPAGE=https://usebottles.com/ https://github.com/bottlesdevs/Bottles
+INHERIT=python-single-r1 meson gnome2-utils xdg
+IUSE=python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=python_single_target_python3_8? ( dev-lang/python:3.8 >=dev-lang/python-exec-2:=[python_targets_python3_8] ) python_single_target_python3_9? ( dev-lang/python:3.9 >=dev-lang/python-exec-2:=[python_targets_python3_9] ) python_single_target_python3_10? ( dev-lang/python:3.10 >=dev-lang/python-exec-2:=[python_targets_python3_10] ) >=x11-libs/gtk+-3.24.10[introspection] dev-libs/appstream-glib[introspection] python_single_target_python3_8? ( dev-python/pygobject:3[python_targets_python3_8(-),cairo] ) python_single_target_python3_9? ( dev-python/pygobject:3[python_targets_python3_9(-),cairo] ) python_single_target_python3_10? ( dev-python/pygobject:3[python_targets_python3_10(-),cairo] ) app-arch/patool gui-libs/libhandy:1[introspection]
+REQUIRED_USE=^^ ( python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10 )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/bottlesdevs/Bottles/archive/2021.10.14-treviso-2.tar.gz -> bottles-2021.10.14.tar.gz
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	dab5d8ec471d025b79c9e6906bcf3bff	gnome2-utils	355c758ccc0d6df60d43a066640e642c	meson	9f3e84959ae1d60e19bc91f212774dcc	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	python-single-r1	d46c125afba8be02eb1cd7104bac6e9c	python-utils-r1	655fe65f186504e455c2f3116808fda8	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	wrapper	4251d4c84c25f59094fd557e0063a974	xdg	6024fbc93167fad782e2032933654857	xdg-utils	27f9a2f19502b925ac117bd657aa2979
+_md5_=86dbff25d0cefbc4dc27fdee9d7538a1

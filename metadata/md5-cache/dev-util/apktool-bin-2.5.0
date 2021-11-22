@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install preinst prepare setup unpack
+DEPEND=!!dev-util/apktool >=dev-java/java-config-2.2.0-r3
+DESCRIPTION=A tool for reverse engineering 3rd party, closed, binary Android apps
+EAPI=7
+HOMEPAGE=https://ibotpeaches.github.io/Apktool/
+IUSE=elibc_FreeBSD
+KEYWORDS=amd64 x86
+LICENSE=Apache-2.0
+RDEPEND=>=virtual/jdk-1.7 >=dev-java/java-config-2.2.0-r3
+RESTRICT=test
+SLOT=0
+SRC_URI=https://github.com/iBotPeaches/Apktool/releases/download/v2.5.0/apktool_2.5.0.jar
+_eclasses_=java-pkg-2	a3d583b3f640032c3eff643a4191bd03	java-utils-2	8a3af9303fdbeca4510a6ba6e91b1460
+_md5_=fc74c7f9e9cd3798d72248fde128586c

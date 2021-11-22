@@ -1,0 +1,13 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install setup
+DEPEND=virtual/udev
+DESCRIPTION=Comprehensive list of udev rules to connect to android devices
+EAPI=7
+HOMEPAGE=https://github.com/M0Rf30/android-udev-rules
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=virtual/udev
+SLOT=0
+SRC_URI=https://github.com/M0Rf30/android-udev-rules/archive/20210501.tar.gz -> android-udev-rules-20210501.tar.gz
+_eclasses_=multilib	4b66d835ec72e021e359bb81eacfe988	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	udev	2d229ad4bfa09058e0184b1ca900db32	user	1033b6bed7cf367c4507ea9a3ff503d0	user-info	2e75eaea3582b052ec16d9d5aa74ced3
+_md5_=ed885f1c175b0a8154d53ac96c282c2b

@@ -1,0 +1,15 @@
+BDEPEND=dev-util/ninja >=dev-util/cmake-3.20.5 >=kde-frameworks/extra-cmake-modules-5.82.0:5 dev-util/ninja >=dev-util/cmake-3.9.6
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
+DEPEND=kde-frameworks/plasma kde-plasma/kdecoration kde-frameworks/kiconthemes dev-qt/qtcore dev-qt/qtgui dev-qt/qtdeclarative dev-qt/qtx11extras dev-util/desktop-file-utils x11-misc/shared-mime-info dev-qt/qtcore:5
+DESCRIPTION=Sierra Breeze Enhanced started as a fork of Breeze Enhanced decoration
+EAPI=7
+HOMEPAGE=https://github.com/kupiqu/SierraBreezeEnhanced.git
+INHERIT=ecm cmake-utils multilib
+IUSE=debug debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=kde-frameworks/plasma kde-plasma/kdecoration kde-frameworks/kiconthemes dev-qt/qtcore dev-qt/qtgui dev-qt/qtdeclarative dev-qt/qtx11extras || ( kde-frameworks/breeze-icons:* kde-frameworks/oxygen-icons:* ) >=kde-frameworks/kf-env-4 dev-qt/qtcore:5
+SLOT=0
+SRC_URI=https://github.com/kupiqu/SierraBreezeEnhanced/archive/refs/tags/V1.0.0.tar.gz -> sierrabreezeenhanced-1.0.0.tar.gz
+_eclasses_=cmake	11fee991ab428a3370e5c20fa8231fb6	cmake-utils	f40ef5c4fb8eda19cca8d6604bef497e	ecm	9fe70cc0ef1ddfecce7548500987215d	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	dab5d8ec471d025b79c9e6906bcf3bff	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	multilib	4b66d835ec72e021e359bb81eacfe988	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	virtualx	fa024aa649b6bd544144bf94893d402c	wrapper	4251d4c84c25f59094fd557e0063a974	xdg	6024fbc93167fad782e2032933654857	xdg-utils	4f29a8b760a594a212abe9c2ba957c31
+_md5_=077fdb5499f3d1309336a515510ad606

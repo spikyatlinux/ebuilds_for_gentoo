@@ -1,0 +1,12 @@
+<repositories version="1.0">
+	<repo priority="50" quality="experimental" status="unofficial">
+		<name>spikyatlinux</name>
+		<description>Here are some of my own or modified ebuilds. Also some of them I´ve found in the web.</description>
+		<homepage>https://github.com/spikyatlinux/ebuilds_for_gentoo</homepage>
+		<owner type="person">
+			<email>spikyatlinux@gmail.com</email>
+			<name>SpikyAtLinux</name>
+		</owner>
+		<source type="git">https://github.com/spikyatlinux/ebuilds_for_gentoo.git</source>
+	</repo>
+</repositories>

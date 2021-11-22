@@ -1,0 +1,5 @@
+# My use flags for my openbox set
+x11-misc/rofi windowmode
+x11-misc/tint2 tint2conf
+x11-terms/rxvt-unicode 256-color blink unicode3 xft -utmp -wtmp
+x11-wm/openbox imlib
