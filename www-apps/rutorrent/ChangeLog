@@ -2,82 +2,9 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  rutorrent-2021.11.16.ebuild:
-  Updated '2021-11-22-11:53'...
+*rutorrent-2021.11.16 (22 Nov 2021)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:06'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-10:31'...
-
-*rutorrent-2021.11.16 (21 Nov 2021)
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -rutorrent-3.10-r12.ebuild, +rutorrent-2021.11.16.ebuild:
-  Updated '2021-11-21-19:56'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*rutorrent-3.10-r12 (27 Oct 2021)
-
-  27 Oct 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -rutorrent-3.10-r11.ebuild, +rutorrent-3.10-r12.ebuild:
-  Updated '2021-10-27-13:18'...
-
-*rutorrent-3.10-r11 (05 Sep 2021)
-
-  05 Sep 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -rutorrent-3.10-r10.ebuild, +rutorrent-3.10-r11.ebuild:
-  Updated '2021-09-05-19:54'...
-
-*rutorrent-3.10-r10 (01 Jul 2021)
-
-  01 Jul 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -rutorrent-3.10-r8.ebuild, +rutorrent-3.10-r10.ebuild:
-  Updated '2021-07-01-20:59'...
-
-*rutorrent-3.10-r8 (05 Apr 2021)
-
-  05 Apr 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -rutorrent-3.10-r6.ebuild, +rutorrent-3.10-r8.ebuild:
-  Updated '2021-04-05-14:10'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> rutorrent-3.10-r6.ebuild:
-  Updated '2021-03-07-12:02'...
-
-*rutorrent-3.10-r6 (07 Mar 2021)
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -rutorrent-3.10-r2.ebuild, +rutorrent-3.10-r6.ebuild:
-  Updated '2021-03-07-11:23'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-11:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-10:26'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*rutorrent-3.10-r2 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +rutorrent-3.10-r2.ebuild:
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
+  +rutorrent-2021.11.16.ebuild:
   Initial commit
 

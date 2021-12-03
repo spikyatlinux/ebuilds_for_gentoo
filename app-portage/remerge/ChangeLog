@@ -2,43 +2,8 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  remerge-0.0.8.ebuild:
-  Updated '2021-11-22-11:53'...
+*remerge-0.0.8 (22 Nov 2021)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz,
-  remerge-0.0.8.ebuild:
-  Updated '2021-11-22-11:06'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*remerge-0.0.8 (10 Aug 2021)
-
-  10 Aug 2021; SpikyAtLinux <spikyatlinux@gmail.com> +remerge-0.0.8.ebuild:
-  Updated '2021-08-10-19:54'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  -remerge-0.0.4.ebuild:
-  Updated '2021-03-07-10:20'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*remerge-0.0.4 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +remerge-0.0.4.ebuild:
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +remerge-0.0.8.ebuild:
   Initial commit
 

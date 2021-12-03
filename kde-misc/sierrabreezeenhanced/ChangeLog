@@ -2,30 +2,10 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  sierrabreezeenhanced-1.0.3.ebuild, sierrabreezeenhanced-9999.ebuild:
-  Updated '2021-11-22-11:53'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:06'...
-
+*sierrabreezeenhanced-9999 (22 Nov 2021)
 *sierrabreezeenhanced-1.0.3 (22 Nov 2021)
 
   22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -sierrabreezeenhanced-1.0.0.ebuild, +sierrabreezeenhanced-1.0.3.ebuild,
-  sierrabreezeenhanced-9999.ebuild:
-  Updated '2021-11-22-10:33'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*sierrabreezeenhanced-9999 (11 Apr 2021)
-*sierrabreezeenhanced-1.0.0 (11 Apr 2021)
-
-  11 Apr 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +sierrabreezeenhanced-1.0.0.ebuild, +sierrabreezeenhanced-9999.ebuild:
-  Updated '2021-04-11-13:34'...
+  +sierrabreezeenhanced-1.0.3.ebuild, +sierrabreezeenhanced-9999.ebuild:
+  Initial commit
 

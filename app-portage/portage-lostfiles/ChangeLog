@@ -2,33 +2,9 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  portage-lostfiles-0.2.3.ebuild:
-  Updated '2021-11-22-11:53'...
+*portage-lostfiles-0.2.3 (22 Nov 2021)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz,
-  portage-lostfiles-0.2.3.ebuild:
-  Updated '2021-11-22-11:06'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-  03 Jul 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  portage-lostfiles-0.2.3.ebuild:
-  Updated '2021-07-03-09:40'...
-
-*portage-lostfiles-0.2.3 (25 May 2021)
-
-  25 May 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -portage-lostfiles-0.2.2.ebuild, +portage-lostfiles-0.2.3.ebuild:
-  Updated '2021-05-25-20:00'...
-
-*portage-lostfiles-0.2.2 (20 Mar 2021)
-
-  20 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +portage-lostfiles-0.2.2.ebuild:
-  Updated '2021-03-20-17:01'...
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
+  +portage-lostfiles-0.2.3.ebuild:
+  Initial commit
 

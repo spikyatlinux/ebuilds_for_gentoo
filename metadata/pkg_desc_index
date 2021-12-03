@@ -1,14 +1,14 @@
 app-admin/s-tui 1.1.3: Stress-Terminal UI monitoring tool
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/bottles 2021.11.14 9999: Easily manage WINE prefixes in a new way
-app-office/hibiscus 2.10.3 9999: Official prebuilt nightly HBCI Plugin for Jameica
+app-office/hibiscus 2.10.4 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-portage/portage-lostfiles 0.2.3: A simple script to identify files not tracked by Portage package manager
 app-portage/portconf 1.6.9: /etc/portage cleaner
 app-portage/remerge 0.0.8: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-portage/showem 1.0.3 9999: View output of a parallel emerge from a separate terminal
 app-text/ascii-design 1.1.1-r1: Ascii Design is an ascii-art program based on figlet engine.
-dev-java/jameica 2.10.0 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
+dev-java/jameica 2.10.1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
 dev-php/pdlib 1.0.2: PHP bindings for dlib
 dev-util/android-udev-rules 20210501: Comprehensive list of udev rules to connect to android devices
 dev-util/apktool-bin 2.5.0: A tool for reverse engineering 3rd party, closed, binary Android apps

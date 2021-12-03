@@ -2,57 +2,10 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  epson-inkjet-printer-escpr-1.7.17.ebuild:
-  Updated '2021-11-22-11:53'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:06'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-10:31'...
-
 *epson-inkjet-printer-escpr-1.7.17 (22 Nov 2021)
 
   22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -epson-inkjet-printer-escpr-1.7.16.ebuild,
-  +epson-inkjet-printer-escpr-1.7.17.ebuild:
-  Updated '2021-11-22-10:26'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*epson-inkjet-printer-escpr-1.7.16 (19 Aug 2021)
-
-  19 Aug 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +epson-inkjet-printer-escpr-1.7.16.ebuild, +files/1.6.5-warnings.patch,
+  +epson-inkjet-printer-escpr-1.7.17.ebuild, +files/1.6.5-warnings.patch,
   +files/epson-inkjet-printer-escpr-1.7.7-fnocommon.patch:
-  Updated '2021-08-19-22:22'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  -epson-inkjet-printer-escpr-1.7.8.ebuild, -files/1.6.5-warnings.patch,
-  -files/epson-inkjet-printer-escpr-1.7.8-fnocommon.patch:
-  Updated '2021-03-07-10:20'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*epson-inkjet-printer-escpr-1.7.8 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +epson-inkjet-printer-escpr-1.7.8.ebuild, +files/1.6.5-warnings.patch,
-  +files/epson-inkjet-printer-escpr-1.7.8-fnocommon.patch:
   Initial commit
 

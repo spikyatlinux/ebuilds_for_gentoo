@@ -2,44 +2,9 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  bluegriffon-bin-3.1.ebuild:
-  Updated '2021-11-22-11:53'...
+*bluegriffon-bin-3.1 (22 Nov 2021)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:06'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-10:31'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  bluegriffon-bin-3.1.ebuild:
-  Updated '2021-03-07-12:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-11:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-10:26'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-02-08'...
-
-*bluegriffon-bin-3.1 (07 Feb 2021)
-
-  07 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com>
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
   +bluegriffon-bin-3.1.ebuild, +files/bluegriffon-bin.desktop, +metadata.xml:
-  Try to fix hibiscus ebuild
+  Initial commit
 

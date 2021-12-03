@@ -2,49 +2,10 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  bottles-2021.11.14.ebuild, bottles-9999.ebuild:
-  Updated '2021-11-22-11:53'...
+*bottles-9999 (22 Nov 2021)
+*bottles-2021.11.14 (22 Nov 2021)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz,
-  bottles-2021.11.14.ebuild:
-  Updated '2021-11-22-11:06'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-10:31'...
-
-*bottles-2021.11.14 (21 Nov 2021)
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -bottles-2021.10.14.ebuild, -bottles-2021.10.28.ebuild,
-  +bottles-2021.11.14.ebuild, bottles-9999.ebuild:
-  Updated '2021-11-21-19:56'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*bottles-2021.10.28 (07 Nov 2021)
-
-  07 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -bottles-2021.8.28.ebuild, +bottles-2021.10.28.ebuild:
-  Updated '2021-11-07-13:01'...
-
-*bottles-2021.10.14 (27 Oct 2021)
-
-  27 Oct 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +bottles-2021.10.14.ebuild:
-  Updated '2021-10-27-13:18'...
-
-  05 Sep 2021; SpikyAtLinux <spikyatlinux@gmail.com> bottles-9999.ebuild:
-  Updated '2021-09-05-19:56'...
-
-*bottles-9999 (05 Sep 2021)
-*bottles-2021.8.28 (05 Sep 2021)
-
-  05 Sep 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +bottles-2021.8.28.ebuild, +bottles-9999.ebuild:
-  Updated '2021-09-05-19:54'...
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
+  +bottles-2021.11.14.ebuild, +bottles-9999.ebuild:
+  Initial commit
 

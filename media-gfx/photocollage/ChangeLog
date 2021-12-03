@@ -2,55 +2,9 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  photocollage-1.4.5.ebuild:
-  Updated '2021-11-22-11:53'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-22-11:07'...
-
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz,
-  photocollage-1.4.5.ebuild:
-  Updated '2021-11-22-11:06'...
-
 *photocollage-1.4.5 (22 Nov 2021)
 
   22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -photocollage-1.4.4.ebuild, +photocollage-1.4.5.ebuild:
-  Updated '2021-11-22-10:39'...
-
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-  03 Jul 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  photocollage-1.4.4.ebuild:
-  Updated '2021-07-03-09:40'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  photocollage-1.4.4.ebuild:
-  Updated '2021-03-07-12:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-11:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-10:26'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*photocollage-1.4.4 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +photocollage-1.4.4.ebuild:
+  +photocollage-1.4.5.ebuild:
   Initial commit
 

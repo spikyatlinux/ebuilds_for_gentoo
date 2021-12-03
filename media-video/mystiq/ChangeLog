@@ -2,36 +2,8 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  mystiq-20200323.ebuild:
-  Updated '2021-11-22-11:53'...
+*mystiq-20200323 (22 Nov 2021)
 
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> mystiq-20200323.ebuild:
-  Updated '2021-03-07-12:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-11:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-10:26'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*mystiq-20200323 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +mystiq-20200323.ebuild:
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +mystiq-20200323.ebuild:
   Initial commit
 

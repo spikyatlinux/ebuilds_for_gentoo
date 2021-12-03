@@ -8,7 +8,7 @@ inherit flag-o-matic toolchain-funcs
 MY_PV="2.11.0-nightly"
 
 DESCRIPTION="Official prebuilt nightly HBCI Plugin for Jameica"
-HOMEPAGE="http://jameica.org"
+HOMEPAGE="https://www.willuhn.de/products/hibiscus/"
 SRC_URI="https://www.willuhn.de/products/${PN}/releases/nightly/${PN}-${MY_PV}.zip"
 LICENSE="GPL-3"
 SLOT="0"

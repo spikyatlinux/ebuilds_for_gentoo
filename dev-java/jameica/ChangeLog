@@ -2,54 +2,10 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  jameica-2.10.0.ebuild, jameica-9999.ebuild:
-  Updated '2021-11-22-11:53'...
+*jameica-9999 (22 Nov 2021)
+*jameica-2.10.0 (22 Nov 2021)
 
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*jameica-9999 (13 May 2021)
-
-  13 May 2021; SpikyAtLinux <spikyatlinux@gmail.com> -jameica-2.11.ebuild,
-  +jameica-9999.ebuild:
-  Updated '2021-05-13-13:09'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> jameica-2.10.0.ebuild,
-  jameica-2.11.ebuild:
-  Updated '2021-03-07-12:02'...
-
-*jameica-2.11 (07 Mar 2021)
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> jameica-2.10.0.ebuild,
-  +jameica-2.11.ebuild, -jameica-9999.ebuild:
-  Updated '2021-03-07-11:43'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-11:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-10:26'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> jameica-9999.ebuild:
-  Updated '2021-01-28'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*jameica-9999 (28 Jan 2021)
-*jameica-2.10.0 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +files/jameica.desktop,
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +files/jameica.desktop,
   +jameica-2.10.0.ebuild, +jameica-9999.ebuild:
   Initial commit
 

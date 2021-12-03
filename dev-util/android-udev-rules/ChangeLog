@@ -2,16 +2,9 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  android-udev-rules-20210501.ebuild:
-  Updated '2021-11-22-11:53'...
+*android-udev-rules-20210501 (22 Nov 2021)
 
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*android-udev-rules-20210501 (01 Aug 2021)
-
-  01 Aug 2021; SpikyAtLinux <spikyatlinux@gmail.com>
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
   +android-udev-rules-20210501.ebuild:
-  Updated '2021-08-01-23:48'...
+  Initial commit
 

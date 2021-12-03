@@ -6,4 +6,4 @@ KEYWORDS=~amd64 ~arm ~x86 ~x86-linux ~x64-macos
 LICENSE=GPL-2
 RDEPEND=app-shells/bash sys-apps/coreutils sys-apps/portage
 SLOT=0
-_md5_=0e6bb027142dc008f72f76dbe20f6777
+_md5_=250088814b08b055bde37f83e3bddecf

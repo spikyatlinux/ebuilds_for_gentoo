@@ -2,65 +2,9 @@
 # Copyright 1999-2021 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> -Manifest.gz,
-  platform-tools-31.0.3.ebuild:
-  Updated '2021-11-22-11:53'...
+*platform-tools-31.0.3 (22 Nov 2021)
 
-  21 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-11-21-16:25'...
-
-*platform-tools-31.0.3 (22 Aug 2021)
-
-  22 Aug 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -platform-tools-31.0.2.ebuild, +platform-tools-31.0.3.ebuild:
-  Updated '2021-08-22-21:20'...
-
-*platform-tools-31.0.2 (13 May 2021)
-
-  13 May 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -platform-tools-31.0.1.ebuild, +platform-tools-31.0.2.ebuild:
-  Updated '2021-05-13-13:09'...
-
-*platform-tools-31.0.1 (15 Apr 2021)
-
-  15 Apr 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -platform-tools-31.0.0.ebuild, +platform-tools-31.0.1.ebuild:
-  Updated '2021-04-15-12:15'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  platform-tools-31.0.0.ebuild:
-  Updated '2021-03-07-12:02'...
-
-*platform-tools-31.0.0 (07 Mar 2021)
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  -platform-tools-30.0.5.ebuild, +platform-tools-31.0.0.ebuild,
-  -platform-tools-9999.ebuild:
-  Updated '2021-03-07-11:23'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-11:02'...
-
-  07 Mar 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-03-07-10:26'...
-
-  15 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-15'...
-
-  09 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-09'...
-
-  08 Feb 2021; SpikyAtLinux <spikyatlinux@gmail.com> Manifest.gz:
-  Updated '2021-02-08'...
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com> +Manifest.gz:
-  Updated '2021-01-28'...
-
-*platform-tools-9999 (28 Jan 2021)
-*platform-tools-30.0.5 (28 Jan 2021)
-
-  28 Jan 2021; SpikyAtLinux <spikyatlinux@gmail.com>
-  +files/72platformtools-env.d, +platform-tools-30.0.5.ebuild,
-  +platform-tools-9999.ebuild:
+  22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/72platformtools-env.d, +platform-tools-31.0.3.ebuild:
   Initial commit
 
