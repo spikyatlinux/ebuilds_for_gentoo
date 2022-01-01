@@ -1,10 +1,10 @@
-# ChangeLog for dev-util/android-tools-google
+# ChangeLog for dev-go/go-protobuf
 # Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-*android-tools-google-31.0.3-r1 (01 Jan 2022)
+*go-protobuf-1.5.2 (01 Jan 2022)
 
   01 Jan 2022; SpikyAtLinux <spikyatlinux@gmail.com>
-  +android-tools-google-31.0.3-r1.ebuild, +files/72platformtools-env.d:
+  +go-protobuf-1.5.2.ebuild:
   Updated '2022-01-01-19:26'...
 

@@ -2,6 +2,9 @@
 # Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  01 Jan 2022; SpikyAtLinux <spikyatlinux@gmail.com> mystiq-20200323.ebuild:
+  Updated '2022-01-01-19:26'...
+
 *mystiq-20200323 (22 Nov 2021)
 
   22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +mystiq-20200323.ebuild:
