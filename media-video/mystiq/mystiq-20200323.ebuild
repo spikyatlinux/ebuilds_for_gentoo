@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit qmake-utils
+inherit ecm kde.org qmake-utils
 
 MY_PV="20.03.23"
 MY_NAME="MystiQ"

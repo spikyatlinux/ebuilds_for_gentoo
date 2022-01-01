@@ -1,12 +1,12 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 inherit eutils unpacker
 
 DESCRIPTION="Android platform-tools same as android-tools, but without sdk from google"
 HOMEPAGE="https://developer.android.com/studio/releases/platform-tools.html"
-SRC_URI="https://dl.google.com/android/repository/platform-tools-latest-linux.zip -> ${P}-${PV}.zip"
+SRC_URI="https://dl.google.com/android/repository/platform-tools-latest-linux.zip -> ${P}.zip"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -30,7 +30,7 @@ src_install() {
 	done
 	
     mkdir ${D}/opt
-    unzip ${DISTDIR}/${P}-${PV}.zip -d ${D}/opt/
+    unzip ${DISTDIR}/${P}.zip -d ${D}/opt/
     
     newenvd "${FILESDIR}"/72platformtools-env.d 72platformtools
 	

@@ -1,0 +1,12 @@
+BDEPEND=sys-devel/gettext >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=Kde Image Menu
+EAPI=7
+HOMEPAGE=https://github.com/caco3/kim5
+INHERIT=git-r3
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=kde-apps/dolphin:5 kde-apps/kdialog:5 media-video/ffmpeg media-gfx/imagemagick x11-apps/xwd
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=77222c468a21e4eba68ebd46493b7eb7

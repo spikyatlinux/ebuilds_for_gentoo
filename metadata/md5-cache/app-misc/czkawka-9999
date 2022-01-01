@@ -1,0 +1,14 @@
+BDEPEND=>=virtual/rust-1.37.0 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install test unpack
+DEPEND=gtk? ( x11-libs/gtk+:3 )
+DESCRIPTION=Czkawka is a simple, fast and easy to use alternative to FSlint, written in Rust
+EAPI=7
+HOMEPAGE=https://github.com/qarmin/czkawka
+INHERIT=cargo git-r3 optfeature
+IUSE=+gtk debug
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=gtk? ( x11-libs/gtk+:3 )
+SLOT=0
+_eclasses_=cargo	c7fefacaebdcb455d2a7b59429eb47a6	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	multilib	8a0248f83ae77f945d376ff4a7953257	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	optfeature	30ce9dec2b8943338c9b015bd32bac6a	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
+_md5_=b1e0adc4451c7834f7cab23e39f4d8fd

@@ -10,6 +10,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=virtual/httpd-php >=app-admin/webapp-config-1.50.15
-SLOT=2021.11.16
+SLOT=2021.12.20
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	webapp	cd327e73cdb307ceb80dcca6b8ad8b52
-_md5_=56f736810450a45479e1b5a0e9ebebff
+_md5_=801d39296b411803e78936994cee53f8
