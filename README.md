@@ -31,9 +31,9 @@ without quotes of course.
 #################################################
 
 #### Oneliner to use my repo without layman
-
-	# wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/spikyatlinux.conf -O /etc/portage/repos.conf/spikyatlinux.conf && emaint sync -r spikyatlinux && eix-update
-
+```
+wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/spikyatlinux.conf -O /etc/portage/repos.conf/spikyatlinux.conf && emaint sync -r spikyatlinux && eix-update
+```
 #### ebuilds_for_gentoo
 
 
@@ -41,20 +41,22 @@ without quotes of course.
 #################################################
 
 With layman:
-
-	# sudo layman -S
-	# sudo layman -f -a spikyatlinux
-    # sudo emaint sync -r spikyatlinux
+```
+	sudo layman -S
+	sudo layman -f -a spikyatlinux
+	sudo emaint sync -r spikyatlinux
+```
 
 With eselect:
-
-	# eselect repository enable spikyatlinux
-	# emaint sync -r spikyatlinux
+```
+	eselect repository enable spikyatlinux
+	emaint sync -r spikyatlinux
+```
 
 if you have eix installed
-
-    # sudo eix-update
-
+```
+    sudo eix-update
+```
 #################################################
 
 #### Add some gentoo profiles
