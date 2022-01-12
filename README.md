@@ -28,7 +28,7 @@ without quotes of course.
 
 #### Oneliner to use my repo without layman
 
-wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/spikyatlinux.conf -O /etc/portage/repos.conf/spikyatlinux.conf && emaint sync -r spikyatlinux && eix-update
+	# wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/spikyatlinux.conf -O /etc/portage/repos.conf/spikyatlinux.conf && emaint sync -r spikyatlinux && eix-update
 
 #### ebuilds_for_gentoo
 
