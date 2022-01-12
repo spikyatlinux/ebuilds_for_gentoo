@@ -33,26 +33,19 @@ wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/sp
 #### ebuilds_for_gentoo
 
 
-#### Add repository with layman
+#### Add my repository
 #################################################
 
-1st install layman:
-
-    # emerge -av layman
-
-2nd Sync layman:
-
-    # sudo layman -S
-
-3rd Add my repository:
-
-    # sudo layman -f -a spikyatlinux
-
-4th Perhaps you have to sync your local db:
-    
+With layman:
+	# sudo layman -S
+	# sudo layman -f -a spikyatlinux
     # sudo emaint sync -r spikyatlinux
 
-or if you have eix installed
+With eselect:
+	# eselect repository enable spikyatlinux
+	# emaint sync -r spikyatlinux
+
+if you have eix installed
 
     # sudo eix-update
 
