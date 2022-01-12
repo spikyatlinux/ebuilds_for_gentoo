@@ -18,6 +18,7 @@ dev-util/android-udev-rules 20210501: Comprehensive list of udev rules to connec
 dev-util/apktool-bin 2.5.0: A tool for reverse engineering 3rd party, closed, binary Android apps
 kde-misc/kim5 9999: Kde Image Menu
 kde-misc/sierrabreezeenhanced 1.0.3 9999: Sierra Breeze Enhanced started as a fork of Breeze Enhanced decoration
+media-gfx/iscan-plugin-network-nt 1.1.4: Network scanning plugin for EPSON scanners (nonfree)
 media-gfx/photocollage 1.4.5: Graphical tool to make photo collage posters
 media-video/mystiq 20200323: Qt5/C++ FFmpeg Media Converter
 net-print/epson-inkjet-printer-escpr 1.7.17: Epson Inkjet Printer Driver (ESC/P-R)
