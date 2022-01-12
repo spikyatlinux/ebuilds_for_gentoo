@@ -37,11 +37,13 @@ wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/sp
 #################################################
 
 With layman:
+
 	# sudo layman -S
 	# sudo layman -f -a spikyatlinux
     # sudo emaint sync -r spikyatlinux
 
 With eselect:
+
 	# eselect repository enable spikyatlinux
 	# emaint sync -r spikyatlinux
 
