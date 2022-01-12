@@ -63,13 +63,13 @@ sudo eix-update
 #### I´ve merged original gentoo desktop profiles with
 #### openrc and systemd profiles
 
-####################### OpenRC Profiles #######################
+**####################### OpenRC Profiles #######################**
 - amd64 default/linux/amd64/17.1/desktop/plasma+gnome-openrc stable
 
-####################### SystemD Profiles #######################
+**####################### SystemD Profiles #######################**
 - amd64 default/linux/amd64/17.1/desktop/plasma+gnome/systemd stable
 
-###################### NoMultilib Profiles ######################
+**###################### NoMultilib Profiles ######################**
 - amd64 default/linux/amd64/17.1/no-multilib/desktop stable
 - amd64 default/linux/amd64/17.1/no-multilib/plasma-openrc stable
 - amd64 default/linux/amd64/17.1/no-multilib/gnome-openrc stable
@@ -78,7 +78,7 @@ sudo eix-update
 - amd64 default/linux/amd64/17.1/no-multilib/gnome/systemd stable
 - amd64 default/linux/amd64/17.1/no-multilib/plasma+gnome/systemd stable
 
-####################### Hardened Profiles #######################
+**####################### Hardened Profiles #######################**
 - amd64 default/linux/amd64/17.1/hardened/plasma-openrc dev
 
 #### ;-)
