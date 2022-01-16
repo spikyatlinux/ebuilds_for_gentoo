@@ -1,0 +1,10 @@
+# ChangeLog for x11-themes/papirus-icon-theme
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*papirus-icon-theme-20220101 (12 Jan 2022)
+
+  12 Jan 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +papirus-icon-theme-20220101.ebuild:
+  Updated '2022-01-12-23:57'...
+
