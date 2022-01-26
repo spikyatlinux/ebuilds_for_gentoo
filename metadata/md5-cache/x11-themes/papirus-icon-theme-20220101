@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst
+DESCRIPTION=Free and open source SVG icon theme
+EAPI=8
+HOMEPAGE=https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+INHERIT=xdg
+KEYWORDS=~amd64 ~arm64 ~ppc64 ~x86
+LICENSE=GPL-3
+SLOT=0
+SRC_URI=https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20220101.tar.gz -> papirus-icon-theme-20220101.tar.gz
+_eclasses_=xdg	6024fbc93167fad782e2032933654857	xdg-utils	4f29a8b760a594a212abe9c2ba957c31
+_md5_=f1b7f6189d1f8ce59b3216d477760343
