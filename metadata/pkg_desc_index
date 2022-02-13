@@ -1,7 +1,7 @@
 app-admin/opensnitch 1.4.3: Desktop application firewall
 app-admin/s-tui 1.1.3: Stress-Terminal UI monitoring tool
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
-app-emulation/bottles 2021.12.28 2022.1.14 2022.1.28 9999: Easily manage WINE prefixes in a new way
+app-emulation/bottles 2021.12.28 2022.1.14 2022.1.28 2022.2.14 9999: Easily manage WINE prefixes in a new way
 app-misc/czkawka 9999: Czkawka is a simple, fast and easy to use alternative to FSlint, written in Rust
 app-office/hibiscus 2.10.4 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-portage/portage-lostfiles 0.2.3: A simple script to identify files not tracked by Portage package manager
@@ -23,6 +23,6 @@ media-gfx/photocollage 1.4.5: Graphical tool to make photo collage posters
 media-video/mystiq 20200323: Qt5/C++ FFmpeg Media Converter
 net-print/epson-inkjet-printer-escpr 1.7.17: Epson Inkjet Printer Driver (ESC/P-R)
 sys-apps/firetools 0.9.64 9999: Graphical user interface of Firajail security sandbox
-www-apps/rutorrent 2021.12.20 2022.01.28: ruTorrent is a front-end for the popular Bittorrent client rTorrent
+www-apps/rutorrent 2021.12.20 2022.01.28 2022.02.12: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 x11-themes/materia-kde 20211226: GTK port of Materia Theme for Plasma 5 desktop.
 x11-themes/papirus-icon-theme 20220101: Free and open source SVG icon theme
