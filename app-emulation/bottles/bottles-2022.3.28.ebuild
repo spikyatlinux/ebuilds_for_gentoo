@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
-inherit optfeature python-single-r1 meson xdg
+inherit optfeature gnome2-utils python-single-r1 meson xdg
 
 DESCRIPTION="Easily manage WINE prefixes in a new way"
 HOMEPAGE="
@@ -12,14 +12,14 @@ HOMEPAGE="
 	https://github.com/bottlesdevs/Bottles
 "
 
-LICENSE="GPL-3"
+LICENSE="GPL-3+"
 SLOT="0"
 
 if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bottlesdevs/${PN^}.git"
 else
-	VERSION_CODENAME="treviso"
+	VERSION_CODENAME="trento-1"
 	MY_PV="${PV}-${VERSION_CODENAME}"
 	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="-* ~amd64"
@@ -27,7 +27,7 @@ else
 fi
 
 RESTRICT="mirror !test? ( test )"
-IUSE="test"
+IUSE="test gamemode"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 PROPERTIES="test_network"
 
@@ -39,6 +39,7 @@ DEPEND="
 	$(python_gen_cond_dep '
 		dev-python/pygobject:3[${PYTHON_USEDEP},cairo]
 	')
+	gamemode? ( games-util/gamemode )
 "
 BDEPEND="
 	test? (
@@ -62,7 +63,7 @@ RDEPEND="
 	gnome-base/dconf
 	gnome-base/gsettings-desktop-schemas
 	gnome-base/librsvg:2
-	gui-libs/libhandy:1[introspection]
+	>=gui-libs/libhandy-1.5[introspection]
 	media-libs/freetype
 	media-libs/libcanberra[gtk3]
 	media-libs/vulkan-loader
@@ -71,6 +72,8 @@ RDEPEND="
 	net-libs/webkit-gtk:4
 	sys-libs/zlib
 	sys-process/procps
+	x11-apps/xdpyinfo
+	x11-libs/gtksourceview:4
 	x11-libs/libnotify[introspection]
 	virtual/opengl
 	amd64? (
@@ -112,7 +115,13 @@ src_install() {
 	python_optimize "${D}/usr/share/bottles/"
 }
 
+pkg_preinst() {
+	xdg_pkg_preinst
+	gnome2_schemas_savelist
+}
+
 pkg_postinst() {
 	xdg_pkg_postinst
+	gnome2_schemas_update
 	optfeature "gamemode support" games-util/gamemode
 }

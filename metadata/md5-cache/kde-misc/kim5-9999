@@ -8,5 +8,5 @@ LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=kde-apps/dolphin:5 kde-apps/kdialog:5 media-video/ffmpeg media-gfx/imagemagick x11-apps/xwd
 SLOT=0
-_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53
 _md5_=77222c468a21e4eba68ebd46493b7eb7

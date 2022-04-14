@@ -1,4 +1,4 @@
-BDEPEND=>=dev-util/meson-0.58.2-r1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-util/meson-0.59.4 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
 DEPEND=python_single_target_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8 ) python_single_target_python3_9? ( >=dev-lang/python-3.9.9-r1:3.9 ) python_single_target_python3_10? ( >=dev-lang/python-3.10.0_p1-r1:3.10 ) >=x11-libs/gtk+-3.24.10[introspection] dev-libs/appstream-glib[introspection] dev-python/markdown python_single_target_python3_8? ( dev-python/pygobject:3[${PYTHON_MULTI_USEDEP},cairo] ) python_single_target_python3_9? ( dev-python/pygobject:3[${PYTHON_MULTI_USEDEP},cairo] ) python_single_target_python3_10? ( dev-python/pygobject:3[${PYTHON_MULTI_USEDEP},cairo] ) dev-util/desktop-file-utils x11-misc/shared-mime-info
 DESCRIPTION=Easily manage WINE prefixes in a new way
@@ -12,5 +12,5 @@ RDEPEND=python_single_target_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8 ) p
 REQUIRED_USE=^^ ( python_single_target_python3_8 python_single_target_python3_9 python_single_target_python3_10 )
 RESTRICT=mirror
 SLOT=0
-_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	gnome2-utils	239e7afa214b50012f83b8bb61de7555	meson	9f3e84959ae1d60e19bc91f212774dcc	multilib	de4beb52bfa93c4c5d96792a6b5e1784	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	python-single-r1	3c5721adc30f98c39739c5970a4762d8	python-utils-r1	ce976d20176213d68719e1a760f6e9fe	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	xdg	6024fbc93167fad782e2032933654857	xdg-utils	4f29a8b760a594a212abe9c2ba957c31
+_eclasses_=eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	git-r3	b9ac6f96d2a88edb5b351df634dc5e53	gnome2-utils	2116cec8f46f4d1b0a88c5b1f1575dd3	meson	2d8a51910bc57e004c37aa55c7d99ce4	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	fef481272d4a8e136a7d8a0fb1329384	python-single-r1	a5747fe6dc0651d95cb78eddd5e160a8	python-utils-r1	59dddabd6a41ab69723654916142f63b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	xdg	6024fbc93167fad782e2032933654857	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e
 _md5_=b0c3f5caee4e540842594a9b341de078
