@@ -2,6 +2,14 @@
 # Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*bottles-2022.3.28 (14 Apr 2022)
+
+  14 Apr 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  -bottles-2021.12.28.ebuild, -bottles-2022.1.14.ebuild,
+  -bottles-2022.1.28.ebuild, -bottles-2022.2.14.ebuild,
+  +bottles-2022.3.28.ebuild:
+  Updated '2022-04-14-20:59'...
+
 *bottles-2022.2.14 (13 Feb 2022)
 
   13 Feb 2022; SpikyAtLinux <spikyatlinux@gmail.com>

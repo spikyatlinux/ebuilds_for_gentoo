@@ -1,0 +1,10 @@
+# ChangeLog for media-fonts/nerd-fonts
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*nerd-fonts-2.1.0 (14 Apr 2022)
+
+  14 Apr 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/10-nerd-font-symbols.conf, +metadata.xml, +nerd-fonts-2.1.0.ebuild:
+  Updated '2022-04-14-20:59'...
+

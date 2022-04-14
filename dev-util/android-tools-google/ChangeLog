@@ -2,6 +2,12 @@
 # Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*android-tools-google-33.0.1 (14 Apr 2022)
+
+  14 Apr 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +android-tools-google-33.0.1.ebuild:
+  Updated '2022-04-14-20:59'...
+
 *android-tools-google-31.0.3-r1 (01 Jan 2022)
 
   01 Jan 2022; SpikyAtLinux <spikyatlinux@gmail.com>

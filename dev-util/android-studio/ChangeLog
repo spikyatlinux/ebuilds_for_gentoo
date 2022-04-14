@@ -1,0 +1,12 @@
+# ChangeLog for dev-util/android-studio
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*android-studio-2021.1.1.22 (14 Apr 2022)
+*android-studio-2021.1.1.21 (14 Apr 2022)
+
+  14 Apr 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +android-studio-2021.1.1.21.ebuild, +android-studio-2021.1.1.22.ebuild,
+  +metadata.xml:
+  Updated '2022-04-14-20:59'...
+

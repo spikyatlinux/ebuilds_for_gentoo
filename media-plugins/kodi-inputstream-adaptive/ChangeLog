@@ -1,0 +1,10 @@
+# ChangeLog for media-plugins/kodi-inputstream-adaptive
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*kodi-inputstream-adaptive-19.0.3 (14 Apr 2022)
+
+  14 Apr 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +kodi-inputstream-adaptive-19.0.3.ebuild, +metadata.xml:
+  Updated '2022-04-14-20:59'...
+
