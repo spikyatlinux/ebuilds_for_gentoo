@@ -2,6 +2,9 @@
 # Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  14 Apr 2022; SpikyAtLinux <spikyatlinux@gmail.com> remerge-0.0.8.ebuild:
+  Updated '2022-04-14-21:05'...
+
 *remerge-0.0.8 (22 Nov 2021)
 
   22 Nov 2021; SpikyAtLinux <spikyatlinux@gmail.com> +remerge-0.0.8.ebuild:
