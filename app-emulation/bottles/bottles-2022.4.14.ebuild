@@ -19,7 +19,7 @@ if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bottlesdevs/${PN^}.git"
 else
-	VERSION_CODENAME="trento-1"
+	VERSION_CODENAME="trento-2"
 	MY_PV="${PV}-${VERSION_CODENAME}"
 	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="-* ~amd64"
