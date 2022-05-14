@@ -1,4 +1,4 @@
-BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.4:1.16 ) >=sys-devel/autoconf-2.71 >=sys-devel/libtool-2.4 sys-devel/m4 sys-devel/libtool php_targets_php7-3? ( dev-lang/php:7.3 ) php_targets_php7-4? ( dev-lang/php:7.4 ) php_targets_php8-0? ( dev-lang/php:8.0 )
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71 >=sys-devel/libtool-2.4 sys-devel/m4 sys-devel/libtool php_targets_php7-3? ( dev-lang/php:7.3 ) php_targets_php7-4? ( dev-lang/php:7.4 ) php_targets_php8-0? ( dev-lang/php:8.0 )
 DEFINED_PHASES=compile configure install prepare test
 DEPEND=sci-libs/dlib[X] php_targets_php7-3? ( dev-lang/php:7.3 ) php_targets_php7-4? ( dev-lang/php:7.4 ) php_targets_php8-0? ( dev-lang/php:8.0 )
 DESCRIPTION=PHP bindings for dlib
@@ -13,5 +13,5 @@ REQUIRED_USE=|| ( php_targets_php7-3 php_targets_php7-4 php_targets_php8-0 )
 RESTRICT=test
 SLOT=0
 SRC_URI=https://github.com/goodspb/pdlib/archive/v1.0.2.tar.gz -> pdlib-1.0.2.tar.gz
-_eclasses_=autotools	ed3ef2014ee93d24bde80f0c0ea9732e	gnuconfig	262062cef0ba4f22b397193da514a350	libtool	241a8f577b9781a42a7421e53448a44e	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	php-ext-source-r3	3c26d87acac034aedf8bf126f7010c8a	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
+_eclasses_=autotools	b46e8992a8126c894fbdc8084fc040c4	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	241a8f577b9781a42a7421e53448a44e	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	php-ext-source-r3	3c26d87acac034aedf8bf126f7010c8a	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
 _md5_=95c80288e3493de837c38c81136912ba
