@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=virtual/udev
 SLOT=0
 SRC_URI=https://github.com/M0Rf30/android-udev-rules/archive/20210501.tar.gz -> android-udev-rules-20210501.tar.gz
-_eclasses_=multilib	4a33c9008e5ee30cb8840a3fdc24df2b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	udev	2d229ad4bfa09058e0184b1ca900db32	user	ccdfe713e9e8d4a8714f0370512ca086	user-info	69a1ed744ec33cf2c910ff2bd6084d11
+_eclasses_=multilib	4fbbbc98f236f1b43acd99476bc3cd85	toolchain-funcs	fd9cde67030b26e479eeadaced488253	udev	2d229ad4bfa09058e0184b1ca900db32	user	6d5286606283893a6f21db7860e5cc6c	user-info	69a1ed744ec33cf2c910ff2bd6084d11
 _md5_=fcb88d566b194c50f1b5b6ed458953c8

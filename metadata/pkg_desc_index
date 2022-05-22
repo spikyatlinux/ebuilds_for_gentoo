@@ -30,6 +30,6 @@ media-tv/hypnotix 2.6: An IPTV streaming application
 media-video/mystiq 20200323: Qt5/C++ FFmpeg Media Converter
 net-print/epson-inkjet-printer-escpr 1.7.17: Epson Inkjet Printer Driver (ESC/P-R)
 sys-apps/firetools 0.9.64 9999: Graphical user interface of Firajail security sandbox
-www-apps/rutorrent 2021.12.20 2022.01.28 2022.02.12: ruTorrent is a front-end for the popular Bittorrent client rTorrent
+www-apps/rutorrent 2022.05.12: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 x11-themes/materia-kde 20211226: GTK port of Materia Theme for Plasma 5 desktop.
 x11-themes/papirus-icon-theme 20220101: Free and open source SVG icon theme
