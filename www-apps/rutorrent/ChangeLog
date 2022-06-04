@@ -2,6 +2,13 @@
 # Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*rutorrent-2022.05.12 (22 May 2022)
+
+  22 May 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  -rutorrent-2021.12.20.ebuild, -rutorrent-2022.01.28.ebuild,
+  -rutorrent-2022.02.12.ebuild, +rutorrent-2022.05.12.ebuild:
+  Updated '2022-05-22-09:01'...
+
 *rutorrent-2022.02.12 (13 Feb 2022)
 
   13 Feb 2022; SpikyAtLinux <spikyatlinux@gmail.com>

@@ -1,4 +1,4 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -27,4 +27,15 @@ src_install() {
 
 pkg_setup() {
 	enewgroup adbusers
+}
+
+pkg_postinst() {
+	einfo "To be able to use android devices,"
+	einfo "add yourself to the 'adbusers' group by calling"
+	einfo "  usermod -a -G adbusers <user>"
+	udev_reload
+}
+
+pkg_postrm() {
+	udev_reload
 }
