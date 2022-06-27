@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -19,10 +19,10 @@ if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bottlesdevs/${PN^}.git"
 else
-	VERSION_CODENAME="brescia-1"
+	VERSION_CODENAME="trento-2"
 	MY_PV="${PV}-${VERSION_CODENAME}"
 	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="-* ~amd64"
 	S="${WORKDIR}/${PN^}-${MY_PV}"
 fi
 
@@ -60,8 +60,6 @@ RDEPEND="
 	dev-libs/libgee
 	dev-libs/libgpg-error
 	dev-libs/libpcre:3
-	gui-libs/libadwaita
-	gui-libs/gtksourceview
 	gnome-base/dconf
 	gnome-base/gsettings-desktop-schemas
 	gnome-base/librsvg:2
@@ -79,7 +77,6 @@ RDEPEND="
 	x11-libs/libnotify[introspection]
 	virtual/opengl
 	amd64? (
-		x11-themes/gtk-engines-adwaita[abi_x86_32(-)]
 		media-libs/freetype[abi_x86_32(-)]
 		media-libs/vulkan-loader[abi_x86_32(-)]
 		net-libs/gnutls[abi_x86_32(-)]

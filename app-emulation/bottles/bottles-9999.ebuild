@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7..10} )
+PYTHON_COMPAT=( python3_{8..10} )
 inherit python-single-r1 meson gnome2-utils xdg
 
 DESCRIPTION="Easily manage WINE prefixes in a new way"
