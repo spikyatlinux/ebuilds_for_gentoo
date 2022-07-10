@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=kde-plasma/plasma-desktop:5 ico? ( x11-themes/papirus-icon-theme ) kvantum? ( x11-themes/kvantum )
 SLOT=0
-SRC_URI=https://github.com/PapirusDevelopmentTeam/materia-kde/archive/20211226.tar.gz -> materia-kde-20211226.tar.gz
+SRC_URI=https://github.com/PapirusDevelopmentTeam/materia-kde/archive/20220510.tar.gz -> materia-kde-20220510.tar.gz
 _md5_=f75f1d1da3f5a8c91ab83f47fb650517

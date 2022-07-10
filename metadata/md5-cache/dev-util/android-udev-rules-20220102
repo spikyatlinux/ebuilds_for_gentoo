@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=virtual/udev
+DESCRIPTION=Comprehensive list of udev rules to connect to android devices
+EAPI=7
+HOMEPAGE=https://github.com/M0Rf30/android-udev-rules
+INHERIT=udev user
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=virtual/udev
+SLOT=0
+SRC_URI=https://github.com/M0Rf30/android-udev-rules/archive/20220102.tar.gz -> android-udev-rules-20220102.tar.gz
+_eclasses_=multilib	4fbbbc98f236f1b43acd99476bc3cd85	toolchain-funcs	e9da88162e7a3c60376e80c2c2adcdfb	udev	f3a0a3964e2028a140c181f00eea9712	user	1f6dd43c7e925ba0272de52bcd326972	user-info	69a1ed744ec33cf2c910ff2bd6084d11
+_md5_=6c7c328850435f843a2ebdf0d6179dc3

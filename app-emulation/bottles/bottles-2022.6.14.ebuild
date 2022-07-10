@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,7 +22,7 @@ else
 	VERSION_CODENAME="brescia-1"
 	MY_PV="${PV}-${VERSION_CODENAME}"
 	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS="-* ~amd64"
 	S="${WORKDIR}/${PN^}-${MY_PV}"
 fi
 
@@ -39,7 +39,6 @@ DEPEND="
 	$(python_gen_cond_dep '
 		dev-python/pygobject:3[${PYTHON_USEDEP},cairo]
 	')
-	gamemode? ( games-util/gamemode )
 "
 BDEPEND="
 	test? (
@@ -47,6 +46,10 @@ BDEPEND="
 		dev-libs/glib
 		dev-util/desktop-file-utils
 	)
+	gamemode? (
+		games-util/gamemode
+	)
+
 "
 RDEPEND="
 	${DEPEND}
@@ -60,12 +63,10 @@ RDEPEND="
 	dev-libs/libgee
 	dev-libs/libgpg-error
 	dev-libs/libpcre:3
-	gui-libs/libadwaita
-	gui-libs/gtksourceview
 	gnome-base/dconf
 	gnome-base/gsettings-desktop-schemas
 	gnome-base/librsvg:2
-	>=gui-libs/libhandy-1.5[introspection]
+	gui-libs/libhandy:1[introspection]
 	media-libs/freetype
 	media-libs/libcanberra[gtk3]
 	media-libs/vulkan-loader
@@ -79,7 +80,6 @@ RDEPEND="
 	x11-libs/libnotify[introspection]
 	virtual/opengl
 	amd64? (
-		x11-themes/gtk-engines-adwaita[abi_x86_32(-)]
 		media-libs/freetype[abi_x86_32(-)]
 		media-libs/vulkan-loader[abi_x86_32(-)]
 		net-libs/gnutls[abi_x86_32(-)]

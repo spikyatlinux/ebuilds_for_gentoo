@@ -1,4 +1,4 @@
-BDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.9-r1:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.0_p1-r1:3.10 ) >=dev-python/setuptools-42.0.2[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
+BDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 ) >=dev-python/setuptools-42.0.2[python_targets_python3_8(-)?,python_targets_python3_9(-)?,python_targets_python3_10(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 EAPI=7
@@ -7,9 +7,9 @@ INHERIT=distutils-r1
 IUSE=python_targets_python3_8 python_targets_python3_9 python_targets_python3_10
 KEYWORDS=~amd64
 LICENSE=BSD-2
-RDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.9-r1:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.0_p1-r1:3.10 )
+RDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.13:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.12:3.9 ) python_targets_python3_10? ( >=dev-lang/python-3.10.4:3.10 )
 REQUIRED_USE=|| ( python_targets_python3_8 python_targets_python3_9 python_targets_python3_10 )
 SLOT=0
 SRC_URI=https://gitlab.phys-el.ru/ustinov/remerge/-/archive/0.0.8/remerge-0.0.8.tar.gz -> remerge-0.0.8.tar.gz
-_eclasses_=distutils-r1	3b871cf4724e3abc9b4ff059289f0d45	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multibuild	d26d81f242cb193d899a72bca423d0bd	multilib	4fbbbc98f236f1b43acd99476bc3cd85	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-r1	8638751691200e941f26fe0ac3aef1d1	python-utils-r1	5dc84801daa87406aafaf535cb947a64	toolchain-funcs	fd9cde67030b26e479eeadaced488253
-_md5_=76888b91e0284843798fcf2f756f5a99
+_eclasses_=distutils-r1	64c5b9cc381383c9c1ef74fb199293ea	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	multibuild	d26d81f242cb193d899a72bca423d0bd	multilib	4fbbbc98f236f1b43acd99476bc3cd85	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	python-r1	e2883e4f04f0503cdf7f2954e2bf5e15	python-utils-r1	32313e7e2fbfba8f62a99ef923fc923c	toolchain-funcs	e9da88162e7a3c60376e80c2c2adcdfb
+_md5_=b561c4df6c02aa8f09f7bd437b146f55
