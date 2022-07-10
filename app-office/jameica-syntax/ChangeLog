@@ -1,0 +1,10 @@
+# ChangeLog for app-office/jameica-syntax
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*jameica-syntax-2.10.0 (10 Jul 2022)
+
+  10 Jul 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +jameica-syntax-2.10.0.ebuild:
+  Updated '2022-07-10-16:39'...
+
