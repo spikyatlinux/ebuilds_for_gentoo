@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 inherit optfeature gnome2-utils python-single-r1 meson xdg
 
 DESCRIPTION="Easily manage WINE prefixes in a new way"
@@ -39,7 +39,6 @@ DEPEND="
 	$(python_gen_cond_dep '
 		dev-python/pygobject:3[${PYTHON_USEDEP},cairo]
 	')
-	gamemode? ( games-util/gamemode )
 "
 BDEPEND="
 	test? (
@@ -47,6 +46,10 @@ BDEPEND="
 		dev-libs/glib
 		dev-util/desktop-file-utils
 	)
+	gamemode? (
+		games-util/gamemode
+	)
+
 "
 RDEPEND="
 	${DEPEND}

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 inherit optfeature gnome2-utils python-single-r1 meson xdg
 
 DESCRIPTION="Easily manage WINE prefixes in a new way"
@@ -67,6 +67,7 @@ RDEPEND="
 	gnome-base/gsettings-desktop-schemas
 	gnome-base/librsvg:2
 	gui-libs/libhandy:1[introspection]
+	gui-libs/libadwaita[introspection]
 	media-libs/freetype
 	media-libs/libcanberra[gtk3]
 	media-libs/vulkan-loader
