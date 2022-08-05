@@ -20,7 +20,8 @@ if [[ "${PV}" == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/bottlesdevs/${PN^}.git"
 else
 	VERSION_CODENAME="trento-2"
-	MY_PV="${PV}-${VERSION_CODENAME}"
+	year="${PV::4}" month="${PV:4:2}" day="${PV:6:2}" patch="${PV:10:1}"
+	MY_PV="${year}.${month#0}.${day#0}-${VERSION_CODENAME}${patch:+"-${patch}"}"
 	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="-* ~amd64"
 	S="${WORKDIR}/${PN^}-${MY_PV}"
@@ -66,7 +67,8 @@ RDEPEND="
 	gnome-base/dconf
 	gnome-base/gsettings-desktop-schemas
 	gnome-base/librsvg:2
-	>=gui-libs/libhandy-1.5[introspection]
+	gui-libs/libhandy:1[introspection]
+	gui-libs/gtksourceview
 	media-libs/freetype
 	media-libs/libcanberra[gtk3]
 	media-libs/vulkan-loader
