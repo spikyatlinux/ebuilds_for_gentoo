@@ -19,11 +19,11 @@ if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bottlesdevs/${PN^}.git"
 else
-	VERSION_CODENAME="brescia"
+	VERSION_CODENAME="brescia-2"
 	year="${PV::4}" month="${PV:4:2}" day="${PV:6:2}" patch="${PV:10:1}"
 	MY_PV="${year}.${month#0}.${day#0}-${VERSION_CODENAME}${patch:+"-${patch}"}"
 	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="-* ~amd64"
+	KEYWORDS=""
 	S="${WORKDIR}/${PN^}-${MY_PV}"
 fi
 
@@ -67,6 +67,7 @@ RDEPEND="
 	gnome-base/dconf
 	gnome-base/gsettings-desktop-schemas
 	gnome-base/librsvg:2
+	>=gui-libs/libadwaita-1.2
 	gui-libs/libhandy:1[introspection]
 	gui-libs/gtksourceview
 	media-libs/freetype
@@ -75,6 +76,7 @@ RDEPEND="
 	net-fs/samba[winbind]
 	net-libs/gnutls
 	net-libs/webkit-gtk:4
+	sys-fs/fvs
 	sys-libs/zlib
 	sys-process/procps
 	x11-apps/xdpyinfo
@@ -91,6 +93,8 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		app-arch/patool[${PYTHON_USEDEP}]
 		dev-python/certifi[${PYTHON_USEDEP}]
+		dev-python/pefile[${PYTHON_USEDEP}]
+		media-gfx/icoextract[${PYTHON_USEDEP}]
 		dev-python/markdown[${PYTHON_USEDEP}]
 		dev-python/requests[${PYTHON_USEDEP}]
 		dev-python/pyyaml[${PYTHON_USEDEP}]

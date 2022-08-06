@@ -1,0 +1,11 @@
+# ChangeLog for x11-apps/gpu-viewer
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*gpu-viewer-9999 (05 Aug 2022)
+*gpu-viewer-1.42 (05 Aug 2022)
+
+  05 Aug 2022; SpikyAtLinux <spikyatlinux@gmail.com> +gpu-viewer-1.42.ebuild,
+  +gpu-viewer-9999.ebuild:
+  Updated '2022-08-05-21:29'...
+
