@@ -1,0 +1,9 @@
+# ChangeLog for gui-libs/libadwaita
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*libadwaita-1.2 (06 Aug 2022)
+
+  06 Aug 2022; SpikyAtLinux <spikyatlinux@gmail.com> +libadwaita-1.2.ebuild:
+  Updated '2022-08-06-13:40'...
+

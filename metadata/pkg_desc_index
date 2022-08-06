@@ -1,7 +1,7 @@
 app-admin/opensnitch 1.4.3: Desktop application firewall
 app-admin/s-tui 1.1.3: Stress-Terminal UI monitoring tool
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
-app-emulation/bottles 9999 20220414 20220628: Easily manage WINE prefixes in a new way
+app-emulation/bottles 9999 20220414 20220728-r2: Easily manage WINE prefixes in a new way
 app-office/hibiscus 2.10.7 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/portage-lostfiles 0.2.3: A simple script to identify files not tracked by Portage package manager
@@ -14,14 +14,18 @@ dev-go/go-protobuf 1.5.2: Go support for Google's protocol buffers
 dev-java/jameica 2.10.2 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
 dev-php/pdlib 1.0.2: PHP bindings for dlib
 dev-python/imdbpy 9999: Python package to access the IMDb's database
+dev-python/orjson 3.6.8-r1: Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 dev-util/android-studio 2021.1.1.21 2021.1.1.22: Android development environment based on IntelliJ IDEA
 dev-util/android-studio-beta 2021.2.1.10: Android development environment based on IntelliJ IDEA
 dev-util/android-studio-canary 2021.3.1.3 2021.3.1.5: Android development environment based on IntelliJ IDEA
 dev-util/android-tools-google 31.0.3-r1 33.0.1: Android platform-tools same as android-tools, but without sdk from google
 dev-util/android-udev-rules 20220102: Comprehensive list of udev rules to connect to android devices
 dev-util/apktool-bin 2.5.0: A tool for reverse engineering 3rd party, closed, binary Android apps
+gui-libs/libadwaita 1.2: Building blocks for modern adaptive GNOME applications
 kde-misc/kim5 9999: Kde Image Menu
+kde-misc/sierrabreezeenhanced 1.0.3 1.1.0: A fork of BreezeEnhanced to make it (arguably) more minimalistic and informative
 media-fonts/nerd-fonts 2.1.0: Collection of fonts that are patched to include a high number of glyphs (icons).
+media-gfx/icoextract 0.1.3: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-plugin-network-nt 1.1.4: Network scanning plugin for EPSON scanners (nonfree)
 media-gfx/photocollage 1.4.5: Graphical tool to make photo collage posters
 media-plugins/kodi-inputstream-adaptive 19.0.3: Kodi's Adaptive inputstream addon
@@ -30,6 +34,7 @@ media-video/mystiq 20200323: Qt5/C++ FFmpeg Media Converter
 net-print/epson-inkjet-printer-escpr 1.7.17 1.7.19: Epson Inkjet Printer Driver (ESC/P-R)
 sys-apps/czkawka-bin 4.1.0: A multi-functional app to find duplicates, empty folders, similar images, etc.
 sys-apps/firetools 0.9.64 9999: Graphical user interface of Firajail security sandbox
+sys-fs/fvs 0.3.4: File Versioning System with hash comparison, deduplication and data storage to create unlinked states that can be deleted
 www-apps/rutorrent 2022.06.02: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 x11-apps/gpu-viewer 1.42 9999: A frontend to glxinfo and vulkaninfo.
 x11-themes/materia-kde 20220510: GTK port of Materia Theme for Plasma 5 desktop.

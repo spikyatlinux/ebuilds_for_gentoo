@@ -1,0 +1,10 @@
+# ChangeLog for dev-python/orjson
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*orjson-3.6.8-r1 (06 Aug 2022)
+
+  06 Aug 2022; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/orjson-3.6.7-no-strip.patch, +metadata.xml, +orjson-3.6.8-r1.ebuild:
+  Updated '2022-08-06-13:40'...
+

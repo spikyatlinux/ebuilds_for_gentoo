@@ -1,0 +1,9 @@
+# ChangeLog for sys-fs/fvs
+# Copyright 1999-2022 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*fvs-0.3.4 (06 Aug 2022)
+
+  06 Aug 2022; SpikyAtLinux <spikyatlinux@gmail.com> +fvs-0.3.4.ebuild:
+  Updated '2022-08-06-13:40'...
+
