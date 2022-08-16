@@ -19,10 +19,10 @@ if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/bottlesdevs/${PN^}.git"
 else
-	VERSION_CODENAME="brescia-2"
-	year="${PV::4}" month="${PV:4:2}" day="${PV:6:2}" patch="${PV:10:1}"
+	VERSION_CODENAME="brescia"
+	year="${PV::4}" month="${PV:4:2}" day="${PV:6:2}" patch="${PVR:10:1}"
 	MY_PV="${year}.${month#0}.${day#0}-${VERSION_CODENAME}${patch:+"-${patch}"}"
-	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/bottlesdevs/${PN^}/archive/refs/tags/${MY_PV}.tar.gz -> ${PF}.tar.gz"
 	KEYWORDS=""
 	S="${WORKDIR}/${PN^}-${MY_PV}"
 fi

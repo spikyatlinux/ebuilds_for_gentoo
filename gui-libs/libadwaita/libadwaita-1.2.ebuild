@@ -23,6 +23,7 @@ DEPEND="
 	>=gui-libs/gtk-4.5.0:4[introspection?]
 	dev-libs/fribidi
 	introspection? ( >=dev-libs/gobject-introspection-1.54:= )
+	dev-lang/sassc
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
