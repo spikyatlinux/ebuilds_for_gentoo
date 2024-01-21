@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Office;
+Keywords=Jameica;Hibiscus;Banking;Homebanking;Onlinebanking;HTMLUnit;Scripting;Willuhn
+Comment=Banking Software
+Comment[en_US]=Bankingapplication
+Exec=/usr/bin/jameica
+GenericName=Jameica
+GenericName[en_US]=Jameica
+Icon=/opt/jameica/jameica-icon.png
+MimeType=
+Name=Jameica
+Name[en_US]=Jameica
+StartupNotify=false
+Terminal=false
+Type=Application

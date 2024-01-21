@@ -1,0 +1,4 @@
+# My use flags for my openbox set
+x11-misc/rofi windowmode
+x11-misc/tint2 tint2conf
+x11-wm/openbox imlib xdg

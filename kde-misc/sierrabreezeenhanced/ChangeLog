@@ -1,0 +1,10 @@
+# ChangeLog for kde-misc/sierrabreezeenhanced
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*sierrabreezeenhanced-1.3.3 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com>
+  +sierrabreezeenhanced-1.3.3.ebuild:
+  Initial commit
+

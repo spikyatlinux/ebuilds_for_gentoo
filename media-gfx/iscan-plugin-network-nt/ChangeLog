@@ -1,0 +1,10 @@
+# ChangeLog for media-gfx/iscan-plugin-network-nt
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*iscan-plugin-network-nt-1.1.4-r2 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com>
+  +iscan-plugin-network-nt-1.1.4-r2.ebuild:
+  Initial commit
+

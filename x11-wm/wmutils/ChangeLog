@@ -1,0 +1,11 @@
+# ChangeLog for x11-wm/wmutils
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*wmutils-9999 (29 Oct 2023)
+*wmutils-1.7 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com> +wmutils-1.7.ebuild,
+  +wmutils-9999.ebuild:
+  Initial commit
+

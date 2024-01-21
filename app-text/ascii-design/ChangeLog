@@ -1,0 +1,11 @@
+# ChangeLog for app-text/ascii-design
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*ascii-design-1.1.1-r2 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com>
+  +ascii-design-1.1.1-r2.ebuild, +files/ascii-design.desktop,
+  +files/ascii-design.png:
+  Initial commit
+

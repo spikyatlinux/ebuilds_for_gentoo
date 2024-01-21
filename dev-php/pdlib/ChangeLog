@@ -1,0 +1,11 @@
+# ChangeLog for dev-php/pdlib
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*pdlib-1.1.0 (29 Oct 2023)
+*pdlib-1.0.2 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com> +pdlib-1.0.2.ebuild,
+  +pdlib-1.1.0.ebuild:
+  Initial commit
+

@@ -1,0 +1,10 @@
+# ChangeLog for app-editors/bluegriffon-bin
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*bluegriffon-bin-3.1 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com>
+  +bluegriffon-bin-3.1.ebuild, +files/bluegriffon-bin.desktop:
+  Initial commit
+

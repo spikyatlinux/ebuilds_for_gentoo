@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Ascii Design
+GenericName=A tool to create ascii arts
+GenericName[it]=Uno strumento per creare ascii art
+Comment=Ascii Design - A tool to create ascii arts
+Comment[it]=Ascii Design - Uno strumento per creare ascii art
+Exec=ascii-design
+Icon=ascii-design
+Terminal=false
+Categories=Qt;KDE;Office;

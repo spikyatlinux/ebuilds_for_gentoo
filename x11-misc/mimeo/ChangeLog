@@ -1,0 +1,9 @@
+# ChangeLog for x11-misc/mimeo
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*mimeo-2023 (29 Oct 2023)
+
+  29 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com> +mimeo-2023.ebuild:
+  Initial commit
+
