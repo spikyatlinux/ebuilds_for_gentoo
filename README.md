@@ -1,5 +1,5 @@
 ###
-### Copyright 2016-2022 SpikyAtLinux
+### Copyright 2016-2024 SpikyAtLinux
 ```
   ___         _               __ _ _      ___ _ _
  / __|___ _ _| |_ ___  ___   / /| | | ___| _ |_) |_
@@ -7,7 +7,7 @@
  \___\___|_||_\__\___/\___/ \___/ |_|    |___/_|\__|
 ```
 ###
-### Unofficial repository
+### Unofficial private signed repository
 ###
 
 Here are some of my own or modified ebuilds.
