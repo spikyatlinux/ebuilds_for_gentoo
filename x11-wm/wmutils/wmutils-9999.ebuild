@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -40,7 +40,7 @@ fi
 src_prepare() {
 	sed -i 's/-Os//g' -i config.mk
 	sed -i '/lsw.c/d' -i Makefile
- 	sed -i '/lsw.1/d' -i man/Makefile
+	sed -i '/lsw.1/d' -i man/Makefile
 	default
 }
 
@@ -51,4 +51,3 @@ src_install() {
 	einfo "I´ve removed lsw, caused it exists in x11-misc/lsw package"
 	einfo ""
 }
-

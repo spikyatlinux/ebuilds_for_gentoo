@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
@@ -13,8 +13,8 @@ SLOT="0"
 KEYWORDS="~x86 amd64"
 S="${WORKDIR}"
 DEPEND="app-arch/unzip
-        dev-util/patchelf
-        !dev-util/android-tools"
+	dev-util/patchelf
+	!dev-util/android-tools"
 RDEPEND="${DEPEND}"
 RESTRICT="strip mirror"
 QA_PREBUILT="/opt/${P}"
@@ -28,12 +28,12 @@ src_install() {
 		patchelf --set-rpath '$ORIGIN' "${x}" || \
 			die "patchelf failed on ${x}"
 	done
-	
+
     mkdir ${D}/opt
     unzip ${DISTDIR}/${P}.zip -d ${D}/opt/
-    
+
     newenvd "${FILESDIR}"/72platformtools-env.d 72platformtools
-	
+
 }
 
 pkg_postinst() {

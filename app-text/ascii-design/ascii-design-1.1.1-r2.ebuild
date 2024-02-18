@@ -1,4 +1,4 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
@@ -36,8 +36,8 @@ src_install() {
 }
 
 pkg_postinst() {
-        einfo ""
-        einfo "Set figlet font path in ${P} to \`/usr/share/figlet\`."
-        einfo "The binary of figlet should be autodetect"
-        einfo ""
+	einfo ""
+	einfo "Set figlet font path in ${P} to \`/usr/share/figlet\`."
+	einfo "The binary of figlet should be autodetect"
+	einfo ""
 }

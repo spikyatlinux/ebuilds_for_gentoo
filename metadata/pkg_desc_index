@@ -5,7 +5,7 @@ app-mobilephone/abextract 2.0-r1: Tool to extract and repack ADB backup
 app-office/hibiscus 2.10.16 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
-dev-java/jameica 2.10.4 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
+dev-java/jameica 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
 dev-php/pdlib 1.0.2 1.1.0: PHP bindings for dlib
 dev-util/android-tools-google 34.0.5: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.9.1: A tool for reengineering 3rd party, closed, binary Android apps

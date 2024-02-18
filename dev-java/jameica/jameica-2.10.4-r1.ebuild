@@ -1,4 +1,4 @@
-# Copyright 2021-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,7 +13,7 @@ SRC_URI="x86? ( https://www.willuhn.de/products/${PN}/releases/current/${PN}/${P
 			-> ${P}.zip )
 		 amd64? (
 		 https://www.willuhn.de/products/${PN}/releases/current/${PN}/${PN}-linux64-${PV}.zip
-		 	-> ${P}-linux64.zip )"
+			-> ${P}-linux64.zip )"
 
 # Jameica: GPL-2
 # lib/apache_xmlrpc, lib/jakarta_commons, lib/velocity: Apache-2.0
