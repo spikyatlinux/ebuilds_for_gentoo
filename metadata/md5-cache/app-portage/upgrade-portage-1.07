@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst postrm
+DEPEND=>=sys-apps/portage-3.0 gnome-extra/zenity || ( lxqt-base/lxqt-openssh-askpass net-misc/ssh-askpass-fullscreen net-misc/x11-ssh-askpass ) color? ( >=app-shells/shell-text-1.0-r2 )
+DESCRIPTION=Simple way to upgrade Gentoo system
+EAPI=7
+HOMEPAGE=https://github.com/Anard/upgrade-portage.git
+INHERIT=desktop xdg-utils
+IUSE=+color l10n_fr
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=>=sys-apps/portage-3.0 gnome-extra/zenity || ( lxqt-base/lxqt-openssh-askpass net-misc/ssh-askpass-fullscreen net-misc/x11-ssh-askpass ) color? ( >=app-shells/shell-text-1.0-r2 )
+SLOT=0
+SRC_URI=https://github.com/Anard/upgrade-portage/archive/refs/tags/1.07.tar.gz -> upgrade-portage-1.07.tar.gz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	xdg-utils	baea6080dd821f5562d715887954c9d3
+_md5_=a754fb806cd23642da905ef62409162f

@@ -2,3 +2,24 @@
 # your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using egencache *
 
+kde-misc/Burn-My-Windows:doom - Melt your windows
+kde-misc/Burn-My-Windows:energize-a - Beam your windows away
+kde-misc/Burn-My-Windows:energize-b - Using different transporter technology results in an alternative visual effect
+kde-misc/Burn-My-Windows:fire - The classic effect inspired by Compiz
+kde-misc/Burn-My-Windows:glide - Fade the window to transparency with subtle 3D effects
+kde-misc/Burn-My-Windows:glitch - This effect applies some intentional graphics issues to your windows
+kde-misc/Burn-My-Windows:hexagon - With glowing lines and hexagon-shaped tiles, this effect looks very sci-fi
+kde-misc/Burn-My-Windows:incinerate - A less snappy but definitely more fancy take on the fire effect
+kde-misc/Burn-My-Windows:pixel-wheel - Pixelate the window and hide the pixels in a wheel-like fashion
+kde-misc/Burn-My-Windows:pixel-wipe - Pixelate the window and hide the pixels radially, starting from the pointer position
+kde-misc/Burn-My-Windows:pixelate - Pixelate the window and randomly hide the pixels
+kde-misc/Burn-My-Windows:portal - Transfer your windows to other locations in space and time
+kde-misc/Burn-My-Windows:tv - Make windows close like turning off a TV
+kde-misc/Burn-My-Windows:tv-glitch - Make your windows close like a very glitchy old-school TV
+kde-misc/Burn-My-Windows:wisps - Let your windows be carried away to the realm of dreams by these little fairies
+net-dns/noip-updater:ezipupd - Use user/group ezipupd instead of nobody: Useful if you restrict outgoing network traffic for user nobody
+x11-misc/blugon:xgamma - Install xgamma to be used as a backend
+x11-misc/polybar:i3wm - Add support for i3 window manager
+x11-misc/polybar:ipc - Add support for Inter-Process Messaging
+x11-misc/polybar:mpd - Add support for Music Player Daemon
+x11-misc/polybar:network - Enable network support

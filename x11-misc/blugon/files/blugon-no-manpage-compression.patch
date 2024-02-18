@@ -1,0 +1,24 @@
+--- a/Makefile	2020-04-12 13:57:13.000000000 -0400
++++ b/Makefile	2020-04-17 16:58:59.074518290 -0400
+@@ -4,12 +4,11 @@
+ build:
+ 	sed "s|MAKE_INSTALL_PREFIX = '.*'|MAKE_INSTALL_PREFIX = '$(PREFIX)'|g" blugon.py > blugon
+ 	sed "s|MAKE_INSTALL_PREFIX|$(PREFIX)|g" systemd/user/blugon.service > blugon.service
+-	gzip --best --force --keep blugon.1
+ 	cd backends/scg && make build
+ 
+ install:
+ 	install -D -m755 blugon $(DESTDIR)$(PREFIX)/bin/blugon
+-	install -D -m644 blugon.1.gz $(DESTDIR)$(PREFIX)/share/man/man1/blugon.1.gz
++	install -D -m644 blugon.1 $(DESTDIR)$(PREFIX)/share/man/man1/blugon.1
+ 	install -D -m644 bash-completion/blugon $(DESTDIR)$(PREFIX)/share/bash-completion/completions/blugon
+ 	install -D -m644 blugon.service $(DESTDIR)$(PREFIX)/lib/systemd/user/blugon.service
+ 	install -D -m755 backends/tty/tty.sh $(DESTDIR)$(PREFIX)/lib/blugon/tty.sh
+@@ -23,6 +22,6 @@
+ 
+ clean:
+ 	rm -f blugon
+-	rm -f blugon.1.gz
++	rm -f blugon.1
+ 	rm -f blugon.service
+ 	cd backends/scg && make clean

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>yemou@protonmail.com</email>
+	</maintainer>
+	<use>
+		<flag name="xgamma">Install xgamma to be used as a backend</flag>
+	</use>
+</pkgmetadata>

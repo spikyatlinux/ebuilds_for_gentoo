@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=A multi-functional app to find duplicates, empty folders, similar images, etc.
+EAPI=8
+HOMEPAGE=https://github.com/qarmin/czkawka
+IUSE=gtk
+KEYWORDS=~amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/qarmin/czkawka/releases/download/5.1.0/linux_czkawka_cli gtk? ( https://github.com/qarmin/czkawka/releases/download/5.1.0/linux_czkawka_gui )
+_md5_=0bba71d94847d70331e037aee9938fcb

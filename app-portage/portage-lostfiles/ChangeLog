@@ -1,0 +1,13 @@
+# ChangeLog for app-portage/portage-lostfiles
+# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+  03 Oct 2023; SpikyAtLinux <spikyatlinux@gmail.com>
+  portage-lostfiles-0.2.3-r1.ebuild:
+  Updated '2023-10-03-12:56'...
+
+*portage-lostfiles-0.2.3-r1 (30 Aug 2023)
+
+  30 Aug 2023; SpikyAtLinux <spikyatlinux@gmail.com>
+  +portage-lostfiles-0.2.3-r1.ebuild:
+  Initial commit

@@ -1,0 +1,15 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=x11-libs/libxcb x11-libs/xcb-util x11-libs/xcb-util-wm
+DESCRIPTION=Tiling window manager based on binary space partitioning
+EAPI=7
+HOMEPAGE=https://github.com/baskerville/bspwm/
+INHERIT=toolchain-funcs git-r3
+IUSE=examples
+KEYWORDS=amd64 ~riscv ~x86
+LICENSE=BSD-2
+PROPERTIES=live
+RDEPEND=x11-libs/libxcb x11-libs/xcb-util x11-libs/xcb-util-wm x11-misc/sxhkd
+SLOT=0
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
+_md5_=b5126ff4392aa89af3add21ed057e107

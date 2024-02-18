@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DESCRIPTION=Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
+EAPI=8
+HOMEPAGE=https://github.com/jgmenu
+INHERIT=optfeature
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3+
+RDEPEND=x11-libs/libX11 x11-libs/libXrandr x11-libs/cairo x11-libs/pango gnome-base/librsvg dev-libs/glib dev-libs/libxml2
+SLOT=0
+SRC_URI=https://github.com/jgmenu/jgmenu/archive/refs/tags/v4.4.0.tar.gz -> jgmenu-4.4.0.tar.gz
+_eclasses_=optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54
+_md5_=c387b8491c7e9ef0489cf6db0b52b590

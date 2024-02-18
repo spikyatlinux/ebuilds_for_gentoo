@@ -1,0 +1,55 @@
+--- a/portconf	2023-10-09 18:06:28.048896751 +0200
++++ b/portconf	2023-10-09 18:17:05.295858768 +0200
+@@ -37,8 +37,8 @@
+ sort_passed_uses(){
+ 	for opt in ${1};do
+ 		opt="${opt//\*/\\*}"
+-		uses="$(tr "[:space:]" $'\n' <<< ${uses} | grep -v -e "^${opt#-}$" -e "^\-${opt#-}$" | tr $'\n' " ")"
+-		uses+=" $(tr "[:space:]" $'\n' <<< ${1} | grep -e "^${opt#-}$" -e "^\-${opt#-}$" | tail -n1)"
++		uses="$(tr "[:space:]" $'\n' <<< ${uses} | grep -v -e "^${opt#-}$" -e "^-${opt#-}$" | tr $'\n' " ")"
++		uses+=" $(tr "[:space:]" $'\n' <<< ${1} | grep -e "^${opt#-}$" -e "^-${opt#-}$" | tail -n1)"
+ 		unset opt
+ 	done
+ 	echo ${uses}
+@@ -811,7 +811,7 @@
+ 	set -f
+ 	FULL="${PROFILE} ${MAKE_USES}"
+ 	for opt in ${FULL};do
+-		GLOBAL+=" $(echo ${FULL} | tr "[:space:]" $'\n' | grep -e "^${opt#-}$" -e "^\-${opt#-}$" | tail -n1)"
++		GLOBAL+=" $(echo ${FULL} | tr "[:space:]" $'\n' | grep -e "^${opt#-}$" -e "^-${opt#-}$" | tail -n1)"
+ 	done
+ 	GLOBAL="$(echo ${GLOBAL} | tr "[:space:]" $'\n' | sort -u)"
+ ############################################################################
+@@ -883,7 +883,7 @@
+ 
+ 				if grep -q "^${use}$" <<< "${GLOBAL}" && grep -q "^${use}$" <<< "${LOCAL}";then
+ 					global_use="${global_use} ${use}"
+-				elif grep -q "^\-${use}$" <<< "${GLOBAL}" && grep -q "^\-${use}$" <<< "${LOCAL}";then
++				elif grep -q "^-${use}$" <<< "${GLOBAL}" && grep -q "^-${use}$" <<< "${LOCAL}";then
+ 					global_use="${global_use} -${use}"
+ 					incorrect_use="${incorrect_use// ${use}/}"
+ 				fi
+@@ -1126,7 +1126,7 @@
+ 			if grep -q "^${flag}$" <<< "${USE}" && grep -q "^${flag}$" <<< "${PROFILE}";then
+ 				echo -e "Twice defined: ${red}${use}${restore}"
+ 				sed -e "s|[^[:punct:]]\<${flag}\>||g" -i ${tmp_file}
+-			elif grep -q "^\-${flag}$" <<< "${USE}" && grep -q "^\-${flag}$" <<< "${PROFILE}";then
++			elif grep -q "^-${flag}$" <<< "${USE}" && grep -q "^-${flag}$" <<< "${PROFILE}";then
+ 				echo -e "Twice defined: ${red}-${use}${restore}"
+ 				sed -e "s|[^[:punct:]]\-\<${flag}\>||g" -i ${tmp_file}
+ 			fi
+@@ -1811,11 +1811,11 @@
+ --full
+ -f"
+ opts=" ${PORTCONF_DEFAULT_OPTS} ${@}"
+-grep -q -e " \--yes\>" -e " \-y\>" <<< " ${opts}" && yes="1"
+-grep -q -e " \--pretend\>" -e " \-p\>" <<< " ${opts}" && PRETEND="1"
++grep -q -e " --yes\>" -e " -y\>" <<< " ${opts}" && yes="1"
++grep -q -e " --pretend\>" -e " -p\>" <<< " ${opts}" && PRETEND="1"
+ opts="$(sed -e 's| --yes\>||g;s| -y\>||g' -e 's| --pretend\>||g;s| -p\>||g' <<< " ${opts}")"
+ if grep -q "${eix_dep_keys//\-/\\-}" <<< "${opts}";then
+-	if grep -q -e " \--regen-cache\>" -e " \-rc\>" <<< " ${opts}";then
++	if grep -q -e " --regen-cache\>" -e " -rc\>" <<< " ${opts}";then
+ 		eix_check
+ 		opts="$(sed -e 's| --regen-cache\>||g;s| -rc\>||g' -e '/^[ \t]$/d' <<< " ${opts}")"
+ 	else

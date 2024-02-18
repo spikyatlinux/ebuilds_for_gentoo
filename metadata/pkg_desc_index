@@ -1,23 +1,65 @@
 app-admin/s-tui 1.1.4-r1: Stress-Terminal UI monitoring tool
+app-backup/btrfs-assistant 1.8 9999: A GUI management tool to make managing a Btrfs filesystem easier.
+app-backup/timeshift 23.07.1 23.12.2: A system restore utility for Linux
+app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
+app-emulation/quickemu 4.9.2-r1: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-misc/font-manager 0.8.8 9999: A simple font management application for Gtk+ Desktop Environments
 app-mobilephone/abextract 2.0-r1: Tool to extract and repack ADB backup
 app-office/hibiscus 2.10.16 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
+app-portage/find_cruft 5.2: find cruft files not managed by portage
+app-portage/portage-lostfiles 0.2.3-r1 0.5.4: A simple script to identify files not tracked by Portage package manager
+app-portage/portconf 1.6.9-r2: /etc/portage cleaner
+app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
+app-portage/pyerge 0.7.2: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
+app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
+app-portage/upgrade-portage 1.07: Simple way to upgrade Gentoo system
+app-shells/shell-text 1.1-r1: Formatting text in echo commands
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
 dev-java/jameica 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
 dev-php/pdlib 1.0.2 1.1.0: PHP bindings for dlib
+dev-php/pecl-mcrypt 1.0.5-r1: Bindings for the libmcrypt library
+dev-php/pecl-memcached 3.2.0-r2: Interface PHP with memcached via libmemcached library
 dev-util/android-tools-google 34.0.5: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.9.1: A tool for reengineering 3rd party, closed, binary Android apps
+games-emulation/ryujinx 1.1.1052: Experimental Nintendo Switch emulator written in C#
+gui-apps/eww 0.4.0-r1: Elkowars Wacky Widgets is a standalone widget system made in Rust
+kde-misc/Burn-My-Windows 40: Disintegrate your windows with style
 kde-misc/kim5 9999: Kde Image Menu
 kde-misc/sierrabreezeenhanced 1.3.3: A fork of BreezeEnhanced to make it (arguably) more minimalistic and informative
 media-fonts/meslo-nerd 3.1.1: Nerd Font build of Apple's Menlo font, patched by ryanoasis
 media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON scanners (nonfree)
+media-gfx/sweethome3d-bin 7.2: Sweet Home 3D is a free interior design application.
+media-plugins/kodi-pvr-waipu 19.3.1: Waipu.tv PVR addon for Kodi
+media-video/celluloid 0.26: A simple GTK+ frontend for mpv
+net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
+net-misc/networkmanager-dmenu 2.3.1: Control networkmanager using DMENU
+sys-apps/czkawka 6.0.0: App to find duplicates, empty folders, similar images etc.
+sys-apps/czkawka-bin 5.1.0: A multi-functional app to find duplicates, empty folders, similar images, etc.
+sys-apps/system-chroot 20230507: Prepare a system root to be mounted in chroot. Do all submounts like sys or proc.
+sys-fs/gdu 5.25.0: Disk usage analyzer with console interface written in Go
+sys-process/nvtop 3.0.2: NVIDIA GPUs htop like monitoring tool
+www-apps/froxlor 0.10.38: A PHP-based webhosting-oriented control panel for servers.
+www-apps/rutorrent 4.2.6-r1 2022.09.19: ruTorrent is a front-end for the popular Bittorrent client rTorrent
+www-client/carbonyl-bin 0.0.3: Chromium running inside your terminal
+x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
+x11-misc/blugon 1.12.1 9999: A simple Blue Light Filter for X
+x11-misc/bsptab-rs 9999: Mostly just a rust rewrite of https://github.com/albertored11/bsptab
+x11-misc/gsimplecal 2.4.1: A lightweight calendar designed for tint2
+x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
+x11-misc/jgmenu 4.4.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
+x11-misc/lemonbar 1.4-r1: A featherweight, lemon-scented, bar based on xcb
 x11-misc/lightdm-qt5-greeter 0.11.1: lightdm-qt5-greeter is a simple frontend for the lightdm displaymanager, written in c++ and qt5.
 x11-misc/mimeo 2023: Open files by MIME-type or file name using regular expressions.
 x11-misc/obfilebrowser 2021: An Openbox pipe menu application and file browser.
+x11-misc/polybar 9999: A fast and easy-to-use tool for creating status bars
+x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
 x11-misc/tint2-psuinfo 1.2: A psutil-based command to display customizable system info, intended for Tint2 or other panels
+x11-themes/candy-icon-theme 0_pre20230524 9999: sweet gradient icons
 x11-themes/materia-kde 20220823-r1: GTK port of Materia Theme for Plasma 5 desktop.
+x11-wm/bspwm 0.9.10-r50: Tiling window manager based on binary space partitioning
+x11-wm/dk 2.0: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/wmutils 1.7 9999: Set of window manipulation tools
