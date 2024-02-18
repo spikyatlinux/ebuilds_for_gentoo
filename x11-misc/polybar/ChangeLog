@@ -1,0 +1,10 @@
+# ChangeLog for x11-misc/polybar
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*polybar-9999 (18 Feb 2024)
+
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/polybar-3.6.3-fix-prefix.patch, +metadata.xml, +polybar-9999.ebuild:
+  Updated '2024-02-18-17:53'...
+

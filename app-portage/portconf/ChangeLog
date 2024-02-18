@@ -1,9 +1,10 @@
 # ChangeLog for app-portage/portconf
-# Copyright 1999-2023 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
-*portconf-1.6.9-r1 (30 Aug 2023)
+*portconf-1.6.9-r2 (18 Feb 2024)
 
-  30 Aug 2023; SpikyAtLinux <spikyatlinux@gmail.com> +files/fix_grep.patch,
-  +portconf-1.6.9-r1.ebuild:
-  Initial commit
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> +files/fix_grep.patch,
+  +metadata.xml, +portconf-1.6.9-r2.ebuild:
+  Updated '2024-02-18-17:53'...
+

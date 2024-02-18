@@ -4,7 +4,7 @@
 EAPI=8
 
 PHP_EXT_NAME="mcrypt"
-USE_PHP="php8-1 php8-2"
+USE_PHP="php8-1 php8-2 php8-3"
 MY_P="${PN/pecl-/}-${PV/_rc/RC}"
 PHP_EXT_ECONF_ARGS=()
 PHP_EXT_PECL_FILENAME="${MY_P}.tgz"
@@ -15,7 +15,7 @@ inherit php-ext-pecl-r3
 DESCRIPTION="Bindings for the libmcrypt library"
 LICENSE="PHP-3.01"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~hppa ~ppc ~ppc64 ~s390 ~sparc ~x86"
+KEYWORDS="~x86 ~amd64"
 
 DEPEND="dev-libs/libltdl
 	dev-libs/libmcrypt"

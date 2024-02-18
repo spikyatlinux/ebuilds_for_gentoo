@@ -1,0 +1,10 @@
+# ChangeLog for app-portage/upgrade-portage
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*upgrade-portage-1.07 (18 Feb 2024)
+
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> +metadata.xml,
+  +upgrade-portage-1.07.ebuild:
+  Updated '2024-02-18-17:53'...
+

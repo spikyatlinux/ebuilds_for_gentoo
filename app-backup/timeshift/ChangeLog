@@ -1,0 +1,11 @@
+# ChangeLog for app-backup/timeshift
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*timeshift-23.12.2 (18 Feb 2024)
+*timeshift-23.07.1 (18 Feb 2024)
+
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> +metadata.xml,
+  +timeshift-23.07.1.ebuild, +timeshift-23.12.2.ebuild:
+  Updated '2024-02-18-17:53'...
+

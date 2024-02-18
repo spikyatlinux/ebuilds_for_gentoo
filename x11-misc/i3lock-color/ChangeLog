@@ -1,0 +1,12 @@
+# ChangeLog for x11-misc/i3lock-color
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*i3lock-color-2.13.5 (18 Feb 2024)
+
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/i3lock-color-2.13.5-cleanup-cflags.patch,
+  +files/i3lock-color-2.13.5-disable-automagic.patch,
+  +i3lock-color-2.13.5.ebuild, +metadata.xml:
+  Updated '2024-02-18-17:53'...
+

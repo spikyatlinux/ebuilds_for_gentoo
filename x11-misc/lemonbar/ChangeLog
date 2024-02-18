@@ -1,0 +1,10 @@
+# ChangeLog for x11-misc/lemonbar
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*lemonbar-1.4-r1 (18 Feb 2024)
+
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> +lemonbar-1.4-r1.ebuild,
+  +metadata.xml:
+  Updated '2024-02-18-17:53'...
+
