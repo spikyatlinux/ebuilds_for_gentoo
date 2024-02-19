@@ -1,9 +1,0 @@
-DEFINED_PHASES=install
-DESCRIPTION=Prepare a system root to be mounted in chroot. Do all submounts like sys or proc.
-EAPI=7
-HOMEPAGE=https://github.com/bell07/bashscripts-system_chroot
-KEYWORDS=amd64
-RESTRICT=mirror
-SLOT=0
-SRC_URI=https://github.com/bell07/bashscripts-system_chroot/archive/9f4661c9c68e564c7af21328c8fbfdd9566c1aad.zip -> system-chroot-20230507.zip
-_md5_=40dbe06a73c4ae5f1adf370209d0ab15
