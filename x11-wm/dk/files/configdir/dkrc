@@ -1,0 +1,111 @@
+#!/bin/sh
+
+#################### BEGIN Environtment BEGIN ####################
+# Use qt5-styleplugins for QT Themes
+# export QT_QPA_PLATFORMTHEME=qt5ct
+# Use gtk style for QT Themes (Comment above)
+#export QT_QPA_PLATFORMTHEME=gtk2
+#export QT_STYLE_OVERRIDE=kvantum
+## Bspwm config directory
+export DKDIR="$HOME/.config/dk"
+## Sxhkd config directory
+export SXHDIR="$HOME/.config/dk/sxhkd"
+export KITTY_CONFIG_DIRECTORY="$DKDIR/kitty"
+## Run java applications without issues
+export _JAVA_AWT_WM_NONREPARENTING=1
+# export XDG_CURRENT_DESKTOP=KDE
+export XDG_SESSION_DESKTOP=dk
+xrdb -merge ~/.Xresources && xrdb -override ~/.Xresources
+#################### END Environtment END ####################
+
+logfile="$HOME/.dkrc.log"
+[ -d "$HOME/.local/share/xorg" ] && logfile="$HOME/.local/share/xorg/dkrc.log"
+: > "$logfile"
+
+if hash sxhkd >/dev/null 2>&1; then
+    pkill -u $USER sxhkd
+    sxhkd -c "$HOME/.config/dk/sxhkd/sxhkdrc" &
+fi
+
+xsetroot -cursor_name left_ptr &
+#xrandr -s 1920x1080 &
+nitrogen --restore &
+polybar -c ~/.config/dk/polybar/config.ini &
+dunst &
+picom -c ~/.config/dk/picom/picom.conf &
+numlockx &
+
+mon1='DP-0'
+mon2='DP-1'
+
+monitor_count=$(xrandr | grep -sw 'connected' | wc -l)
+
+if [ $monitor_count -gt 1 ]; then
+    mon2='HDMI-0'
+fi
+
+{ 
+    dkcmd set numws=9
+    
+    if [ $mon2 = 'HDMI-0' ]; then
+        dkcmd set ws=_ apply layout=tile master=1 stack=1 pad left=10 right=10 top=10 bottom=10 gap=15 msplit=0.4 ssplit=0.5
+        dkcmd set ws=4 layout=none pad left=5 right=5 top=5 bottom=5 gap=5 msplit=0.5 ssplit=0.5
+    fi
+
+    if [ $mon2 = 'DP-1' ]; then
+        dkcmd set ws=_ apply layout=tile master=1 stack=3 pad left=5 right=5 top=5 bottom=5 gap=5 msplit=0.5 ssplit=0.5
+        dkcmd set ws=4 layout=none pad left=5 right=5 top=5 bottom=5 gap=5 msplit=0.5 ssplit=0.5
+    fi
+
+    dkcmd set \
+        ws=1  name="" \
+        ws=2  name="" \
+        ws=3  name="" \
+        ws=4  name="" \
+        ws=5  name="" \
+        ws=6  name="" \
+        ws=7  name="" \
+        ws=8  name="" \
+        ws=9  name="" 
+
+    dkcmd set static_ws=true \
+        ws=1  mon=$mon1 \
+        ws=2  mon=$mon1 \
+        ws=3  mon=$mon1 \
+        ws=4  mon=$mon2 \
+        ws=5  mon=$mon2 \
+        ws=6  mon=$mon2 \
+        ws=7  mon=$mon2 \
+        ws=8  mon=$mon2 \
+        ws=9  mon=$mon2 
+    
+    dkcmd set focus_open=true focus_urgent=true focus_mouse=true
+    dkcmd set tile_tohead=0 tile_hints=false
+    dkcmd set win_minwh=50 win_minxy=10
+    dkcmd set smart_gap=false smart_border=false
+    dkcmd set mouse mod=super move=button1 resize=button3
+    #dkcmd set border w=5 ow=3 colour f='#f2cdcd' u='#32303f' r='#45475a' of='#32303f' ou='#4c566a' or='#4c566a'
+    
+    dkcmd set border width=3 outer_width=0 \
+    colour \
+    focus='#cba6f7' \
+    unfocus='#2e3440' \
+    urgent='#2e3440' \
+    outer_focus='#6c7086' \
+    outer_unfocus='#2e3440' \
+    outer_urgent='#2e3440'
+
+
+    dkcmd rule class="^firefox$" ws=1
+    dkcmd rule class="^mpv" ws=3
+    dkcmd rule class="^telegram-desktop" ws=4
+    dkcmd rule class="^telegram" ws=4
+    dkcmd rule class="^(nitrogen|lxappearance|pavucontrol|headset|blueman|nm-applet|blueman-manager|blueman|telegram)$" float=true
+    dkcmd rule apply '*'
+
+} >> "$logfile" 2>&1 
+
+if grep -q 'error:' "$logfile"; then
+    hash notify-send && notify-send -t 0 -u critical "dkrc has errors" \
+        "$(awk '/error:/ {sub(/^error: /, ""); gsub(/</, "\<"); print}' "$logfile")"
+    exit 1

@@ -6,8 +6,8 @@ EAPI=8
 DESCRIPTION="A list based tiling window manager in the vein of dwm, bspwm, and xmonad."
 HOMEPAGE="https://bitbucket.org/natemaia/dk/src/master/"
 #EGIT_REPO_URI="https://bitbucket.org/natemaia/dk.git"
-COMMIT="4b24990c74f06a34afce6396d4795c9fb17a99bc"
-SRC_COMMIT="4b24990"
+COMMIT="919db9da7b257b44e0b97681c284cff0055864b1"
+SRC_COMMIT="919db9d"
 SRC_URI="https://bitbucket.org/natemaia/dk/get/${COMMIT}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}"
 
@@ -31,6 +31,11 @@ RDEPEND="
 	x11-misc/sxhkd
 "
 KEYWORDS="~amd64 ~x86"
+
+PATCHES=(
+	"${FILESDIR}/sxhkdrc.patch"
+)
+
 #src_prepare() {
 #	default
 
@@ -49,7 +54,7 @@ src_compile() {
 }
 
 src_install() {
-	cd natemaia-dk-${SRC_COMMIT}* || die
+	cd natemaia-dk-* || die
 	if use man; then
 		sed "s/VERSION/${VERSION}/g" man/dk.1 || die
 	    doman man/*.*
@@ -66,12 +71,18 @@ src_install() {
 
 	if use doc ; then
 		insinto /etc/xdg/dk
-		doins doc/sxhkdrc doc/dkrc doc/scripts
+		#doins doc/sxhkdrc doc/scripts doc/dkrc
+		doins -r ${FILESDIR}/configdir/*
 	fi
 }
 
 pkg_postinst() {
 	xdg_desktop_database_update
+	chmod +x /etc/xdg/dk/dkrc
+	chmod +x /etc/xdg/dk/picom/picom.sh
+	chmod +x /etc/xdg/dk/polybar/*.sh
+	chmod +x /etc/xdg/dk/rofi/scripts/*
+	chmod +x /etc/xdg/dk/kitty/searchinbrowser.sh
 }
 
 pkg_postrm() {

@@ -56,5 +56,5 @@ x11-misc/tint2-psuinfo 1.2: A psutil-based command to display customizable syste
 x11-themes/candy-icon-theme 0_pre20230524 9999: sweet gradient icons
 x11-themes/materia-kde 20220823-r1: GTK port of Materia Theme for Plasma 5 desktop.
 x11-wm/bspwm 0.9.10-r50: Tiling window manager based on binary space partitioning
-x11-wm/dk 2.0: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
+x11-wm/dk 2.0-r1: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/wmutils 1.7 9999: Set of window manipulation tools
