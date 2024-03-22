@@ -5,6 +5,9 @@
   22 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com> -wmutils-9999.ebuild:
   Some ebuild updates
 
+  22 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com> -wmutils-9999.ebuild:
+  app-office/hibiscus-2.10.18 updated
+
   19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
   Updated '2024-02-19-19:19'...
 

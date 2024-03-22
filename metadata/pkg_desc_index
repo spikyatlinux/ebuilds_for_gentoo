@@ -38,6 +38,7 @@ media-video/celluloid 0.26: A simple GTK+ frontend for mpv
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-misc/networkmanager-dmenu 2.3.1: Control networkmanager using DMENU
 sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
+sys-fs/dua-cli 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-process/nvtop 3.0.2: NVIDIA GPUs htop like monitoring tool
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/blugon 1.12.1 9999: A simple Blue Light Filter for X
