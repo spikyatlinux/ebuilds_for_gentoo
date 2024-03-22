@@ -2,6 +2,21 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*dk-2.0-r1 (03 Mar 2024)
+
+  03 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com> -dk-2.0.ebuild,
+  +dk-2.0-r1.ebuild, +files/configdir/dkrc,
+  +files/configdir/kitty/current-theme.conf,
+  +files/configdir/kitty/kitty.conf, +files/configdir/picom/picom.conf,
+  +files/configdir/polybar/colors.ini, +files/configdir/polybar/config.ini,
+  +files/configdir/polybar/modules.ini, +files/configdir/rofi/config.rasi,
+  +files/configdir/rofi/power.rasi, +files/configdir/rofi/scripts/powermenu,
+  +files/configdir/rofi/scripts/sxhkd_help,
+  +files/configdir/rofi/sxhkd_help.rasi,
+  +files/configdir/rofi/themes/colors.rasi, +files/configdir/sxhkd/sxhkdrc,
+  +files/sxhkdrc.patch:
+  Some changes in ebuilds
+
   19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
   Updated '2024-02-19-19:19'...
 
