@@ -67,6 +67,5 @@ src_configure() {
 		$(meson_use google-fonts webkit) \
 		$(meson_use nls enable-nls) \
 		$(meson_use doc yelp-doc) \
-		$(meson_use doc gtk-doc) \
-		--buildtype=release
+		$(meson_use doc gtk-doc)
 }

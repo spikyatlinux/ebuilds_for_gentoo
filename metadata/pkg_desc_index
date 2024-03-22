@@ -4,9 +4,9 @@ app-backup/timeshift 23.12.2 24.01.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.2-r1: Create and run optimised Windows, macOS and Linux desktop virtual machines
-app-misc/font-manager 0.8.8 9999: A simple font management application for Gtk+ Desktop Environments
+app-misc/font-manager 0.8.8-r1 9999: A simple font management application for Gtk+ Desktop Environments
 app-mobilephone/abextract 2.0-r1: Tool to extract and repack ADB backup
-app-office/hibiscus 2.10.16 9999: Official prebuilt nightly HBCI Plugin for Jameica
+app-office/hibiscus 2.10.18 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
 app-portage/portage-lostfiles 0.2.3-r1 0.5.4: A simple script to identify files not tracked by Portage package manager
@@ -57,4 +57,4 @@ x11-themes/candy-icon-theme 0_pre20230524 9999: sweet gradient icons
 x11-themes/materia-kde 20220823-r1: GTK port of Materia Theme for Plasma 5 desktop.
 x11-wm/bspwm 0.9.10-r50: Tiling window manager based on binary space partitioning
 x11-wm/dk 2.0-r1: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
-x11-wm/wmutils 1.7 9999: Set of window manipulation tools
+x11-wm/wmutils 1.7: Set of window manipulation tools
