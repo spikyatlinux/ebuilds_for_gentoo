@@ -1,8 +1,0 @@
-Change ebuild to actual version and digest
-
-ebuild gdu-5.25.0.ebuild digest
-ebuild gdu-5.25.0.ebuild unpack
-
-cd /var/tmp/portage/sys-fs/gdu-5.25.0/work/gdu-5.25.0
-tar --create --auto-compress --file gdu-5.25.0.tar.gz gdu-5.25.0
-cp -afv gdu-5.25.0.tar.gz /var/www/vhosts/mysusi.org/htdocs/files
