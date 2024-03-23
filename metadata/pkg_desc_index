@@ -24,7 +24,6 @@ media-fonts/meslo-nerd 3.1.1: Nerd Font build of Apple's Menlo font, patched by 
 media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON scanners (nonfree)
-media-gfx/sweethome3d-bin 7.2: Sweet Home 3D is a free interior design application.
 media-plugins/kodi-pvr-waipu 19.3.1: Waipu.tv PVR addon for Kodi
 media-video/celluloid 0.26: A simple GTK+ frontend for mpv
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
