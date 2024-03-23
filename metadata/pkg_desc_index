@@ -1,5 +1,4 @@
 app-admin/s-tui 1.1.4-r1: Stress-Terminal UI monitoring tool
-app-backup/btrfs-assistant 1.9 9999: A GUI management tool to make managing a Btrfs filesystem easier.
 app-backup/timeshift 23.12.2 24.01.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
