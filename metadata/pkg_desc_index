@@ -13,7 +13,6 @@ app-portage/portconf 1.6.9-r2: /etc/portage cleaner
 app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
 app-portage/pyerge 0.7.2: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
-app-portage/upgrade-portage 1.07: Simple way to upgrade Gentoo system
 app-shells/shell-text 1.1-r1: Formatting text in echo commands
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
 dev-java/jameica 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
