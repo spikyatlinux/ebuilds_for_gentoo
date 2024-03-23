@@ -20,7 +20,6 @@ dev-php/pecl-mcrypt 1.0.5-r1: Bindings for the libmcrypt library
 dev-php/pecl-memcached 3.2.0-r2: Interface PHP with memcached via libmemcached library
 dev-util/android-tools-google 34.0.5: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.9.3: A tool for reengineering 3rd party, closed, binary Android apps
-games-emulation/ryujinx 1.1.1052: Experimental Nintendo Switch emulator written in C#
 gui-apps/eww 0.4.0-r1: Elkowars Wacky Widgets is a standalone widget system made in Rust
 kde-misc/Burn-My-Windows 40: Disintegrate your windows with style
 kde-misc/kim5 9999: Kde Image Menu
