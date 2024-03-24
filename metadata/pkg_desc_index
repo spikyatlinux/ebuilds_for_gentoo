@@ -8,7 +8,6 @@ app-mobilephone/abextract 2.0-r1: Tool to extract and repack ADB backup
 app-office/hibiscus 2.10.18 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
-app-portage/portage-lostfiles 0.2.3-r1 0.5.4: A simple script to identify files not tracked by Portage package manager
 app-portage/portconf 1.6.9-r2: /etc/portage cleaner
 app-portage/pyerge 0.7.2: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
