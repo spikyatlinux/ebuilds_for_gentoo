@@ -79,4 +79,3 @@ sudo eix-update
 **####################### Hardened Profiles #######################**
 - amd64 default/linux/amd64/23.0/hardened/plasma-openrc dev
 
-#### ;-)
