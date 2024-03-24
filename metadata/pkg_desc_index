@@ -3,7 +3,6 @@ app-backup/timeshift 24.01.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.2-r1: Create and run optimised Windows, macOS and Linux desktop virtual machines
-app-misc/font-manager 0.8.8-r1 9999: A simple font management application for Gtk+ Desktop Environments
 app-mobilephone/abextract 2.0-r1: Tool to extract and repack ADB backup
 app-office/hibiscus 2.10.18 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
