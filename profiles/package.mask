@@ -1,3 +1,0 @@
-# SpikyAtLinux <spikyatlinux@gmail.com> (2020-03-09)
-# No Python 3 support.
-=dev-util/meld-1.8.6
