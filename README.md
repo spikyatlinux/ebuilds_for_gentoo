@@ -10,16 +10,14 @@
 ### Unofficial private signed repository
 ###
 
-Here are some of my own or modified ebuilds.
+Here are some of my own, or modified ebuilds.
 Also some of them I´ve found in the web, or
 in other overlays ;-)
 
-Use all of them at your own risk. I´ve tested all
-on my local system, if you find some errors or
-outdated ebuilds let me know ;-)
-
-Perhaps you can star me if you find something
-useful ;-)
+### Use all of them at your own risk. I´ve tested all
+### on my local system, perhaps some ebuilds where
+### deleted cause they are in other overlays, I didn´t
+### need it anymore, or I´ve no time to change/edit it.
 
 #################################################
 
@@ -64,21 +62,21 @@ sudo eix-update
 #### openrc and systemd profiles
 
 **####################### OpenRC Profiles #######################**
-- amd64 default/linux/amd64/17.1/desktop/plasma+gnome-openrc stable
+- amd64 default/linux/amd64/23.0/desktop/plasma+gnome-openrc stable
 
 **####################### SystemD Profiles #######################**
-- amd64 default/linux/amd64/17.1/desktop/plasma+gnome/systemd stable
+- amd64 default/linux/amd64/23.0/desktop/plasma+gnome/systemd stable
 
 **###################### NoMultilib Profiles ######################**
-- amd64 default/linux/amd64/17.1/no-multilib/desktop stable
-- amd64 default/linux/amd64/17.1/no-multilib/plasma-openrc stable
-- amd64 default/linux/amd64/17.1/no-multilib/gnome-openrc stable
-- amd64 default/linux/amd64/17.1/no-multilib/plasma+gnome-openrc stable
-- amd64 default/linux/amd64/17.1/no-multilib/plasma/systemd stable
-- amd64 default/linux/amd64/17.1/no-multilib/gnome/systemd stable
-- amd64 default/linux/amd64/17.1/no-multilib/plasma+gnome/systemd stable
+- amd64 default/linux/amd64/23.0/no-multilib/desktop stable
+- amd64 default/linux/amd64/23.0/no-multilib/plasma-openrc stable
+- amd64 default/linux/amd64/23.0/no-multilib/gnome-openrc stable
+- amd64 default/linux/amd64/23.0/no-multilib/plasma+gnome-openrc stable
+- amd64 default/linux/amd64/23.0/no-multilib/plasma/systemd stable
+- amd64 default/linux/amd64/23.0/no-multilib/gnome/systemd stable
+- amd64 default/linux/amd64/23.0/no-multilib/plasma+gnome/systemd stable
 
 **####################### Hardened Profiles #######################**
-- amd64 default/linux/amd64/17.1/hardened/plasma-openrc dev
+- amd64 default/linux/amd64/23.0/hardened/plasma-openrc dev
 
 #### ;-)
