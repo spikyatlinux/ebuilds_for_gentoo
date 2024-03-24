@@ -14,10 +14,11 @@ Here are some of my own, or modified ebuilds.
 Also some of them I´ve found in the web, or
 in other overlays ;-)
 
-Use all of them at your own risk. I´ve tested all
-on my local system, perhaps some ebuilds where
-deleted cause they are in other overlays, I didn´t
-need it anymore, or I´ve no time to change/edit it.
+### Use all of them at your own risk.
+I´ve tested all on my local system, without error.
+- Perhaps some ebuilds where deleted cause they are in other overlays
+- I didn´t need it anymore
+- I´ve no time to change/edit it.
 
 #################################################
 
