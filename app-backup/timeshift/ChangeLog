@@ -2,6 +2,10 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  23 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  -timeshift-23.12.2.ebuild:
+  Removed app-backup/btrfs-assistant
+
   19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
   Updated '2024-02-19-19:19'...
 
