@@ -39,20 +39,13 @@ wget https://raw.githubusercontent.com/spikyatlinux/ebuilds_for_gentoo/master/sp
 #### Add my repository
 #################################################
 
-With layman:
-```
-sudo layman -S
-sudo layman -f -a spikyatlinux
-sudo emaint sync -r spikyatlinux
-```
-
-With eselect:
+# With eselect:
 ```
 eselect repository enable spikyatlinux
 emaint sync -r spikyatlinux
 ```
 
-if you have eix installed
+# if you have eix installed
 ```
 sudo eix-update
 ```
