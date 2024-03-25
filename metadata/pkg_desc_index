@@ -31,5 +31,4 @@ x11-misc/jgmenu 4.4.0: Simple, independent and contemporary-looking X11 menu, de
 x11-misc/mimeo 2023: Open files by MIME-type or file name using regular expressions.
 x11-misc/obfilebrowser 2021: An Openbox pipe menu application and file browser.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
-x11-wm/dk 2.0-r1: A list based tiling window manager in the vein of dwm, bspwm, and xmonad.
 x11-wm/wmutils 1.7: Set of window manipulation tools
