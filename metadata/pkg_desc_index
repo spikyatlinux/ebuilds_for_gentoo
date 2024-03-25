@@ -27,7 +27,6 @@ sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/jgmenu 4.4.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
-x11-misc/mimeo 2023: Open files by MIME-type or file name using regular expressions.
 x11-misc/obfilebrowser 2021: An Openbox pipe menu application and file browser.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
 x11-wm/wmutils 1.7: Set of window manipulation tools
