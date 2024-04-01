@@ -27,7 +27,8 @@ S="${WORKDIR}/${PN}-${PV}"
 src_install() {
 	exeinto /usr/bin/
 	doexe networkmanager_dmenu
-	domenu networkmanager_dmenu.desktop
+	#domenu networkmanager_dmenu.desktop
+	make_desktop_entry networkmanager_dmenu ${PN} network-wireless-symbolic "Settings;Network;"
 	dodoc LICENSE.txt
 	dodoc README.md
 	dodoc config.ini.example
