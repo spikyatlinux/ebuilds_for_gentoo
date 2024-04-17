@@ -26,6 +26,7 @@ sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
 sys-fs/dua-cli 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
+x11-misc/dunst 1.11.0-r1: Lightweight replacement for common notification daemons
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/jgmenu 4.4.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
