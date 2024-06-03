@@ -8,6 +8,7 @@ app-office/hibiscus 2.10.20 9999: Official prebuilt nightly HBCI Plugin for Jame
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
 app-portage/portconf 1.6.9-r2: /etc/portage cleaner
+app-portage/porttail 1.0.0_alpha1: Dynamically follow and view running Portage builds
 app-portage/pyerge 0.7.2: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
@@ -18,6 +19,7 @@ dev-util/android-tools-google 35.0.1: Android platform-tools same as android-too
 dev-util/apktool 2.9.3: A tool for reengineering 3rd party, closed, binary Android apps
 media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
+media-gfx/iscan-data 1.39.0.1-r1: Image Scan! for Linux data files
 media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON scanners (nonfree)
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-fs/davfs2 1.7.0-r1: Linux FUSE (or coda) driver that allows you to mount a WebDAV resource
