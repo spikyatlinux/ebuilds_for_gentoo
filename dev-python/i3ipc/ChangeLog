@@ -2,6 +2,9 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  07 Jun 2024; SpikyAtLinux <spikyatlinux@gmail.com> i3ipc-2.2.1-r1.ebuild:
+  Some cleanup
+
 *i3ipc-2.2.1-r1 (06 Jun 2024)
 
   06 Jun 2024; SpikyAtLinux <spikyatlinux@gmail.com> +i3ipc-2.2.1-r1.ebuild:
