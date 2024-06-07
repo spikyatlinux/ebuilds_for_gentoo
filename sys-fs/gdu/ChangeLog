@@ -2,6 +2,11 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*gdu-5.25.0 (06 Jun 2024)
+
+  06 Jun 2024; SpikyAtLinux <spikyatlinux@gmail.com> +gdu-5.25.0.ebuild:
+  Add app-backup/timeshift-24.06.1
+
   22 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com> -buildinfo,
   -gdu-5.25.0.ebuild:
   Removed sys-fs/gdu-5.25.0 cause it´s in guru overlay

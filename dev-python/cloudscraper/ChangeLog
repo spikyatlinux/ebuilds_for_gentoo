@@ -1,0 +1,10 @@
+# ChangeLog for dev-python/cloudscraper
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*cloudscraper-1.2.69-r1 (06 Jun 2024)
+
+  06 Jun 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  +cloudscraper-1.2.69-r1.ebuild:
+  Add app-backup/timeshift-24.06.1
+

@@ -1,0 +1,9 @@
+# ChangeLog for dev-python/i3ipc
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*i3ipc-2.2.1-r1 (06 Jun 2024)
+
+  06 Jun 2024; SpikyAtLinux <spikyatlinux@gmail.com> +i3ipc-2.2.1-r1.ebuild:
+  Add app-backup/timeshift-24.06.1
+
