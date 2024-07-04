@@ -1,4 +1,4 @@
-app-backup/timeshift 24.01.1 24.06.1: A system restore utility for Linux
+app-backup/timeshift 24.06.2: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.4: Create and run optimised Windows, macOS and Linux desktop virtual machines
@@ -20,8 +20,8 @@ media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a 
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-data 1.39.0.1-r1: Image Scan! for Linux data files
 media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON scanners (nonfree)
+media-video/tartube 2.5.0: A GUI front-end for youtube-dl
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
-net-fs/davfs2 1.7.0-r1: Linux FUSE (or coda) driver that allows you to mount a WebDAV resource
 net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
 sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
 sys-fs/dua-cli 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
@@ -31,6 +31,6 @@ www-apps/rutorrent 4.3.1: ruTorrent is a front-end for the popular Bittorrent cl
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/dunst 1.11.0-r1: Lightweight replacement for common notification daemons
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
-x11-misc/jgmenu 4.4.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
+x11-misc/jgmenu 4.4.1: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
 x11-wm/wmutils 1.7: Set of window manipulation tools

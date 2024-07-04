@@ -26,7 +26,7 @@ SRC_URI="x86? ( https://www.willuhn.de/products/${PN}/releases/current/${PN}/${P
 # lib/nanoxml: ZLIB
 LICENSE="Apache-2.0 CPL-1.0 EPL-1.0 GPL-2 LGPL-2 MIT MPL-1.1 MPL-2.0 ZLIB"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="x86 amd64"
 
 RDEPEND="
 	virtual/jre

@@ -10,7 +10,7 @@ SRC_URI="https://dl.google.com/android/repository/platform-tools-latest-linux.zi
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 amd64"
+KEYWORDS="x86 amd64"
 S="${WORKDIR}"
 DEPEND="app-arch/unzip
 	dev-util/patchelf

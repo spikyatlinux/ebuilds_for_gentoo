@@ -10,5 +10,5 @@ KEYWORDS=alpha amd64 ~arm ~hppa ia64 ~mips ~ppc ppc64 sparc x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://www.no-ip.com/client/linux/noip-2.1.9.tar.gz
-_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	readme.gentoo-r1	204091a2cde6179cd9d3db26d09412d3	systemd	c8b03e8df84486aa991d4396686e8942	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	readme.gentoo-r1	b8c7a61664027641d79dcfc04bd366f4	systemd	c8b03e8df84486aa991d4396686e8942	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
 _md5_=c5321713172d841e410a3ba74b34ff6f
