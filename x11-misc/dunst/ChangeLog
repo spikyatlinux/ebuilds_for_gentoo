@@ -2,6 +2,9 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  04 Jul 2024; SpikyAtLinux <spikyatlinux@gmail.com> dunst-1.11.0-r1.ebuild:
+  Stabilisation and cleanup
+
 *dunst-1.11.0-r1 (17 Apr 2024)
 
   17 Apr 2024; SpikyAtLinux <spikyatlinux@gmail.com> +dunst-1.11.0-r1.ebuild:

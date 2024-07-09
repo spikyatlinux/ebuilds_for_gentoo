@@ -1,0 +1,9 @@
+# ChangeLog for media-video/tartube
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*tartube-2.5.0 (04 Jul 2024)
+
+  04 Jul 2024; SpikyAtLinux <spikyatlinux@gmail.com> +tartube-2.5.0.ebuild:
+  Stabilisation and cleanup
+

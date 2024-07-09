@@ -2,6 +2,9 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  04 Jul 2024; SpikyAtLinux <spikyatlinux@gmail.com> pecl-mcrypt-1.0.7.ebuild:
+  Stabilisation and cleanup
+
 *pecl-mcrypt-1.0.7 (25 Mar 2024)
 
   25 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com>
