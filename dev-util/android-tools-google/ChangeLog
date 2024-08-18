@@ -2,6 +2,12 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*android-tools-google-35.0.2 (18 Aug 2024)
+
+  18 Aug 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  -android-tools-google-35.0.1.ebuild, +android-tools-google-35.0.2.ebuild:
+  Some updates
+
   04 Jul 2024; SpikyAtLinux <spikyatlinux@gmail.com>
   android-tools-google-35.0.1.ebuild:
   Stabilisation and cleanup

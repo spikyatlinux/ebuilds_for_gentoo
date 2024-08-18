@@ -1,7 +1,8 @@
-app-backup/timeshift 24.06.2: A system restore utility for Linux
+app-backup/timeshift 24.06.3: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
-app-emulation/quickemu 4.9.4: Create and run optimised Windows, macOS and Linux desktop virtual machines
+app-emulation/quickemu 4.9.6: Create and run optimised Windows, macOS and Linux desktop virtual machines
+app-mobilephone/scrcpy 2.6.1-r1: Display and control your Android device
 app-office/hibiscus 2.10.20 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
@@ -14,7 +15,7 @@ dev-php/pdlib 1.1.0: PHP bindings for dlib
 dev-php/pecl-mcrypt 1.0.7: Bindings for the libmcrypt library
 dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-bot page
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.
-dev-util/android-tools-google 35.0.1: Android platform-tools same as android-tools, but without sdk from google
+dev-util/android-tools-google 35.0.2: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.9.3: A tool for reengineering 3rd party, closed, binary Android apps
 media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
@@ -24,6 +25,7 @@ media-video/tartube 2.5.0: A GUI front-end for youtube-dl
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
 sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
+sys-boot/refind 0.14.2-r2: The UEFI Boot Manager by Rod Smith
 sys-fs/dua-cli 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/gdu 5.25.0: Disk usage analyzer with console interface written in Go
 sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
