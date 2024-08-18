@@ -1,0 +1,9 @@
+# ChangeLog for x11-misc/rofi-calc
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*rofi-calc-2.2.1 (09 Jul 2024)
+
+  09 Jul 2024; SpikyAtLinux <spikyatlinux@gmail.com> +rofi-calc-2.2.1.ebuild:
+  Deleted www-apps/rutorrent, cause it´s in official repo
+

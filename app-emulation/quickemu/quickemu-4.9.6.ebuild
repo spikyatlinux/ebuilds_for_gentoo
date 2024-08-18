@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..12} )
+PYTHON_COMPAT=(python3_{8..12})
 inherit python-single-r1
 
 DESCRIPTION="Create and run optimised Windows, macOS and Linux desktop virtual machines"
@@ -13,7 +13,7 @@ SRC_URI="https://github.com/quickemu-project/${PN}/archive/refs/tags/${PV}.tar.g
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-REQUIRED_USE="${PYTHON_REQUIRED_USE}"
+REQUIRED_USE="$PYTHON_REQUIRED_USE"
 
 DEPEND="
 	${PYTHON_DEPS}
@@ -32,11 +32,10 @@ DEPEND="
 	x11-apps/xrandr
 	x11-misc/xdg-user-dirs
 "
-RDEPEND="${DEPEND}"
+RDEPEND="$DEPEND"
 BDEPEND=""
 
 src_install() {
-	python_doscript macrecovery macrecovery
 	dobin quickemu
 	dobin quickget
 }
