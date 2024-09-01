@@ -27,7 +27,7 @@ net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
 sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
 sys-boot/refind 0.14.2-r2: The UEFI Boot Manager by Rod Smith
 sys-fs/dua-cli 2.29.0: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/gdu 5.25.0: Disk usage analyzer with console interface written in Go
+sys-fs/gdu 5.29.0: Disk usage analyzer with console interface written in Go
 sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
 x11-misc/betterlockscreen 4.2.0: sweet looking lockscreen for linux system
 x11-misc/dunst 1.11.0-r1: Lightweight replacement for common notification daemons
