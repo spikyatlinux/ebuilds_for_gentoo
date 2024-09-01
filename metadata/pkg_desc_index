@@ -25,7 +25,6 @@ media-video/tartube 2.5.040: A GUI front-end for youtube-dl
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
 sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
-sys-boot/refind 0.14.2-r2: The UEFI Boot Manager by Rod Smith
 sys-fs/dua-cli 2.29.2: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/gdu 5.29.0: Disk usage analyzer with console interface written in Go
 sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
