@@ -2,6 +2,11 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*nerd-fonts-3.2.1 (01 Sep 2024)
+
+  01 Sep 2024; SpikyAtLinux <spikyatlinux@gmail.com> +nerd-fonts-3.2.1.ebuild:
+  Updated media-fonts/nerd-fonts to v3.2.1
+
   19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
   Updated '2024-02-19-19:19'...
 
