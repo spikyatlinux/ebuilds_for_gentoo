@@ -17,7 +17,7 @@ dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-b
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-util/android-tools-google 35.0.2: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.9.3: A tool for reengineering 3rd party, closed, binary Android apps
-media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
+media-fonts/nerd-fonts 3.1.1 3.2.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-data 1.39.0.1-r1: Image Scan! for Linux data files
 media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON scanners (nonfree)
