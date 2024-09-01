@@ -14,7 +14,7 @@ inherit go-module
 DESCRIPTION="Disk usage analyzer with console interface written in Go"
 HOMEPAGE="https://github.com/dundee/gdu"
 SRC_URI="https://github.com/dundee/gdu/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://github.com/spikyatlinux/gdu-vendor-files/raw/main/gdu-5.29.0-vendor.tar.gz"
+SRC_URI+=" https://github.com/spikyatlinux/gdu-vendor-files/releases/download/v${PV}/gdu-${PV}-vendor.tar.gz"
 
 LICENSE="Apache-2.0 BSD MIT"
 SLOT="0"
@@ -22,7 +22,7 @@ KEYWORDS="~amd64"
 
 src_unpack() {
     default
-    tar -xvf "${DISTDIR}/gdu-5.29.0-vendor.tar.gz" -C "$S"
+    tar -xvf "${DISTDIR}/gdu-${PV}-vendor.tar.gz" -C "$S"
 }
 
 src_compile() {
