@@ -15,8 +15,6 @@
 
 ###
 
-[![Sparkline](https://stars.medv.io/spikyatlinux/ebuilds_for_gentoo.svg)](https://stars.medv.io/spikyatlinux/ebuilds_for_gentoo)
-
 Here are some of my own, or modified ebuilds.
 Also some of them I´ve found in the web, or
 in other overlays ;-)
