@@ -1,0 +1,12 @@
+# ChangeLog for games-util/xone
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*xone-0.3_p20240425 (19 Oct 2024)
+
+  19 Oct 2024; SpikyAtLinux <spikyatlinux@gmail.com> +files/Makefile,
+  +files/xone-0.3_p20240425-kernel_6.11.patch,
+  +files/xone-0.3_p20240425-sysfs_pairing.patch, +metadata.xml,
+  +xone-0.3_p20240425.ebuild:
+  Some updated ebuilds
+

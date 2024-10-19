@@ -1,0 +1,10 @@
+# ChangeLog for app-benchmarks/phoronix-test-suite
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*phoronix-test-suite-10.8.4-r1 (19 Oct 2024)
+
+  19 Oct 2024; SpikyAtLinux <spikyatlinux@gmail.com> +metadata.xml,
+  +phoronix-test-suite-10.8.4-r1.ebuild:
+  Some updated ebuilds
+

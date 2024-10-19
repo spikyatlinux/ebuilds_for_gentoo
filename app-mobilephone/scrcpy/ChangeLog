@@ -2,6 +2,12 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*scrcpy-2.7-r1 (19 Oct 2024)
+
+  19 Oct 2024; SpikyAtLinux <spikyatlinux@gmail.com> -scrcpy-2.6.1-r1.ebuild,
+  +scrcpy-2.7-r1.ebuild:
+  Some updated ebuilds
+
 *scrcpy-2.6.1-r1 (18 Aug 2024)
 
   18 Aug 2024; SpikyAtLinux <spikyatlinux@gmail.com> +scrcpy-2.6.1-r1.ebuild:

@@ -1,9 +1,10 @@
 app-admin/cmd-polkit 0.3.0: Command-line Polkit tool
 app-backup/timeshift 24.06.3: A system restore utility for Linux
-app-backup/timeshift-autosnap 0.9: Automatically creates a timeshift-snapshot when executed
+app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
+app-benchmarks/phoronix-test-suite 10.8.4-r1: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.6: Create and run optimised Windows, macOS and Linux desktop virtual machines
-app-mobilephone/scrcpy 2.6.1-r1: Display and control your Android device
+app-mobilephone/scrcpy 2.7-r1: Display and control your Android device
 app-office/hibiscus 2.10.21 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
@@ -18,6 +19,7 @@ dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-b
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-util/android-tools-google 35.0.2: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.9.3: A tool for reengineering 3rd party, closed, binary Android apps
+games-util/xone 0.3_p20240425: Linux kernel driver for Xbox One and Xbox Series X|S accessories
 media-fonts/nerd-fonts 3.1.1 3.2.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-data 1.39.0.1-r1: Image Scan! for Linux data files
@@ -25,7 +27,7 @@ media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON sc
 media-video/tartube 2.5.040: A GUI front-end for youtube-dl
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
-sys-apps/czkawka 7.0.0: CLI frontend of Czkawka
+sys-apps/czkawka 8.0.0: CLI frontend of Czkawka
 sys-auth/rofi-polkit-agent 9999: Polkit agent, using rofi for UI
 sys-fs/dua-cli 2.29.2: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/gdu 5.29.0: Disk usage analyzer with console interface written in Go
