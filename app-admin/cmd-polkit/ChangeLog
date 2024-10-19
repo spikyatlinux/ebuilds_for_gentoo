@@ -1,0 +1,9 @@
+# ChangeLog for app-admin/cmd-polkit
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*cmd-polkit-0.3.0 (16 Sep 2024)
+
+  16 Sep 2024; SpikyAtLinux <spikyatlinux@gmail.com> +cmd-polkit-0.3.0.ebuild:
+  Some updates
+
