@@ -1,0 +1,9 @@
+# ChangeLog for x11-wm/i3
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*i3-4.24 (13 Nov 2024)
+
+  13 Nov 2024; SpikyAtLinux <spikyatlinux@gmail.com> +i3-4.24.ebuild:
+  Removed x11-misc/rofi-calc, cause same version in tree
+
