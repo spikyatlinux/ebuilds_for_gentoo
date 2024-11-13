@@ -37,5 +37,4 @@ x11-misc/dunst 1.11.0-r1: Lightweight replacement for common notification daemon
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/jgmenu 4.4.1: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
-x11-misc/rofi-calc 2.2.1: Do live calculations in rofi!
 x11-wm/wmutils 1.7: Set of window manipulation tools
