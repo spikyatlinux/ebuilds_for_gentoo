@@ -2,6 +2,13 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*pdlib-1.1.0-r1 (14 Nov 2024)
+
+  14 Nov 2024; SpikyAtLinux <spikyatlinux@gmail.com> -pdlib-1.1.0.ebuild,
+  +pdlib-1.1.0-r1.ebuild:
+  Updated dev-php/pecl-mcrypt-1.0.7-r1 and removed php8-1,also updated
+  package.unmask to unmask pecl-mcrypt/pecl-mcrypt-1.0.7-r1
+
   19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
   Updated '2024-02-19-19:19'...
 
