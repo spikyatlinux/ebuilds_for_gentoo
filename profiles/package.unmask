@@ -1,2 +1,4 @@
 # Fixed download link
 =media-gfx/iscan-plugin-network-nt-1.1.4-r1
+# Removed php8-1
+=dev-php/pecl-mcrypt-1.0.7-r1
