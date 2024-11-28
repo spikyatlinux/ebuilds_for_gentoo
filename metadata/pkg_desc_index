@@ -4,8 +4,8 @@ app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot
 app-benchmarks/phoronix-test-suite 10.8.4-r1: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.6: Create and run optimised Windows, macOS and Linux desktop virtual machines
-app-mobilephone/scrcpy 2.7-r1: Display and control your Android device
-app-office/hibiscus 2.10.21 9999: Official prebuilt nightly HBCI Plugin for Jameica
+app-mobilephone/scrcpy 2.7-r1 3.0-r1: Display and control your Android device
+app-office/hibiscus 2.10.23 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
 app-portage/portconf 1.6.9-r2: /etc/portage cleaner

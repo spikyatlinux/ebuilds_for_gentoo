@@ -2,6 +2,12 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*hibiscus-2.10.23 (28 Nov 2024)
+
+  28 Nov 2024; SpikyAtLinux <spikyatlinux@gmail.com> -hibiscus-2.10.21.ebuild,
+  +hibiscus-2.10.23.ebuild:
+  Updated app-office/hibiscus to v2.10.23
+
 *hibiscus-2.10.21 (16 Sep 2024)
 
   16 Sep 2024; SpikyAtLinux <spikyatlinux@gmail.com> -hibiscus-2.10.20.ebuild,
