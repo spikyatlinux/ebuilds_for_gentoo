@@ -2,3 +2,13 @@
 # your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using egencache *
 
+app-admin/hardinfo2:benchmark - sysbench for benchmarking
+app-admin/hardinfo2:fwupd - fwupd
+app-admin/hardinfo2:gtk3 - gtk+ user interface
+app-crypt/gtkhash:caja - Build the checksums plugin for use inside Caja from MATE
+app-crypt/gtkhash:mbedtls - Support calculating checksums with net-libs/mbedtls
+app-crypt/gtkhash:nautilus - Build the checksums plugin for use inside Nautilus from Gnome
+app-crypt/gtkhash:nemo - Build the checksums plugin for use inside Nemo from Cinnamon
+app-crypt/gtkhash:nettle - Support calculating checksums with dev-libs/nettle
+app-crypt/gtkhash:openssl - Support calculating checksums with libcrypto from dev-libs/openssl
+app-crypt/gtkhash:thunar - Build the checksums plugin for use inside Thunar from XFCE

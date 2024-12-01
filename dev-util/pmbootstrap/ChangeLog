@@ -1,0 +1,10 @@
+# ChangeLog for dev-util/pmbootstrap
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*pmbootstrap-3.0.0 (01 Dec 2024)
+
+  01 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> +metadata.xml,
+  +pmbootstrap-3.0.0.ebuild:
+  I´ve removed guru overlay, and keep only what I need
+

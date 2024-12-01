@@ -1,0 +1,10 @@
+# ChangeLog for dev-vcs/lazygit
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*lazygit-0.44.1 (01 Dec 2024)
+
+  01 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> +lazygit-0.44.1.ebuild,
+  +metadata.xml:
+  I´ve removed guru overlay, and keep only what I need
+

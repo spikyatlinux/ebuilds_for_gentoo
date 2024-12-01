@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Source: Written from scratch for sunset-repo overlay -->
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>sunsetsergal@gmail.com</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">tristanheaven/gtkhash</remote-id>
+	</upstream>
+	<use>
+		<flag name="caja">Build the checksums plugin for use inside Caja from MATE</flag>
+		<flag name="nautilus">Build the checksums plugin for use inside Nautilus from Gnome</flag>
+		<flag name="nemo">Build the checksums plugin for use inside Nemo from Cinnamon</flag>
+		<flag name="thunar">Build the checksums plugin for use inside Thunar from XFCE</flag>
+		<flag name="openssl">Support calculating checksums with libcrypto from dev-libs/openssl</flag>
+		<flag name="mbedtls">Support calculating checksums with net-libs/mbedtls</flag>
+		<flag name="nettle">Support calculating checksums with dev-libs/nettle</flag>
+	</use>
+</pkgmetadata>

@@ -1,0 +1,26 @@
+Source: https://github.com/gtkhash/gtkhash/issues/175
+
+diff --git a/data/caja/Makefile.am b/data/caja/Makefile.am
+index d6eab85..ca49e0c 100644
+--- a/data/caja/Makefile.am
++++ b/data/caja/Makefile.am
+@@ -8,4 +8,4 @@ EXTRA_DIST = \
+ CLEANFILES = $(cajaextensions_DATA)
+ 
+ %.caja-extension: %.caja-extension.in
+-	$(AM_V_GEN)$(MSGFMT) --desktop --keyword Name --keyword Description --template $< -d $(top_srcdir)/po -o $@
++	$(AM_V_GEN)$(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
+diff --git a/data/caja/meson.build b/data/caja/meson.build
+index ce1e8a8..ad60238 100644
+--- a/data/caja/meson.build
++++ b/data/caja/meson.build
+@@ -16,7 +16,7 @@ i18n.merge_file(
+     po_dir: po_dir,
+     type: 'desktop',
+     args: [
+-        '--keyword', 'Name',
+-        '--keyword', 'Description',
++        '--keyword=Name',
++        '--keyword=Description',
+     ]
+ )
