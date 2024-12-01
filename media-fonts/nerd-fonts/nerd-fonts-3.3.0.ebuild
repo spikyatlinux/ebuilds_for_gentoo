@@ -81,7 +81,7 @@ FONTS=(
 	UbuntuSans
 	VictorMono
 	ZedMono
-)
+	)
 
 IUSE_FLAGS=(${FONTS[*],,})
 # FIXME: `+hack` is workaround for: https://pkgcore.github.io/pkgcheck/man/pkgcheck.html#requiredusedefaults

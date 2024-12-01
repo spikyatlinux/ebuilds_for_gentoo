@@ -1,0 +1,14 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-vcs/git sys-auth/polkit app-misc/jq x11-misc/rofi app-admin/cmd-polkit
+DESCRIPTION=Polkit agent, using rofi for UI
+EAPI=8
+HOMEPAGE=https://github.com/czaplicki/rofi-polkit-agent
+INHERIT=git-r3
+KEYWORDS=~amd64
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=dev-vcs/git sys-auth/polkit app-misc/jq x11-misc/rofi app-admin/cmd-polkit
+SLOT=0
+_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=b2687e3758e6be064c0361a8cb431e5c

@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=app-arch/unzip dev-util/patchelf !dev-util/android-tools
+DESCRIPTION=Android platform-tools same as android-tools, but without sdk from google
+EAPI=8
+HOMEPAGE=https://developer.android.com/studio/releases/platform-tools.html
+INHERIT=unpacker
+KEYWORDS=x86 amd64
+LICENSE=GPL-3
+RDEPEND=app-arch/unzip dev-util/patchelf !dev-util/android-tools
+RESTRICT=strip mirror
+SLOT=0
+SRC_URI=https://dl.google.com/android/repository/platform-tools-latest-linux.zip -> android-tools-google-35.0.2.zip
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	unpacker	fb4b84181244b3b9990fa0bf40232dd2
+_md5_=ab41b71141a7d5a2facd00ace4bc8f6b

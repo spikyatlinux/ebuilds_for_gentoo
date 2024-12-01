@@ -1,4 +1,4 @@
-BDEPEND=>=app-portage/elt-patches-20240116 sys-devel/gnuconfig || ( >=dev-build/automake-1.16.5:1.16 ) || ( >=dev-build/autoconf-2.72-r1:2.72 >=dev-build/autoconf-2.71-r6:2.71 ) >=dev-build/libtool-2.4.7-r3
+BDEPEND=>=app-portage/elt-patches-20240116 sys-devel/gnuconfig || ( >=dev-build/automake-1.17-r1:1.17 >=dev-build/automake-1.16.5:1.16 ) || ( >=dev-build/autoconf-2.72-r1:2.72 >=dev-build/autoconf-2.71-r6:2.71 ) >=dev-build/libtool-2.4.7-r3
 DEFINED_PHASES=compile install postinst
 DEPEND=app-misc/figlet dev-qt/qtcore:5
 DESCRIPTION=Ascii Design is an ascii-art program based on figlet engine.
@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=app-misc/figlet dev-qt/qtcore:5
 SLOT=0
 SRC_URI=https://github.com/Faster3ck/Ascii-Design/archive/v1.1.1.tar.gz -> ascii-design-1.1.1.tar.gz
-_eclasses_=autotools	dc70c1dc473b68317fc4a86f5fbfc57d	desktop	021728fdc1b03b36357dbc89489e0f0d	gnuconfig	a397adda6984a4c423e28ac274c1ba98	libtool	5f49a16f67f81bdf873e3d1f10b10001	multilib	c19072c3cd7ac5cb21de013f7e9832e0	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	qmake-utils	a8dd17b1d94586164f5e3fc12b1c6b81	gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	libtool	6b28392a775f807c8be5fc7ec9a605b9	autotools	7d91cc798a8afd8f4e0c6e9587296ebe	desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
 _md5_=0cd7b7ccab29739ce584deb045c08988

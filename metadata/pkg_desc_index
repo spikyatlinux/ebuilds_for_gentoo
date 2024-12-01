@@ -24,7 +24,7 @@ dev-util/apktool 2.9.3: A tool for reengineering 3rd party, closed, binary Andro
 dev-util/pmbootstrap 3.0.0: Helper tool for developing and building postmarketOS
 dev-vcs/lazygit 0.44.1: Simple terminal UI for git commands
 games-util/xone 0.3_p20240425: Linux kernel driver for Xbox One and Xbox Series X|S accessories
-media-fonts/nerd-fonts 3.1.1 3.2.1: Collection of fonts that are patched to include a high number of glyphs (icons).
+media-fonts/nerd-fonts 3.1.1 3.3.0: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-gfx/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 media-gfx/iscan-data 1.39.0.1-r1: Image Scan! for Linux data files
 media-gfx/iscan-plugin-network-nt 1.1.4-r2: Network scanning plugin for EPSON scanners (nonfree)
@@ -41,5 +41,4 @@ x11-misc/dunst 1.11.0-r1: Lightweight replacement for common notification daemon
 x11-misc/i3lock-color 2.13.5: The world's most popular non-default computer lockscreen
 x11-misc/jgmenu 4.4.1: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
-x11-wm/i3 4.24: An improved dynamic tiling window manager
 x11-wm/wmutils 1.7: Set of window manipulation tools

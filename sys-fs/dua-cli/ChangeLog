@@ -2,6 +2,12 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*dua-cli-2.29.4 (01 Dec 2024)
+
+  01 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> -dua-cli-2.29.2.ebuild,
+  +dua-cli-2.29.4.ebuild:
+  Updated sys-fs/dua-cli to v2.29.4
+
   01 Sep 2024; SpikyAtLinux <spikyatlinux@gmail.com> -dua-cli-2.29.0.ebuild:
   Forgot to remove old dua-cli ebuild
 

@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=media-gfx/feh media-gfx/imagemagick sys-devel/bc x11-apps/xdpyinfo x11-apps/xrandr x11-apps/xrdb x11-apps/xset >=x11-misc/i3lock-color-2.13.3:=
 SLOT=0
 SRC_URI=https://github.com/betterlockscreen/betterlockscreen/archive/refs/tags/v4.2.0.tar.gz -> betterlockscreen-4.2.0.tar.gz
-_eclasses_=multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	systemd	54bd206bb5c4efac6ae28b6b006713b0
 _md5_=287b99d00465c4327352a3eb693943e3

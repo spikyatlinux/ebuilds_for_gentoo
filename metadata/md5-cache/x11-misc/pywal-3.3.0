@@ -12,5 +12,5 @@ RDEPEND=dev-python/setuptools[python_targets_python3_10(-)?,python_targets_pytho
 REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
 SLOT=0
 SRC_URI=https://github.com/dylanaraps/pywal/archive/3.3.0.tar.gz -> pywal-3.3.0.tar.gz
-_eclasses_=distutils-r1	f11e1bc907da246e941fbae648327823	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	multibuild	d67e78a235f541871c7dfe4cf7931489	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	python-r1	428f5c53276c2adc06a89108fc2f9f46	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	python-utils-r1	42c5abe4a656a4993a06a4fc61dbdd12	python-r1	2def7a4ce233dfa344f613025c619a23	distutils-r1	85ccd3b54a6533fb120ee52b7c76a3df
 _md5_=efc7c0dfd729971e50c482bf31f00207

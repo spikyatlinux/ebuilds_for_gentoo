@@ -11,5 +11,5 @@ RDEPEND=net-misc/networkmanager dmenu? ( x11-misc/dmenu ) rofi? ( x11-misc/rofi 
 REQUIRED_USE=^^ ( dmenu rofi ) || ( python_targets_python3_10 python_targets_python3_11 python_targets_python3_12 )
 SLOT=0
 SRC_URI=https://github.com/firecat53/networkmanager-dmenu/archive/v2.3.1.tar.gz -> networkmanager-dmenu-2.3.1.tar.gz
-_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multibuild	d67e78a235f541871c7dfe4cf7931489	multilib	c19072c3cd7ac5cb21de013f7e9832e0	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	out-of-source-utils	1a9007554652a6e627edbccb3c25a439	python-r1	428f5c53276c2adc06a89108fc2f9f46	python-utils-r1	8b220bbce5c119fb1d4d5c2f5588f3ea	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	python-utils-r1	42c5abe4a656a4993a06a4fc61dbdd12	python-r1	2def7a4ce233dfa344f613025c619a23
 _md5_=5d906dae3e50f9cc53115142c4a59582
