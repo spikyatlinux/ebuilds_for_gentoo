@@ -18,6 +18,12 @@ DEPEND="dev-build/cmake
         sys-libs/zlib"
 RDEPEND="${DEPEND}"
 
+src_prepare() {
+    default
+    eapply "${FILESDIR}/install-rules.patch"
+    cmake_src_prepare
+}
+
 src_configure() {
     local mycmakeargs=(
 	-DCMAKE_INSTALL_PREFIX="${EPREFIX}/usr"
@@ -30,11 +36,6 @@ src_compile() {
 }
 
 src_install() {
-    cmake --install "${BUILD_DIR}" --prefix="${D}/usr" || die "cmake install failed"
-    # Ensure the binary is installed
-    if [[ ! -f "${D}/usr/bin/dumptorrent" ]]; then
-        einfo "Manually installing dumptorrent binary"
-        dobin "${BUILD_DIR}/dumptorrent"
-    fi
+    cmake_src_install
     dodoc README.md
 }

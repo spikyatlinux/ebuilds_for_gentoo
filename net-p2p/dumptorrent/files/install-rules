@@ -1,0 +1,13 @@
+--- a/CMakeLists.txt  2024-12-03 12:00:00.000000000 +0000
++++ b/CMakeLists.txt  2024-12-03 12:01:00.000000000 +0000
+@@ -15,6 +15,10 @@
+    target_compile_definitions(scrapec PUBLIC _CRT_SECURE_NO_WARNINGS BUILD_MAIN)
+endif()
+
++# Install the binaries
++install(TARGETS dumptorrent RUNTIME DESTINATION bin)
++install(TARGETS scrapec RUNTIME DESTINATION bin)
++
+ message(STATUS "<<< Gentoo configuration >>>
+ Build type      ${CMAKE_BUILD_TYPE}
+ Install path    ${CMAKE_INSTALL_PREFIX}
