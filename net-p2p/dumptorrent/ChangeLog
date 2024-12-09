@@ -2,6 +2,13 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*dumptorrent-1.3-r1 (04 Dec 2024)
+
+  04 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> -dumptorrent-1.3.ebuild,
+  +dumptorrent-1.3-r1.ebuild, +files/install-rules,
+  +files/install-rules.patch:
+  Fixed some errors in net-p2p/dumptorrent
+
 *dumptorrent-1.3 (03 Dec 2024)
 
   03 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> +dumptorrent-1.3.ebuild:
