@@ -11,8 +11,8 @@ SRC_URI="https://github.com/linuxmint/${PN}/archive/${PV}.tar.gz -> ${PF}.tar.gz
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64 x86"
-IUSE=""
+KEYWORDS="~amd64 ~x86"
+IUSE="introspection"
 
 DEPEND="
 	dev-libs/glib:2
@@ -21,7 +21,7 @@ DEPEND="
 	dev-libs/json-glib
 	x11-libs/vte:2.91[vala]
 	>=dev-libs/libgee-0.18.0:=
-	>=x11-libs/xapp-1.0.4
+	>=x11-libs/xapp-1.0.4[introspection,vala]
 	x11-libs/cairo
 	x11-libs/gdk-pixbuf:2
 "
