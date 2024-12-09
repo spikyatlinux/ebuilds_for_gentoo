@@ -1,6 +1,6 @@
 app-admin/cmd-polkit 0.3.0: Command-line Polkit tool
 app-admin/hardinfo2 2.2.4-r2: System Information and Benchmark for Linux Systems
-app-backup/timeshift 24.06.5-r1: A system restore utility for Linux
+app-backup/timeshift 24.06.5: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-benchmarks/phoronix-test-suite 10.8.4-r1: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-crypt/gtkhash 1.5-r1 9999: A cross-platform desktop utility for computing message digests or checksums
