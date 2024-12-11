@@ -2,6 +2,12 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*timeshift-24.06.5 (09 Dec 2024)
+
+  09 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  +timeshift-24.06.5.ebuild, -timeshift-24.06.5-r1.ebuild:
+  Edit ebuild, cause timeshift wasn´t build
+
 *timeshift-24.06.5-r1 (09 Dec 2024)
 
   09 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com>
