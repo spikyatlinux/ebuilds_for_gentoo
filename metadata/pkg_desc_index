@@ -4,7 +4,6 @@ app-backup/btrfs-assistant 2.1.1 9999: A GUI management tool to make managing a 
 app-backup/snapper-gui 9999: GUI for snapper, a tool for Linux filesystem snapshot management
 app-backup/timeshift 24.06.5: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
-app-benchmarks/phoronix-test-suite 10.8.4-r1: Phoronix's comprehensive, cross-platform testing and benchmark suite
 app-crypt/gtkhash 1.5-r1 9999: A cross-platform desktop utility for computing message digests or checksums
 app-editors/bluegriffon-bin 3.1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-editors/neovim 0.10.2-r1: Vim-fork focused on extensibility and agility
