@@ -1,0 +1,9 @@
+# ChangeLog for app-backup/snapper-gui
+# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*snapper-gui-9999 (11 Dec 2024)
+
+  11 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> +snapper-gui-9999.ebuild:
+  Some litte updates
+
