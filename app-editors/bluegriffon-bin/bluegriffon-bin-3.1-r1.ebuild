@@ -42,9 +42,9 @@ RDEPEND="${DEPEND}
 	x11-libs/pixman
 	media-libs/libpng:0/16
 	sys-apps/util-linux
-	media-libs/harfbuzz:0/0.9.18
+	media-libs/harfbuzz:0
 	dev-libs/fribidi
-	dev-libs/libffi:0/7
+	dev-libs/libffi:0/8
 	dev-libs/libpcre
 	dev-libs/expat
 	media-gfx/graphite2
