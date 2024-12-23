@@ -32,8 +32,6 @@ RESTRICT="test"
 PHP_EXT_ECONF_ARGS=()
 
 src_prepare() {
-    # Apply the patch to enable gif support
-    # eapply "${FILESDIR}/enable-gif-support.patch"
     eapply "${FILESDIR}/update_extension_to_1.1.0.patch"
 
     php-ext-source-r3_src_prepare
@@ -67,7 +65,7 @@ src_install() {
         insinto "${EXT_DIR}"
         doins ".libs/${PHP_EXT_NAME}.so" || die "Failed to install extension for slot ${slot}"
 
-        # Set executable bit on installed shared library
+        einfo "Set executable bit on installed shared library"
         fperms +x "${EXT_DIR}/${PHP_EXT_NAME}.so" || die "Failed to set executable bit for slot ${slot}"
     done
     php-ext-source-r3_createinifiles

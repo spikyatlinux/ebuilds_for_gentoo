@@ -2,6 +2,10 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  23 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com> -pdlib-1.1.0-r1.ebuild,
+  -pdlib-1.1.0-r2.ebuild:
+  Removed broken ebuilds
+
 *pdlib-1.1.0-r3 (23 Dec 2024)
 
   23 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com>
