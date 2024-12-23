@@ -17,7 +17,7 @@ app-portage/pyerge 0.7.2: Wrapper tool for emerge - it can mount RAM disk and co
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
 dev-java/jameica 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
-dev-php/pdlib 1.1.0-r1: PHP bindings for dlib
+dev-php/pdlib 1.1.0-r3: PHP bindings for dlib
 dev-php/pecl-mcrypt 1.0.7-r1: Bindings for the libmcrypt library
 dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-bot page
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.

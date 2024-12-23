@@ -2,6 +2,13 @@
 # Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*pdlib-1.1.0-r3 (23 Dec 2024)
+
+  23 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com>
+  -files/enable-gif-support.patch, +files/update_extension_to_1.1.0.patch,
+  +pdlib-1.1.0-r3.ebuild:
+  Fixed dev-php/pdlib giflib error
+
 *pdlib-1.1.0-r2 (18 Dec 2024)
 
   18 Dec 2024; SpikyAtLinux <spikyatlinux@gmail.com>
