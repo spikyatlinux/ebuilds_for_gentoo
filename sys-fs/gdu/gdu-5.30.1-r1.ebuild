@@ -27,7 +27,7 @@ src_unpack() {
 
 src_compile() {
     # Inject the build time, build user, and version into the build flags
-    ego build -ldflags "-s -w -X 'github.com/dundee/gdu/v5/build.Version=${PV}' -X 'github.com/dundee/gdu/v5/build.Time=$(date +%Y-%m-%d\ %H:%M:%S)' -X 'github.com/dundee/gdu/v5/build.User=SpikyAtLinux (ebuild_for_gentoo)'" -v -x -work -o "${PN}" "./cmd/${PN}"
+    ego build -ldflags "-s -w -X 'github.com/dundee/gdu/v5/build.Version=${PV}' -X 'github.com/dundee/gdu/v5/build.Time=$(date +%Y-%m-%d\ %H:%M:%S)' -X 'github.com/dundee/gdu/v5/build.User=SpikyAtLinux (ebuilds_for_gentoo)'" -v -x -work -o "${PN}" "./cmd/${PN}"
 }
 
 src_install() {
