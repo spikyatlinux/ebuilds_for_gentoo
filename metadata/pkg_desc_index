@@ -38,7 +38,7 @@ net-p2p/dumptorrent 1.3-r1: A command-line tool to extract metadata from torrent
 sys-apps/czkawka 8.0.0: CLI frontend of Czkawka
 sys-auth/rofi-polkit-agent 9999: Polkit agent, using rofi for UI
 sys-fs/dua-cli 2.29.4: A tool to conveniently learn about the disk usage of directories, fast!
-sys-fs/gdu 5.29.0: Disk usage analyzer with console interface written in Go
+sys-fs/gdu 5.29.0 5.30.1: Disk usage analyzer with console interface written in Go
 sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
 x11-misc/jgmenu 4.4.1: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
 x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
