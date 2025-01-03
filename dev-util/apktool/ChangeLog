@@ -1,6 +1,9 @@
 # ChangeLog for dev-util/apktool
-# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+  03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> apktool-2.9.3.ebuild:
+  Fixed header and python deps
 
   19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
   Updated '2024-02-19-19:19'...

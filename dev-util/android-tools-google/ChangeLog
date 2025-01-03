@@ -1,6 +1,10 @@
 # ChangeLog for dev-util/android-tools-google
-# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+  03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com>
+  android-tools-google-35.0.2.ebuild:
+  Fixed header and python deps
 
 *android-tools-google-35.0.2 (18 Aug 2024)
 

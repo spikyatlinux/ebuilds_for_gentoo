@@ -1,6 +1,10 @@
 # ChangeLog for net-p2p/dumptorrent
-# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+  03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com>
+  dumptorrent-1.3-r1.ebuild:
+  Fixed header and python deps
 
 *dumptorrent-1.3-r1 (04 Dec 2024)
 

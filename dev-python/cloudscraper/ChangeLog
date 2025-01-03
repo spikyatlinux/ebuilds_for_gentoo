@@ -1,6 +1,10 @@
 # ChangeLog for dev-python/cloudscraper
-# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+  03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com>
+  cloudscraper-1.2.69-r1.ebuild:
+  Fixed header and python deps
 
   07 Jun 2024; SpikyAtLinux <spikyatlinux@gmail.com>
   cloudscraper-1.2.69-r1.ebuild:

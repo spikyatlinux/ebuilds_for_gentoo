@@ -1,6 +1,9 @@
 # ChangeLog for x11-wm/wmutils
-# Copyright 1999-2024 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+  03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> wmutils-1.7.ebuild:
+  Fixed header and python deps
 
   22 Mar 2024; SpikyAtLinux <spikyatlinux@gmail.com> -wmutils-9999.ebuild:
   Some ebuild updates
