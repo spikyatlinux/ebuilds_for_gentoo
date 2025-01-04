@@ -2,6 +2,12 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*tartube-2.5.062 (04 Jan 2025)
+
+  04 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> -tartube-2.5.059.ebuild,
+  +tartube-2.5.062.ebuild:
+  Updated media-video/tartube to v2.5.062
+
   03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> tartube-2.5.059.ebuild:
   Fixed header and python deps
 

@@ -7,7 +7,7 @@ app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot
 app-crypt/gtkhash 1.5-r1 9999: A cross-platform desktop utility for computing message digests or checksums
 app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-editors/neovim 0.10.2-r1: Vim-fork focused on extensibility and agility
-app-emulation/quickemu 4.9.6: Create and run optimised Windows, macOS and Linux desktop virtual machines
+app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-mobilephone/scrcpy 3.1-r1: Display and control your Android device
 app-office/hibiscus 2.10.23 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
