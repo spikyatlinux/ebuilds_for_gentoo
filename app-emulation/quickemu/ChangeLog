@@ -2,6 +2,12 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*quickemu-4.9.7 (04 Jan 2025)
+
+  04 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> -quickemu-4.9.6.ebuild,
+  +quickemu-4.9.7.ebuild:
+  Updated app-emulation/quickemu to v4.9.7
+
   03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> quickemu-4.9.6.ebuild:
   Fixed header and python deps
 
