@@ -1,4 +1,4 @@
-amd64 plasma+gnome exp
-amd64 plasma+gnome+hardened exp
-amd64 gnome+hardened exp
-amd64 plasma-hardened exp
+amd64 gnome+hardened stable
+amd64 plasma+gnome stable
+amd64 plasma+gnome+hardened stable
+amd64 plasma-hardened stable

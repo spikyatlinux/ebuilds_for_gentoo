@@ -52,3 +52,9 @@ sudo eix-update
 ```
 
 #################################################
+### Added some merged original profiles
+spikyatlinux:gnome+hardened (stable)
+spikyatlinux:plasma+gnome (stable)
+spikyatlinux:plasma+gnome+hardened (stable)
+spikyatlinux:plasma-hardened (stable)
+
