@@ -1,4 +1,5 @@
+amd64 desktop-hardened stable
+amd64 plasma-hardened stable
 amd64 gnome+hardened stable
 amd64 plasma+gnome stable
 amd64 plasma+gnome+hardened stable
-amd64 plasma-hardened stable
