@@ -53,8 +53,8 @@ sudo eix-update
 
 #################################################
 ### Merged some original profiles
+- spikyatlinux:desktop-hardened (stable)
+- spikyatlinux:plasma-hardened (stable)
 - spikyatlinux:gnome+hardened (stable)
 - spikyatlinux:plasma+gnome (stable)
 - spikyatlinux:plasma+gnome+hardened (stable)
-- spikyatlinux:plasma-hardened (stable)
-
