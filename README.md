@@ -52,7 +52,7 @@ sudo eix-update
 ```
 
 #################################################
-### Merged some original profiles
+### Merged some original openrc profiles
 - spikyatlinux:desktop-hardened (stable)
 - spikyatlinux:plasma-hardened (stable)
 - spikyatlinux:gnome+hardened (stable)
