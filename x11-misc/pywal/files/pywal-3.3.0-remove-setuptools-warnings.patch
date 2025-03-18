@@ -1,0 +1,49 @@
+From 2721cb1134baad1ff1d1c99c1f300f0290b9c62f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Matt=C3=A9o=20Rossillol=E2=80=91=E2=80=91Laruelle?=
+ <beatussum@protonmail.com>
+Date: Mon, 8 Jul 2024 11:00:34 +0200
+Subject: [PATCH] remove setuptools warnings
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+This commit adds the missing packages in setup.py.
+
+The warnings emited by setuptools are just described below:
+
+```
+Package 'pywal.backends' is absent from the `packages` configuration.
+Package 'pywal.colorschemes.dark' is absent from the `packages` configuration.
+Package 'pywal.colorschemes.light' is absent from the `packages` configuration.
+Package 'pywal.scripts' is absent from the `packages` configuration.
+Package 'pywal.templates' is absent from the `packages` configuration.
+```
+
+Signed-off-by: Mattéo Rossillol‑‑Laruelle <beatussum@protonmail.com>
+---
+ setup.py | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 8345388..12a4eaa 100644
+--- a/setup.py
++++ b/setup.py
+@@ -30,7 +30,14 @@ setuptools.setup(
+         "Programming Language :: Python :: 3.5",
+         "Programming Language :: Python :: 3.6",
+     ],
+-    packages=["pywal"],
++    packages=[
++        "pywal",
++        "pywal.backends",
++        "pywal.colorschemes.dark",
++        "pywal.colorschemes.light",
++        "pywal.scripts",
++        "pywal.templates"
++    ],
+     entry_points={"console_scripts": ["wal=pywal.__main__:main"]},
+     python_requires=">=3.5",
+     test_suite="tests",
+-- 
+2.44.2
+
