@@ -1,5 +1,5 @@
 app-admin/cmd-polkit 0.3.0: Command-line Polkit tool
-app-admin/hardinfo2 2.2.4-r2: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.2.7: System Information and Benchmark for Linux Systems
 app-backup/snapper-gui 9999: GUI for snapper, a tool for Linux filesystem snapshot management
 app-backup/timeshift 24.06.6: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
@@ -34,9 +34,9 @@ net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
 net-p2p/dumptorrent 1.3-r1: A command-line tool to extract metadata from torrent files
 sys-apps/czkawka 8.0.0: CLI frontend of Czkawka
 sys-auth/rofi-polkit-agent 9999: Polkit agent, using rofi for UI
-sys-fs/dua-cli 2.29.4: A tool to conveniently learn about the disk usage of directories, fast!
+sys-fs/dua-cli 2.29.4 2.30.0: A tool to conveniently learn about the disk usage of directories, fast!
 sys-fs/gdu 5.29.0 5.30.1-r1: Disk usage analyzer with console interface written in Go
 sys-process/nvtop 3.1.0: NVIDIA GPUs htop like monitoring tool
-x11-misc/jgmenu 4.4.1: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
-x11-misc/pywal 3.3.0: Generate and change color-schemes on the fly
+x11-misc/jgmenu 4.5.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
+x11-misc/pywal 3.3.0-r1: Generate and change color-schemes on the fly
 x11-wm/wmutils 1.7: Set of window manipulation tools
