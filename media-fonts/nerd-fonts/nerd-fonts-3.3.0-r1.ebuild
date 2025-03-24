@@ -32,6 +32,7 @@ FONTS=(
 	D2Coding
 	DaddyTimeMono
 	DejaVuSansMono
+	DepartureMono
 	DroidSansMono
 	EnvyCodeR
 	FantasqueSansMono
@@ -69,6 +70,7 @@ FONTS=(
 	Overpass
 	ProFont
 	ProggyClean
+	Recursive
 	RobotoMono
 	ShareTechMono
 	SourceCodePro
@@ -77,8 +79,10 @@ FONTS=(
 	Tinos
 	Ubuntu
 	UbuntuMono
+	UbuntuSans
 	VictorMono
-)
+	ZedMono
+	)
 
 IUSE_FLAGS=(${FONTS[*],,})
 # FIXME: `+hack` is workaround for: https://pkgcore.github.io/pkgcheck/man/pkgcheck.html#requiredusedefaults

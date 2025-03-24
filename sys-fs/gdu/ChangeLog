@@ -2,6 +2,9 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  24 Mar 2025; SpikyAtLinux <spikyatlinux@gmail.com> -gdu-5.29.0.ebuild:
+  Some cleanup
+
   03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> gdu-5.29.0.ebuild,
   gdu-5.30.1-r1.ebuild:
   Fixed header and python deps
