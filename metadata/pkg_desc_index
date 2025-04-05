@@ -5,7 +5,7 @@ app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot
 app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-mobilephone/scrcpy 3.1-r1: Display and control your Android device
-app-office/hibiscus 2.10.24 9999: Official prebuilt nightly HBCI Plugin for Jameica
+app-office/hibiscus 2.10.25 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
 app-portage/portconf 1.6.9-r2: /etc/portage cleaner
