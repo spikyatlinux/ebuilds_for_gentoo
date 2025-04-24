@@ -2,6 +2,13 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*pyerge-0.7.2-r1 (24 Apr 2025)
+
+  24 Apr 2025; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/distutils-legacy-fix.patch, -pyerge-0.7.2.ebuild,
+  +pyerge-0.7.2-r1.ebuild:
+  Some little updates
+
   03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> pyerge-0.7.2.ebuild:
   Fixed header and python deps
 

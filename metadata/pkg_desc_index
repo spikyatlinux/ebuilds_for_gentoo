@@ -9,7 +9,7 @@ app-office/hibiscus 2.10.25 9999: Official prebuilt nightly HBCI Plugin for Jame
 app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
 app-portage/find_cruft 5.2: find cruft files not managed by portage
 app-portage/portconf 1.6.9-r2: /etc/portage cleaner
-app-portage/pyerge 0.7.2: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
+app-portage/pyerge 0.7.2-r1: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
 dev-java/jameica 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
