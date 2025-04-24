@@ -1,0 +1,20 @@
+diff -Naur a/setup.py b/setup.py
+--- a/setup.py	2022-09-08 15:10:35.000000000 +0200
++++ b/setup.py	2025-04-24 17:22:16.961354597 +0200
+@@ -21,7 +21,7 @@
+     long_description_content_type='text/markdown',
+     url='https://github.com/emcek/pyerge',
+     author='Michal Plichta',
+-    license='MIT License',
++    license='MIT',
+     entry_points={'console_scripts': ['pye = pyerge.cli:run_parser',
+                                       'e_sync = pyerge.tools:e_sync',
+                                       'e_dl = pyerge.tools:e_dl',
+@@ -38,7 +38,6 @@
+     classifiers=['Development Status :: 5 - Production/Stable',
+                  'Environment :: Console',
+                  'Environment :: X11 Applications',
+-                 'License :: OSI Approved :: MIT License',
+                  'Operating System :: POSIX',
+                  'Operating System :: Unix',
+                  'Programming Language :: Python :: 3',
