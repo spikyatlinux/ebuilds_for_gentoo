@@ -2,6 +2,9 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  02 May 2025; SpikyAtLinux <spikyatlinux@gmail.com> quickemu-4.9.7.ebuild:
+  Updated python to 3.13
+
 *quickemu-4.9.7 (04 Jan 2025)
 
   04 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> -quickemu-4.9.6.ebuild,

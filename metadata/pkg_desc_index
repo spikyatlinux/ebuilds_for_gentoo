@@ -1,5 +1,5 @@
 app-admin/cmd-polkit 0.3.0: Command-line Polkit tool
-app-admin/hardinfo2 2.2.7: System Information and Benchmark for Linux Systems
+app-admin/hardinfo2 2.2.10: System Information and Benchmark for Linux Systems
 app-backup/timeshift 24.06.6: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
