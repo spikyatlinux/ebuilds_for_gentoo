@@ -2,6 +2,9 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  04 Jun 2025; SpikyAtLinux <spikyatlinux@gmail.com> quickemu-4.9.7.ebuild:
+  Updated PYTHON_COMPAT line to include python-3.14
+
   02 May 2025; SpikyAtLinux <spikyatlinux@gmail.com> quickemu-4.9.7.ebuild:
   Updated python to 3.13
 

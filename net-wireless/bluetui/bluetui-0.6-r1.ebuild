@@ -189,7 +189,7 @@ SRC_URI="
 # use cargo-license for a more accurate license picture
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
