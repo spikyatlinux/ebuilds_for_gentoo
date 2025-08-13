@@ -23,7 +23,7 @@ media-libs/giflib
 "
 
 DEPEND="${RDEPEND}
-        dev-build/automake:1.16
+        dev-build/automake:1.17
         dev-build/autoconf:2.1
         dev-build/libtool:2"
 

@@ -2,6 +2,11 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*gdu-5.31.0 (08 Jun 2025)
+
+  08 Jun 2025; SpikyAtLinux <spikyatlinux@gmail.com> +gdu-5.31.0.ebuild:
+  Updated sys-fs/gdu to v5.31.0
+
   24 Mar 2025; SpikyAtLinux <spikyatlinux@gmail.com> -gdu-5.29.0.ebuild:
   Some cleanup
 
