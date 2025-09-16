@@ -1,0 +1,11 @@
+# ChangeLog for app-misc/yazi
+# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+*yazi-9999 (10 Sep 2025)
+*yazi-25.5.31 (10 Sep 2025)
+
+  10 Sep 2025; SpikyAtLinux <spikyatlinux@gmail.com> +metadata.xml,
+  +yazi-25.5.31.ebuild, +yazi-9999.ebuild:
+  Little cleanups
+
