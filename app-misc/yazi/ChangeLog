@@ -2,6 +2,10 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  20 Sep 2025; SpikyAtLinux <spikyatlinux@gmail.com> yazi-25.5.31.ebuild,
+  yazi-9999.ebuild:
+  Some little updates
+
 *yazi-9999 (10 Sep 2025)
 *yazi-25.5.31 (10 Sep 2025)
 
