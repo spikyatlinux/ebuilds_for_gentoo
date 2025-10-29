@@ -8,11 +8,11 @@ MY_PN="${PN%}"
 inherit desktop systemd
 
 DESCRIPTION="Official Jameica Online Banking Software, written in Java"
-HOMEPAGE="https://willuhn.de/"
-SRC_URI="x86? ( https://www.willuhn.de/products/${PN}/releases/current/${PN}/${PN}-linux-${PV}.zip
+HOMEPAGE="https://jameica.org/"
+SRC_URI="x86? ( https://jameica.org/products/${PN}/releases/current/${PN}/${PN}-${PV}.zip
 			-> ${P}.zip )
 		 amd64? (
-		 https://www.willuhn.de/products/${PN}/releases/current/${PN}/${PN}-linux64-${PV}.zip
+		 https://jameica.org/products/${PN}/releases/current/${PN}/${PN}-linux64-${PV}.zip
 			-> ${P}-linux64.zip )"
 
 # Jameica: GPL-2

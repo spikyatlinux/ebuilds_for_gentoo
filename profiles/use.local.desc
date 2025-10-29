@@ -3,3 +3,4 @@
 # * generated automatically using egencache *
 
 app-misc/yazi:cli - Install CLI Data Distribution Service
+kde-misc/darkly:qt5 - Enable building for QT5

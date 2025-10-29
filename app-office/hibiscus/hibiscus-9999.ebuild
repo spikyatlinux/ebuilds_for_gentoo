@@ -5,7 +5,7 @@ EAPI="7"
 
 inherit flag-o-matic toolchain-funcs
 
-MY_PV="2.11.0-nightly"
+MY_PV="2.13.0-nightly"
 
 DESCRIPTION="Official prebuilt nightly HBCI Plugin for Jameica"
 HOMEPAGE="https://www.willuhn.de/products/hibiscus/"

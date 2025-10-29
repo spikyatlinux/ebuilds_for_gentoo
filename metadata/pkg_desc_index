@@ -4,20 +4,21 @@ app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot
 app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-misc/yazi 25.5.31 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
-app-office/hibiscus 2.10.27 9999: Official prebuilt nightly HBCI Plugin for Jameica
-app-office/jameica-syntax 2.10.0: Jameica plugin SynTAX ist eine freie Finanzbuchhaltung für Selbständige nach SKR03/04
+app-office/hibiscus 2.12.0 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-portage/find_cruft 5.2: find cruft files not managed by portage
 app-portage/portconf 1.6.9-r2: /etc/portage cleaner
 app-portage/pyerge 0.7.2-r1: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.
-dev-java/jameica 2.10.4-r1 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
+dev-java/jameica 2.12.0 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
 dev-php/pdlib 1.1.0-r4: PHP bindings for dlib
 dev-php/pecl-mcrypt 1.0.7-r1: Bindings for the libmcrypt library
 dev-python/cloudscraper 1.2.69-r2: A Python module to bypass Cloudflare's anti-bot page
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-util/android-tools-google 35.0.2: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.11.1: A tool for reengineering 3rd party, closed, binary Android apps
+kde-misc/darkly 0.5.23 9999: A modern style for qt applications
+media-fonts/material-design-icons 7.4.47: mdi/font Dist for Material Design Icons.
 media-fonts/nerd-fonts 3.3.0-r1: Collection of fonts that are patched to include a high number of glyphs (icons).
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-misc/networkmanager-dmenu 2.3.1-r1: Control networkmanager using DMENU
@@ -28,4 +29,5 @@ sys-fs/gdu 5.30.1-r1 5.31.0: Disk usage analyzer with console interface written 
 x11-misc/jgmenu 4.5.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking.
 x11-misc/pywal 3.3.0-r1: Generate and change color-schemes on the fly
 x11-misc/rofi-emoji 4.1.0: Emoji selector plugin for Rofi
+x11-misc/slstatus 1.1: Status monitor for window managers that use WM_NAME/stdin to fill the status bar
 x11-wm/wmutils 1.7: Set of window manipulation tools

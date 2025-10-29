@@ -3,14 +3,13 @@
 
 EAPI="7"
 
-MY_PV="2.11.0"
+MY_PV="2.13.0"
 
 DESCRIPTION="Official prebuilt nightly Jameica Online Banking Software, written in Java"
 HOMEPAGE="https://www.jameica.org"
-SRC_URI="x86? ( https://www.willuhn.de/products/${PN}/releases/nightly/${PN}-linux-${MY_PV}-nightly.zip
-			-> ${P}.zip )
+SRC_URI="x86? ( https://jameica.org/products/${PN}/releases/nightly/${PN}-${MY_PV}-nightly.zip -> ${P}.zip )
 		 amd64? (
-		 https://www.willuhn.de/products/${PN}/releases/nightly/${PN}-linux64-${MY_PV}-nightly.zip -> ${P}-linux64.zip )"
+		 https://jameica.org/products/${PN}/releases/nightly/${PN}-linux64-${MY_PV}-nightly.zip -> ${P}-linux64.zip )"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
