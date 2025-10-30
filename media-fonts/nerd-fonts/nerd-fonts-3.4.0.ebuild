@@ -17,9 +17,11 @@ KEYWORDS="amd64 x86"
 FONTS=(
 	0xProto
 	3270
+	AdwaitaMono
 	Agave
 	AnonymousPro
 	Arimo
+	AtkinsonHyperlegibleMono
 	AurulentSansMono
 	BigBlueTerminal
 	BitstreamVeraSansMono
