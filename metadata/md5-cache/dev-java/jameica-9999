@@ -6,5 +6,5 @@ HOMEPAGE=https://www.jameica.org
 LICENSE=GPL-3
 RDEPEND=app-arch/unzip >=virtual/jre-1.6.0 =app-office/hibiscus-9999
 SLOT=0
-SRC_URI=x86? ( https://www.willuhn.de/products/jameica/releases/nightly/jameica-linux-2.11.0-nightly.zip -> jameica-9999.zip ) amd64? ( https://www.willuhn.de/products/jameica/releases/nightly/jameica-linux64-2.11.0-nightly.zip -> jameica-9999-linux64.zip )
-_md5_=e29ee14b51cb7cafab058317302fac4d
+SRC_URI=x86? ( https://jameica.org/products/jameica/releases/nightly/jameica-2.13.0-nightly.zip -> jameica-9999.zip ) amd64? ( https://jameica.org/products/jameica/releases/nightly/jameica-linux64-2.13.0-nightly.zip -> jameica-9999-linux64.zip )
+_md5_=22c2d09cfdc7b8b82e2a9b394e10821b
