@@ -28,7 +28,7 @@ RDEPEND="${DEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}/fix-grep-1.6.9-r2.patch"
+	"${FILESDIR}/fix-errors-1.6.9-r3.patch"
 )
 
 src_install() {

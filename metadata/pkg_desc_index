@@ -1,12 +1,12 @@
 app-admin/cmd-polkit 0.3.0: Command-line Polkit tool
 app-backup/timeshift 25.07.7: A system restore utility for Linux
-app-backup/timeshift-autosnap 0.9-r1: Automatically creates a timeshift-snapshot when executed
+app-backup/timeshift-autosnap 0.9-r1 0.10.0: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
 app-misc/yazi 25.5.31 9999: Blazing fast terminal file manager written in Rust, based on async I/O.
 app-office/hibiscus 2.12.1 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-portage/find_cruft 5.2: find cruft files not managed by portage
-app-portage/portconf 1.6.9-r2: /etc/portage cleaner
+app-portage/portconf 1.6.9-r2 1.6.9-r3: /etc/portage cleaner
 app-portage/pyerge 0.7.2-r1: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it.
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 app-text/ascii-design 1.1.1-r2: Ascii Design is an ascii-art program based on figlet engine.

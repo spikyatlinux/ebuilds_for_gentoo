@@ -1,0 +1,987 @@
+--- a/portconf	2025-11-28 17:30:52.504350016 +0100
++++ b/portconf	2025-11-28 17:31:56.311870671 +0100
+@@ -1,5 +1,5 @@
+ #!/bin/bash
+-# Copyright megabaks
++# Copyright megabaks (Modified by SpikyAtLinux)
+ # Distributed under the terms of the GNU General Public License v3 or later
+ ############################################################################
+ ################ portage functions #########################################
+
+--- a/portconf	2023-10-09 18:06:28.048896751 +0200
++++ b/portconf	2023-10-09 18:17:05.295858768 +0200
+@@ -37,8 +37,8 @@
+ sort_passed_uses(){
+ 	for opt in ${1};do
+ 		opt="${opt//\*/\\*}"
+-		uses="$(tr "[:space:]" $'\n' <<< ${uses} | grep -v -e "^${opt#-}$" -e "^\-${opt#-}$" | tr $'\n' " ")"
+-		uses+=" $(tr "[:space:]" $'\n' <<< ${1} | grep -e "^${opt#-}$" -e "^\-${opt#-}$" | tail -n1)"
++		uses="$(tr "[:space:]" $'\n' <<< ${uses} | grep -v -e "^${opt#-}$" -e "^-${opt#-}$" | tr $'\n' " ")"
++		uses+=" $(tr "[:space:]" $'\n' <<< ${1} | grep -e "^${opt#-}$" -e "^-${opt#-}$" | tail -n1)"
+ 		unset opt
+ 	done
+ 	echo ${uses}
+@@ -811,7 +811,7 @@
+ 	set -f
+ 	FULL="${PROFILE} ${MAKE_USES}"
+ 	for opt in ${FULL};do
+-		GLOBAL+=" $(echo ${FULL} | tr "[:space:]" $'\n' | grep -e "^${opt#-}$" -e "^\-${opt#-}$" | tail -n1)"
++		GLOBAL+=" $(echo ${FULL} | tr "[:space:]" $'\n' | grep -e "^${opt#-}$" -e "^-${opt#-}$" | tail -n1)"
+ 	done
+ 	GLOBAL="$(echo ${GLOBAL} | tr "[:space:]" $'\n' | sort -u)"
+ ############################################################################
+@@ -883,7 +883,7 @@
+ 
+ 				if grep -q "^${use}$" <<< "${GLOBAL}" && grep -q "^${use}$" <<< "${LOCAL}";then
+ 					global_use="${global_use} ${use}"
+-				elif grep -q "^\-${use}$" <<< "${GLOBAL}" && grep -q "^\-${use}$" <<< "${LOCAL}";then
++				elif grep -q "^-${use}$" <<< "${GLOBAL}" && grep -q "^-${use}$" <<< "${LOCAL}";then
+ 					global_use="${global_use} -${use}"
+ 					incorrect_use="${incorrect_use// ${use}/}"
+ 				fi
+@@ -1126,7 +1126,7 @@
+ 			if grep -q "^${flag}$" <<< "${USE}" && grep -q "^${flag}$" <<< "${PROFILE}";then
+ 				echo -e "Twice defined: ${red}${use}${restore}"
+ 				sed -e "s|[^[:punct:]]\<${flag}\>||g" -i ${tmp_file}
+-			elif grep -q "^\-${flag}$" <<< "${USE}" && grep -q "^\-${flag}$" <<< "${PROFILE}";then
++			elif grep -q "^-${flag}$" <<< "${USE}" && grep -q "^-${flag}$" <<< "${PROFILE}";then
+ 				echo -e "Twice defined: ${red}-${use}${restore}"
+ 				sed -e "s|[^[:punct:]]\-\<${flag}\>||g" -i ${tmp_file}
+ 			fi
+@@ -1811,11 +1811,11 @@
+ --full
+ -f"
+ opts=" ${PORTCONF_DEFAULT_OPTS} ${@}"
+-grep -q -e " \--yes\>" -e " \-y\>" <<< " ${opts}" && yes="1"
+-grep -q -e " \--pretend\>" -e " \-p\>" <<< " ${opts}" && PRETEND="1"
++grep -q -e " --yes\>" -e " -y\>" <<< " ${opts}" && yes="1"
++grep -q -e " --pretend\>" -e " -p\>" <<< " ${opts}" && PRETEND="1"
+ opts="$(sed -e 's| --yes\>||g;s| -y\>||g' -e 's| --pretend\>||g;s| -p\>||g' <<< " ${opts}")"
+ if grep -q "${eix_dep_keys//\-/\\-}" <<< "${opts}";then
+-	if grep -q -e " \--regen-cache\>" -e " \-rc\>" <<< " ${opts}";then
++	if grep -q -e " --regen-cache\>" -e " -rc\>" <<< " ${opts}";then
+ 		eix_check
+ 		opts="$(sed -e 's| --regen-cache\>||g;s| -rc\>||g' -e '/^[ \t]$/d' <<< " ${opts}")"
+ 	else
+--- a/portconf	2025-11-28 17:23:26.470689144 +0100
++++ b/portconf	2025-11-28 17:17:52.263919882 +0100
+@@ -28,11 +28,52 @@
+ ################ ignore ####################################################
+ [[ -n "${IGNORE_CATEGORY}" ]] && IGNORE_CATEGORY="$(sed -e '/^$/d' -e 's/$/\/.*/g' <<< "`tr "[:space:]" $'\n' <<< "${IGNORE_CATEGORY}"`")"
+ [[ -n "${IGNORE_PN}" ]] && IGNORE_PN="$(sed -e '/^$/d' -e 's/^/.*\//g' <<< "`tr "[:space:]" $'\n' <<< "${IGNORE_PN}"`")"
++
++# Enhanced ignore patterns for directories and files - use config values or defaults
++IGNORE_DIRS="${IGNORE_DIRS:-"package.env env binrepos.conf gnupg"}"
++IGNORE_FILE_PATTERNS="${IGNORE_FILE_PATTERNS:-"zzz_.*"}"
+ IGNORE="${IGNORE_CATEGORY}
+-${IGNORE_PN}"
++${IGNORE_PN}
++${IGNORE_DIRS}
++${IGNORE_FILE_PATTERNS}"
+ IGNORE="$(sed -e '/^$/d' <<< "${IGNORE}")"
+ IGNORE="${IGNORE:-'Hello, LOR! :3'}"
+ ############################################################################
++################ ignore helper functions ###################################
++should_ignore_path() {
++    local path="$1"
++    
++    # Check if path contains any ignored directory
++    for dir in ${IGNORE_DIRS}; do
++        if [[ "${path}" == *"${dir}"* ]] || [[ "${path}" == *"${dir}/"* ]]; then
++            return 0
++        fi
++    done
++    
++    # Check if filename matches ignore patterns
++    local filename=$(basename "${path}")
++    for pattern in ${IGNORE_FILE_PATTERNS}; do
++        if [[ "${filename}" =~ ${pattern} ]]; then
++            return 0
++        fi
++    done
++    
++    return 1
++}
++
++filter_ignored_paths() {
++	local paths="$1"
++	local filtered=""
++	
++	for path in ${paths}; do
++		if ! should_ignore_path "${path}"; then
++			filtered+=" ${path}"
++		fi
++	done
++	
++	echo "${filtered}"
++}
++############################################################################
+ ################ sort_passed_uses ##########################################
+ sort_passed_uses(){
+ 	for opt in ${1};do
+@@ -368,6 +409,9 @@
+ ################ sort_packages #############################################
+ sort_uniq_files(){
+ 	for package in `find ${PORT_ETC}/ -type f \! -name '*~' \! -name '*.bak' | grep "/package\."`;do
++		# Skip ignored paths
++		should_ignore_path "${package}" && continue
++		
+ 		tmp_sort="$(mktemp)"
+ 		echo -e "${underline}Sorting${restore} ${contrast}${package#${PORT_ETC}/}${restore}"
+ 
+@@ -386,15 +430,23 @@
+ ############################################################################
+ ################ file or dir... ############################################
+ file_or_dir(){
+-	local founded
+-	for i in ${1};do
+-		founded+=" $(ls -d1 ${PORT_ETC}/${i} 2>/dev/null)"
+-	done
+-	if [[ -z "${founded}" ]];then
+-		echo -e "${underline}${2}${restore}${contrast}${PORT_ETC}/${1}${restore}: No such file or directory${restore}"
+-		eend 1 2>/dev/null
+-		return 1
+-	fi
++    local founded
++    for i in ${1}; do
++        # Skip ignored patterns
++        should_ignore_path "${PORT_ETC}/${i}" && continue
++        
++        # Check if the path exists before trying to list it
++        if [[ -e "${PORT_ETC}/${i}" ]]; then
++            founded+=" $(ls -d1 ${PORT_ETC}/${i} 2>/dev/null)"
++        fi
++    done
++    founded="$(filter_ignored_paths "${founded}")"
++    
++    if [[ -z "${founded}" ]]; then
++        echo -e "${underline}${2}${restore}${contrast}${PORT_ETC}/${1}${restore}: No such file or directory${restore}"
++        eend 1 2>/dev/null
++        return 1
++  	fi
+ 	for target in ${founded};do
+ 		if [[ -f "${target}" ]];then
+ 			file="${target}"
+@@ -408,6 +460,9 @@
+ 			fi
+ 		elif [[ -d "${target}" ]];then
+ 			for f in `find ${target} -type f \! -name '*~' \! -name '*.bak'`;do
++				# Skip ignored files within directories
++				should_ignore_path "${f}" && continue
++				
+ 				file="${f}"
+ 				if [[ -s ${file} ]];then
+ 					echo -e "${underline}${2}${restore} ${contrast}${file#${PORT_ETC}/}${restore}"
+@@ -666,6 +721,13 @@
+ 
+ force_not_installed(){
+ 	for package in `find ${PORT_ETC}/package* -type f \! -name '*~' \! -name '*.bak'`;do
++		# Skip package.env directory entirely
++		if echo "${package}" | grep -q "package\.env"; then
++			continue
++		fi
++		# Skip other ignored paths
++		should_ignore_path "${package}" && continue
++		
+ 		if [[ -s "${package}" && -n "$(grep -v "^#" < "${package}")" ]];then
+ 			tmp_package="$(mktemp)"
+ 			cp "${package}" "${tmp_package}"
+@@ -683,6 +745,7 @@
+ 	done
+ 
+ 	for x in `find ${PORT_ETC}/package* -type f`;do
++		should_ignore_path "${x}" && continue
+ 		if [[ ! -s "${x}" ]];then
+ 			echo -e "${underline}Empty file${restore} ${contrast}${x}${restore}"
+ 			remove_ask "${x}"
+@@ -745,7 +808,14 @@
+ ################ env not_installed #########################################
+ env_not_installed(){
+ 	echo -e "${underline}Looking not installed in${restore} ${contrast}${PORT_ETC}/env${restore}"
++	
++	# Skip if the directory matches ignore patterns
++	should_ignore_path "${PORT_ETC}/env" && return 0
++	
+ 	for x in "env" "env.d";do
++		# Skip ignored directories
++		should_ignore_path "${PORT_ETC}/${x}" && continue
++		
+ 		files="$(find ${PORT_ETC}/${x}/ -mindepth 2 -maxdepth 2 -type f \! -name '*~' \! -name '*.bak' 2>/dev/null| cut -d\/ -f5-)"
+ 		[[ -n "${IGNORE}" ]] && files="$(grep -v "${IGNORE}" <<< "${files}")"
+ 		dirs="$(find ${PORT_ETC}/${x}/ -type d 2>/dev/null)"
+@@ -808,171 +878,195 @@
+ ############################################################################
+ ################ incorrect uses ############################################
+ invalid_uses(){
+-	set -f
+-	FULL="${PROFILE} ${MAKE_USES}"
+-	for opt in ${FULL};do
+-		GLOBAL+=" $(echo ${FULL} | tr "[:space:]" $'\n' | grep -e "^${opt#-}$" -e "^-${opt#-}$" | tail -n1)"
+-	done
+-	GLOBAL="$(echo ${GLOBAL} | tr "[:space:]" $'\n' | sort -u)"
+-############################################################################
+-	check_uses(){
+-		echo -e "${underline}Checking use flags in${restore} ${contrast}${file#${PORT_ETC}/}${restore}:"
+-		##### eix env #####
+-		export OVERLAYS_LIST="no"
+-		export FORMAT='<availableversions:USEONLY>'
+-		export USEONLY=' <colliuse>'
+-		#### just count
+-		tput sc
+-		tput civis
+-		while read category pn ver slot;do
+-			tput el
+-			tput el1
+-			echo -ne "["; printf "% ${chars}d" $((count--));echo -ne " ]" "atoms left" 2>/dev/null
+-			tput rc
+-			prepare(){
+-				while read string;do
+-					struse="${string#${category}/${pn}}"
+-					struse="$(tr "[:space:]" $'\n' <<< ${struse})"
+-					usefxd="$(sed -e "s|^${trash#-}$||" -e "s|^\-${trash#-}$||" -e '/^$/d' <<< "${struse}")"
+-					usefxd="$(tr $'\n' " " <<< "${usefxd}")"
+-					usefxd="$(sed -e 's| - | |g' -e 's/[ -]*$//' <<< ${usefxd})"
+-					strfxd="${category}/${pn} ${usefxd}"
+-					sed -e "s|^${category}/${pn}[[:space:]].*${trash#-}.*|$strfxd|" -i ${tmp_file} 2>/dev/null
+-					eend $? 2>/dev/null
+-				done <<< "${strings}"
+-			}
+-
+-			prepare_similar(){
+-				while read string;do
+-					struse="${string#${category}/${pn}}"
+-					struse="$(tr "[:space:]" $'\n' <<< ${struse})"
+-					usefxd="$(sed -e "s|^${use#-}$|${similar_use}|" -e "s|^\-${use#-}$|\-${similar_use}|" -e '/^$/d' <<< "${struse}")"
+-					usefxd="$(tr $'\n' " " <<< "${usefxd}")"
+-					usefxd="$(sed -e 's| - | |g' -e 's/[ -]*$//' <<< ${usefxd})"
+-					strfxd="${category}/${pn} ${usefxd}"
+-					sed -e "s|^${category}/${pn}[[:space:]].*${use#-}.*|$strfxd|" -i ${tmp_file} 2>/dev/null
+-					eend $? 2>/dev/null
+-				done <<< "${strings}"
+-			}
+-
+-			ALL_USE=" $(eix -e "${category}/${pn}")" || continue
+-			ALL_USE="$(sed -e 's| +| |g;s| -| |g;s|(+)||g;s|(-)||g' <<< "${ALL_USE}" | tr "[:space:]" $'\n' | sort -u | sed -e '/^$/d')"
+-			LOCAL="$(grep "\<${category}/${pn}\> " "${file}" | cut -d" " -f2- | sed -e "s|#.*||g" | tr "[:space:]" $'\n' | sort -u)"
+-			USES="$(sed -e 's|^-||g' <<< "${LOCAL}")"
+-			for use in ${USES};do
+-				if ! grep -q "^${use}$" <<< "${ALL_USE}" && [[ "${use}" != "*" ]];then
+-					for agrep_opt in 1 2 3 B;do
+-						for use_opt in "${use}" "^${use}" "${use}$" "^${use}$";do
+-							similar_use="$(agrep -${agrep_opt} "${use_opt}" 2>/dev/null <<< "${ALL_USE}")"
+-							[[ -n "${similar_use}" ]] && (( $(wc -l <<< "${similar_use}") '==' 1 )) && break
+-						done
+-						[[ -n "${similar_use}" ]] && (( $(wc -l <<< "${similar_use}") '==' 1 )) && break
+-						[[ -z "${similar_use}" ]] || (( $(wc -l <<< "${similar_use}") '>' 1 )) && similar_use=""
+-					done
+-					if [[ -z "${similar_use}" ]];then
+-						grep -q " ${use}\>" <<< "${incorrect_use}" || incorrect_use="${incorrect_use} ${use}"
+-					else
+-						strings="$(grep "^${category}/${pn}[[:space:]].*\<${use}\>" ${tmp_file})"
+-						echo -e "${category}/${pn}: ${red}${use} ---> ${green}${similar_use}${restore}"
+-						prepare_similar;
+-						incorrect_use="${incorrect_use// ${similar_use}/}"
+-					fi
+-				else
+-					incorrect_use="${incorrect_use// ${use}/}"
+-				fi
+-
+-				if grep -q "^${use}$" <<< "${GLOBAL}" && grep -q "^${use}$" <<< "${LOCAL}";then
+-					global_use="${global_use} ${use}"
+-				elif grep -q "^-${use}$" <<< "${GLOBAL}" && grep -q "^-${use}$" <<< "${LOCAL}";then
+-					global_use="${global_use} -${use}"
+-					incorrect_use="${incorrect_use// ${use}/}"
+-				fi
+-			done
+-
+-			incorrect_use="$(echo ${incorrect_use} | tr "[:space:]" $'\n' | sed -e 's|  | |g' -e '/^ $/d' -e '/^$/d' | sort -u)"
+-			global_use="$(echo ${global_use} | tr "[:space:]" $'\n' | sed -e 's|  | |g' -e '/^ $/d' -e '/^$/d' | sort -u)"
+-			if [[ -n "${incorrect_use}" ]];then
+-				while read trash;do
+-					echo -e "Invalid use: ${green}${category}/${pn}${restore}: ${red}${trash}${restore}"
+-					strings="$(grep "^${category}/${pn}[[:space:]].*\<${trash}\>" ${tmp_file})"
+-					prepare;
+-				done <<< "${incorrect_use}"
+-			fi
+-			if [[ -n "${global_use}" ]];then
+-				while read trash;do
+-					echo -e "Global  use: ${green}${category}/${pn}${restore}: ${red}${trash}${restore}"
+-					strings="$(grep "^${category}/${pn}[[:space:]].*\<${trash#-}\>" ${tmp_file})"
+-					prepare;
+-				done <<< "${global_use}"
+-			fi
+-			unset ALL_USE LOCAL USES incorrect_use global_use use
+-		done <<< "`[[ -n "${atoms}" ]] && echo -e "${atoms}"`"
+-		while read atom opt;do
+-			if [[ -n "${atom}" ]] && [[ -z "${opt}" ]];then
+-				echo -e "Removing atom: ${green}${atom}${restore}"
+-				sed -e "s|^${atom} *$||" -e '/^$/d' -i "${tmp_file}" 2>/dev/null
+-				eend $? 2>/dev/null
+-			fi
+-		done <<< "$([[ -n "${IGNORE}" ]] && grep -v "${IGNORE}" < "${file}" || cat "${file}")"
+-		while read atom opt;do
+-			if [[ -n "${atom}" ]] && [[ -z "${opt}" ]];then
+-				echo -e "Removing atom: ${green}${atom}${restore}"
+-				sed -e "s|^${atom} *$||" -e '/^$/d' -i "${tmp_file}" 2>/dev/null
+-				eend $? 2>/dev/null
+-			fi
+-		done <<< "$([[ -n "${IGNORE}" ]] && grep -v "${IGNORE}" < "${tmp_file}" || cat "${tmp_file}")"
+-		eend $? 2>/dev/null
+-		unset FORMAT USEONLY
+-	}
+-	if [[ -f "${PORT_ETC}/package.use" ]];then
+-		file="${PORT_ETC}/package.use"
+-		tmp_file="$(mktemp)"
+-		cp "${file}" "${tmp_file}"
+-		if [[ -n "${IGNORE}" ]];then
+-			content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g' | grep -v "${IGNORE}")"
+-			[[ -n "${content}" ]] && atoms="$(qatom ${content})"
+-		else
+-			content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g')"
+-			[[ -n "${content}" ]] && atoms="$(qatom ${content})"
+-		fi
+-		count="$(wc -l <<< "${atoms}")"
+-		((count--))
+-		chars="$(wc -m <<< "${count}")"
+-		check_uses;
+-		tput el;
+-		tput cnorm;
+-		diff_ask "${file}" "${tmp_file}"
+-		[[ ! -s "${file}" ]] && remove_ask "${file}"
+-	elif [[ -d "${PORT_ETC}/package.use" ]];then
+-		for f in `find ${PORT_ETC}/package.use/ -type f \! -name '*~' \! -name '*.bak'`;do
+-			if [[ -s "${f}" ]];then
+-				file="${f}"
+-				tmp_file="$(mktemp)"
+-				cp "${file}" "${tmp_file}"
+-				if [[ -n "${IGNORE}" ]];then
+-					content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g' | grep -v "${IGNORE}")"
+-					[[ -n "${content}" ]] && atoms="$(qatom ${content})"
+-				else
+-					content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g')"
+-					[[ -n "${content}" ]] && atoms="$(qatom ${content})"
+-				fi
+-				count="$(wc -l <<< "${atoms}")"
+-				((count--))
+-				chars="$(wc -m <<< "${count}")"
+-				check_uses;
+-				tput cnorm
+-				diff_ask "${file}" "${tmp_file}"
+-				[[ ! -s "${file}" ]] && remove_ask "${file}"
+-			else
+-				echo -e "${underline}Removing empty file${restore} ${contrast}${f}${restore}"
+-				rm ${f} 2>/dev/null
+-				eend $? 2>/dev/null
+-				continue
+-			fi
+-		done
+-	fi
+-	tput cnorm
+-	set +f
++    set -f
++    FULL="${PROFILE} ${MAKE_USES}"
++    for opt in ${FULL}; do
++        GLOBAL+=" $(echo ${FULL} | tr "[:space:]" $'\n' | grep -e "^${opt#-}$" -e "^-${opt#-}$" | tail -n1)"
++    done
++    GLOBAL="$(echo ${GLOBAL} | tr "[:space:]" $'\n' | sort -u)"
++############################################################################
++    check_uses(){
++        echo -e "${underline}Checking use flags in${restore} ${contrast}${file#${PORT_ETC}/}${restore}:"
++        ##### eix env #####
++        export OVERLAYS_LIST="no"
++        export FORMAT='<availableversions:USEONLY>'
++        export USEONLY=' <colliuse>'
++        #### just count
++        tput sc
++        tput civis
++        while read category pn ver slot; do
++            tput el
++            tput el1
++            echo -ne "["; printf "% ${chars}d" $((count--)); echo -ne " ]" "atoms left" 2>/dev/null
++            tput rc
++            
++            # Skip if category or package name is null
++            [[ "${category}" == "(null)" || "${pn}" == "(null)" ]] && continue
++
++            prepare(){
++                while read string; do
++                    struse="${string#${category}/${pn}}"
++                    struse="$(tr "[:space:]" $'\n' <<< ${struse})"
++                    usefxd="$(sed -e "s|^${trash#-}$||" -e "s|^\-${trash#-}$||" -e '/^$/d' <<< "${struse}")"
++                    usefxd="$(tr $'\n' " " <<< "${usefxd}")"
++                    usefxd="$(sed -e 's| - | |g' -e 's/[ -]*$//' <<< ${usefxd})"
++                    strfxd="${category}/${pn} ${usefxd}"
++                    sed -e "s|^${category}/${pn}[[:space:]].*${trash#-}.*|$strfxd|" -i ${tmp_file} 2>/dev/null
++                    eend $? 2>/dev/null
++                done <<< "${strings}"
++            }
++
++            prepare_similar(){
++                while read string; do
++                    struse="${string#${category}/${pn}}"
++                    struse="$(tr "[:space:]" $'\n' <<< ${struse})"
++                    usefxd="$(sed -e "s|^${use#-}$|${similar_use}|" -e "s|^\-${use#-}$|\-${similar_use}|" -e '/^$/d' <<< "${struse}")"
++                    usefxd="$(tr $'\n' " " <<< "${usefxd}")"
++                    usefxd="$(sed -e 's| - | |g' -e 's/[ -]*$//' <<< ${usefxd})"
++                    strfxd="${category}/${pn} ${usefxd}"
++                    sed -e "s|^${category}/${pn}[[:space:]].*${use#-}.*|$strfxd|" -i ${tmp_file} 2>/dev/null
++                    eend $? 2>/dev/null
++                done <<< "${strings}"
++            }
++
++            ALL_USE=" $(eix -e "${category}/${pn}")" || continue
++            ALL_USE="$(sed -e 's| +| |g;s| -| |g;s|(+)||g;s|(-)||g' <<< "${ALL_USE}" | tr "[:space:]" $'\n' | sort -u | sed -e '/^$/d')"
++            LOCAL="$(grep "\<${category}/${pn}\> " "${file}" | cut -d" " -f2- | sed -e "s|#.*||g" | tr "[:space:]" $'\n' | sort -u)"
++            USES="$(sed -e 's|^-||g' <<< "${LOCAL}")"
++            
++            for use in ${USES}; do
++                if ! grep -q "^${use}$" <<< "${ALL_USE}" && [[ "${use}" != "*" ]]; then
++                    for agrep_opt in 1 2 3 B; do
++                        for use_opt in "${use}" "^${use}" "${use}$" "^${use}$"; do
++                            similar_use="$(agrep -${agrep_opt} "${use_opt}" 2>/dev/null <<< "${ALL_USE}")"
++                            [[ -n "${similar_use}" ]] && (( $(wc -l <<< "${similar_use}") '==' 1 )) && break
++                        done
++                        [[ -n "${similar_use}" ]] && (( $(wc -l <<< "${similar_use}") '==' 1 )) && break
++                        [[ -z "${similar_use}" ]] || (( $(wc -l <<< "${similar_use}") '>' 1 )) && similar_use=""
++                    done
++                    if [[ -z "${similar_use}" ]]; then
++                        grep -q " ${use}\>" <<< "${incorrect_use}" || incorrect_use="${incorrect_use} ${use}"
++                    else
++                        strings="$(grep "^${category}/${pn}[[:space:]].*\<${use}\>" ${tmp_file})"
++                        echo -e "${category}/${pn}: ${red}${use} ---> ${green}${similar_use}${restore}"
++                        prepare_similar;
++                        incorrect_use="${incorrect_use// ${similar_use}/}"
++                    fi
++                else
++                    incorrect_use="${incorrect_use// ${use}/}"
++                fi
++
++                # FIXED: Only flag as "global use" if it conflicts with make.conf, not profile
++                # Profile USE flags can be overridden per-package, so don't remove them
++                if grep -q "^${use}$" <<< "${MAKE_USES}" && grep -q "^${use}$" <<< "${LOCAL}"; then
++                    echo -e "Make.conf conflict: ${green}${category}/${pn}${restore}: ${red}${use}${restore} (also in make.conf)"
++                    global_use="${global_use} ${use}"
++                elif grep -q "^-${use}$" <<< "${MAKE_USES}" && grep -q "^-${use}$" <<< "${LOCAL}"; then
++                    echo -e "Make.conf conflict: ${green}${category}/${pn}${restore}: ${red}-${use}${restore} (disabled in make.conf)"
++                    global_use="${global_use} -${use}"
++                    incorrect_use="${incorrect_use// ${use}/}"
++                fi
++            done
++
++            incorrect_use="$(echo ${incorrect_use} | tr "[:space:]" $'\n' | sed -e 's|  | |g' -e '/^ $/d' -e '/^$/d' | sort -u)"
++            global_use="$(echo ${global_use} | tr "[:space:]" $'\n' | sed -e 's|  | |g' -e '/^ $/d' -e '/^$/d' | sort -u)"
++            
++            if [[ -n "${incorrect_use}" ]]; then
++                while read trash; do
++                    echo -e "Invalid use: ${green}${category}/${pn}${restore}: ${red}${trash}${restore}"
++                    strings="$(grep "^${category}/${pn}[[:space:]].*\<${trash}\>" ${tmp_file})"
++                    prepare;
++                done <<< "${incorrect_use}"
++            fi
++            
++            # FIXED: Only remove global uses that conflict with make.conf (not profile)
++            if [[ -n "${global_use}" ]]; then
++                while read trash; do
++                    # Only remove if it's a real conflict (both enabled or both disabled)
++                    if [[ "${trash}" != "-"* ]] && grep -q "^${trash}$" <<< "${MAKE_USES}"; then
++                        echo -e "Removing make.conf duplicate: ${green}${category}/${pn}${restore}: ${red}${trash}${restore}"
++                        strings="$(grep "^${category}/${pn}[[:space:]].*\<${trash#-}\>" ${tmp_file})"
++                        prepare;
++                    elif [[ "${trash}" == "-"* ]] && grep -q "^-${trash#-}$" <<< "${MAKE_USES}"; then
++                        echo -e "Removing make.conf duplicate: ${green}${category}/${pn}${restore}: ${red}${trash}${restore}"
++                        strings="$(grep "^${category}/${pn}[[:space:]].*\<${trash#-}\>" ${tmp_file})"
++                        prepare;
++                    fi
++                done <<< "${global_use}"
++            fi
++            
++            unset ALL_USE LOCAL USES incorrect_use global_use use
++        done <<< "`[[ -n "${atoms}" ]] && echo -e "${atoms}"`"
++        
++        while read atom opt; do
++            if [[ -n "${atom}" ]] && [[ -z "${opt}" ]]; then
++                echo -e "Removing atom: ${green}${atom}${restore}"
++                sed -e "s|^${atom} *$||" -e '/^$/d' -i "${tmp_file}" 2>/dev/null
++                eend $? 2>/dev/null
++            fi
++        done <<< "$([[ -n "${IGNORE}" ]] && grep -v "${IGNORE}" < "${file}" || cat "${file}")"
++        
++        while read atom opt; do
++            if [[ -n "${atom}" ]] && [[ -z "${opt}" ]]; then
++                echo -e "Removing atom: ${green}${atom}${restore}"
++                sed -e "s|^${atom} *$||" -e '/^$/d' -i "${tmp_file}" 2>/dev/null
++                eend $? 2>/dev/null
++            fi
++        done <<< "$([[ -n "${IGNORE}" ]] && grep -v "${IGNORE}" < "${tmp_file}" || cat "${tmp_file}")"
++        
++        eend $? 2>/dev/null
++        unset FORMAT USEONLY
++    }
++    
++    if [[ -f "${PORT_ETC}/package.use" ]]; then
++        file="${PORT_ETC}/package.use"
++        tmp_file="$(mktemp)"
++        cp "${file}" "${tmp_file}"
++        if [[ -n "${IGNORE}" ]]; then
++            content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g' | grep -v "${IGNORE}")"
++            [[ -n "${content}" ]] && atoms="$(qatom ${content})"
++        else
++            content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g')"
++            [[ -n "${content}" ]] && atoms="$(qatom ${content})"
++        fi
++        count="$(wc -l <<< "${atoms}")"
++        ((count--))
++        chars="$(wc -m <<< "${count}")"
++        check_uses;
++        tput el;
++        tput cnorm;
++        diff_ask "${file}" "${tmp_file}"
++        [[ ! -s "${file}" ]] && remove_ask "${file}"
++    elif [[ -d "${PORT_ETC}/package.use" ]]; then
++        for f in `find ${PORT_ETC}/package.use/ -type f \! -name '*~' \! -name '*.bak'`; do
++            if [[ -s "${f}" ]]; then
++                file="${f}"
++                tmp_file="$(mktemp)"
++                cp "${file}" "${tmp_file}"
++                if [[ -n "${IGNORE}" ]]; then
++                    content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g' | grep -v "${IGNORE}")"
++                    [[ -n "${content}" ]] && atoms="$(qatom ${content})"
++                else
++                    content="$(awk '{print $1}' ${file} | tr -d "<>=~" | sed -e 's|^#.*||g')"
++                    [[ -n "${content}" ]] && atoms="$(qatom ${content})"
++                fi
++                count="$(wc -l <<< "${atoms}")"
++                ((count--))
++                chars="$(wc -m <<< "${count}")"
++                check_uses;
++                tput cnorm
++                diff_ask "${file}" "${tmp_file}"
++                [[ ! -s "${file}" ]] && remove_ask "${file}"
++            else
++                echo -e "${underline}Removing empty file${restore} ${contrast}${f}${restore}"
++                rm ${f} 2>/dev/null
++                eend $? 2>/dev/null
++                continue
++            fi
++        done
++    fi
++    tput cnorm
++    set +f
+ }
+ ############################################################################
+ ################ incorrect uses in make.conf ###############################
+@@ -988,39 +1082,47 @@
+ }
+ 
+ invalid_uses_make(){
+-	set -f
+-	echo -e "${underline}Checking use flags in${restore} ${contrast}${makefile}${restore}"
+-	tmp_file="$(mktemp)"
+-	cp "${makefile}" "${tmp_file}"
+-
+-	vars_in_USE="$(make_conf_use USE | hell_parser | grep '\$' | tr -d '${}')"
+-	real_uses="$(eix --print-all-useflags | sed 's|^[-+]||g;s|^(+)||g' | sort -u)"
+-	for var in ${vars_in_USE} USE;do
+-		sub_uses="$(make_conf_use ${var} | hell_parser | grep -v '\$')"
+-		for use in ${sub_uses};do
+-			if ! grep -q "^${use}$" <<< "${real_uses}" && [[ "${use}" != "*" ]];then
+-				echo -ne "Invalid use ${contrast} ${var}: ${red}${use}${restore}" | column -t
+-				invalid_uses+=" ${use}"
+-			fi
+-		done
+-	done
+-
+-	if [[ -n "${invalid_uses}" ]];then
+-		for iuse in ${invalid_uses};do
+-			line="$(grep "\<${iuse}\>" ${tmp_file})"
+-			fixed_line="$(sed "s|[- \t]${iuse}||" <<< "${line}")"
+-			sed -e "s|${line%\\}|${fixed_line%\\}|" -i "${tmp_file}"
+-		done
+-	fi
+-	diff_ask "${makefile}" "${tmp_file}"
+-	set +f
++    set -f
++    echo -e "${underline}Checking use flags in${restore} ${contrast}${makefile}${restore}"
++    tmp_file="$(mktemp)"
++    cp "${makefile}" "${tmp_file}"
++
++    vars_in_USE="$(make_conf_use USE | hell_parser | grep '\$' | tr -d '${}')"
++    real_uses="$(eix --print-all-useflags | sed 's|^[-+]||g;s|^(+)||g' | sort -u)"
++    
++    for var in ${vars_in_USE} USE; do
++        sub_uses="$(make_conf_use ${var} | hell_parser | grep -v '\$')"
++        for use in ${sub_uses}; do
++            if ! grep -q "^${use}$" <<< "${real_uses}" && [[ "${use}" != "*" ]]; then
++                echo -ne "Invalid use ${contrast} ${var}: ${red}${use}${restore}" | column -t
++                invalid_uses+=" ${use}"
++            fi
++        done
++    done
++
++    if [[ -n "${invalid_uses}" ]]; then
++        for iuse in ${invalid_uses}; do
++            # Use a safer approach to modify the file
++            sed -i "s/\([[:space:]]\)\?${iuse}\([[:space:]]\)\?/ /g" "${tmp_file}"
++            # Clean up multiple spaces
++            sed -i 's/  */ /g' "${tmp_file}"
++            sed -i 's/^ //' "${tmp_file}"
++            sed -i 's/ $//' "${tmp_file}"
++        done
++    fi
++    diff_ask "${makefile}" "${tmp_file}"
++    set +f
+ }
++
+ ############################################################################
+ ################ not_found #################################################
+ not_found(){
+ 	echo -e "${underline}Checking invalid entries${restore}..."
+ 	TRASH="$(LANG=en eix -Ttc 2>/dev/null)"
+ 	for package in $(ls -d1 ${PORT_ETC}/package* | grep -v -e "~" -e "\.bak" -e "\.old");do
++		# Skip ignored paths
++		should_ignore_path "${package}" && continue
++		
+ 		incorrect="$(echo -e "${TRASH}" | tr $'\n' "%" | sed -e "s|.*${package}:||" -e 's|--.*||' -e 's|No.*||'|\
+ 		tr "%" $'\n' | sed -e '/^$/d' | grep -v "${IGNORE}")"
+ 		if [[ -n "${incorrect}" && -f "${package}" ]];then
+@@ -1068,11 +1170,17 @@
+ 		INVALID_FOUNDED+="${line}"$'\n'
+ 
+ 		if [[ -n "${line}" && -f "${file}" ]];then
++			# Skip ignored files
++			should_ignore_path "${file}" && continue
++			
+ 			tmp_file="$(mktemp)"
+ 			cp "${file}" "${tmp_file}"
+ 			[[ -n "${line}" ]] && sed -e "s|`echo $line`$||" -e 's|[ \t]| |' -e '/^[ \t]$/d' -e '/^$/d' -i ${tmp_file}
+ 			diff_ask "${file}" "${tmp_file}"
+ 		elif [[ -n "${line}" && -d "${file}" ]];then
++			# Skip ignored directories
++			should_ignore_path "${file}" && continue
++			
+ 			for package in `grep -RH "${line//'*'/\*}" "${file}"/ | awk -F \: '{print $1}'`;do
+ 					tmp_package="$(mktemp)"
+ 					cp "${package}" "${tmp_package}"
+@@ -1140,6 +1248,8 @@
+ empty_files(){
+ 	echo -e "${underline}Looking empty files${restore}"
+ 	for target in `find ${PORT_ETC} -type f`;do
++		# Skip ignored paths
++		should_ignore_path "${target}" && continue
+ 		[[ ! -s "${target}" || -z "$(grep -v "^#" < "${target}")" ]] && remove_ask "${target}"
+ 	done
+ 	eend 0 2>/dev/null
+@@ -1149,6 +1259,8 @@
+ backup_files(){
+ 	echo -e "${underline}Looking backup files${restore}"
+ 	for target in `find ${PORT_ETC} -type f \( -name "*~" -o  -name "*.bak" -o -name "*.old" \)`;do
++		# Skip ignored paths
++		should_ignore_path "${target}" && continue
+ 		remove_ask "${target}"
+ 	done
+ 	eend 0 2>/dev/null
+@@ -1156,7 +1268,10 @@
+ ############################################################################
+ ################ package.* files 2 dirs ####################################
+ f_to_d(){
+-	while read package;do
++	while read package; do
++		# Skip ignored paths
++		should_ignore_path "${package}" && continue
++		
+ 		if [[ -f "${package}" ]];then
+ 			echo -e "${underline}Processing${restore}: ${contrast}${package##*/}${restore}"
+ 			tmp_file="$(mktemp)"
+@@ -1164,7 +1279,7 @@
+ 			sed -e 's|^#.*||g' -i "${tmp_file}"
+ 			dir="${PORT_ETC}/${package##*/}"
+ 			mkdir "${dir}"
+-			while read line;do
++			while read line; do
+ 			set -f
+ 				atom="$(awk '{print $1}' <<< "${line}")"
+ 				category="$(awk '{print $1}' <<< `qatom ${atom}`)"
+@@ -1186,7 +1301,10 @@
+ ############################################################################
+ ################ package.* dirs 2 files ####################################
+ d_to_f(){
+-	while read package;do
++	while read package; do
++		# Skip ignored paths
++		should_ignore_path "${package}" && continue
++		
+ 		if [[ -d "${package}" ]];then
+ 			echo -e "${underline}Processing${restore}: ${contrast}${package##*/}${restore}"
+ 			tmp_file="$(mktemp)"
+@@ -1384,6 +1502,9 @@
+ sort_uniq_mask_use(){
+ 	if [[ -d "${PORT_ETC}/profile" || -h "${PORT_ETC}/profile" ]];then
+ 		for package in `find ${PORT_ETC}/profile -type f \! -name '*~' \! -name '*.bak' -name "use.stable.mask" -or -name "use.mask"`;do
++			# Skip ignored paths
++			should_ignore_path "${package}" && continue
++			
+ 			tmp_sort="$(mktemp)"
+ 			echo -e "${underline}Sorting${restore} ${contrast}${package#${PORT_ETC}/}${restore}"
+ 
+@@ -1454,9 +1575,14 @@
+ }
+ 
+ check_use_masked() {
+-	for target in $(mask_files);do
+-		file_or_dir "profile/${target}" "Checking masked uses:" "etc_profile_use_mask" || return 1
+-	done
++    for target in $(mask_files); do
++        # Check if the target exists before processing
++        if [[ -e "${PORT_ETC}/profile/${target}" ]] || [[ -d "${PORT_ETC}/profile/${target}" ]]; then
++            file_or_dir "profile/${target}" "Checking masked uses:" "etc_profile_use_mask" || continue
++        else
++            echo -e "${underline}Skipping${restore} ${contrast}profile/${target}${restore}: does not exist"
++        fi
++    done
+ }
+ ############################################################################
+ ################ regen_world ###############################################
+@@ -1559,15 +1685,21 @@
+ ############################################################################
+ ################ unused repo and dep-cache #################################
+ overlays(){
+-	########## repo over layman
+-	layman_path="$(awk '/storage[[:space:]].*:/ {print $3}' /etc/layman/layman.cfg)"
+-	source "${layman_path}/make.conf" 2>/dev/null
+-	layman_pkgdir="$(tr '[[:space:]]' $'\n' <<< "${PORTDIR_OVERLAY}" | sed '/^$/d')"
+-	for repo_dir in ${layman_pkgdir};do
+-		[[ -f "${repo_dir}/profiles/repo_name" ]] && repo_name="$(cat "${repo_dir}/profiles/repo_name")"
+-		repo_name="${repo_name:-${repo_dir##*/}}"
+-		layman_overlays+="${repo_dir} ${repo_name}"$'\n'
+-	done
++    ########## repo over layman
++    local layman_path=""
++    if [[ -f "/etc/layman/layman.cfg" ]]; then
++        layman_path="$(awk '/storage[[:space:]].*:/ {print $3}' /etc/layman/layman.cfg 2>/dev/null)"
++    fi
++    
++    if [[ -n "${layman_path}" && -f "${layman_path}/make.conf" ]]; then
++        source "${layman_path}/make.conf" 2>/dev/null
++        layman_pkgdir="$(tr '[[:space:]]' $'\n' <<< "${PORTDIR_OVERLAY}" | sed '/^$/d')"
++        for repo_dir in ${layman_pkgdir}; do
++            [[ -f "${repo_dir}/profiles/repo_name" ]] && repo_name="$(cat "${repo_dir}/profiles/repo_name")"
++            repo_name="${repo_name:-${repo_dir##*/}}"
++            layman_overlays+="${repo_dir} ${repo_name}"$'\n'
++        done
++    fi
+ 
+ 	all_overlays="${layman_overlays}"
+ 
+--- a/portconf.conf	2025-11-28 17:23:04.735509754 +0100
++++ b/portconf.conf	2025-11-28 17:16:38.034301543 +0100
+@@ -8,5 +8,11 @@
+ #dont check following packages names
+ #IGNORE_PN=""
+ 
++# Directories to ignore in /etc/portage/
++IGNORE_DIRS="package.env env binrepos.conf gnupg profile"
++
++# File patterns to ignore
++IGNORE_FILE_PATTERNS="zzz.*"
++
+ #default options. '-rc' Highly recommend!
+ PORTCONF_DEFAULT_OPTS="-rc"
+--- a/portconf	2025-11-28 18:05:40.357013362 +0100
++++ b/portconf	2025-11-28 18:19:52.265525061 +0100
+@@ -657,101 +657,107 @@
+ ############################################################################
+ ################ not_installed #############################################
+ installed(){
+-	installed="$(qlist -ICSec "${category}/${pn}" | awk '{print $2}')"
+-	if [[ -n "${installed}" ]];then
+-		installed_vers="$(awk -F \: '{print $1}' <<< "${installed}")"
+-		installed_min_ver="$(head -n1 <<< "${installed_vers}")"
+-		installed_max_ver="$(tail -n1 <<< "`grep -v 9999 <<< "${installed_vers}"`")"
+-		installed_live_ver="$(tail -n1 <<< "`grep 9999 <<< "${installed_vers}"`")"
+-		installed_slots="$(awk -F \: '{print $2}' <<< "${installed}")"
+-		#::repo check
+-		full_vers="$(qlist -ICev "${category}/${pn}" | sed "s|${category}/${pn}-||g")"
+-		(( "$(wc -l <<< "${full_vers}")" '>' "1" ))
+-		if [[ -n "${defined_repo}" ]];then
+-			for ver in ${full_vers};do
+-				all_vers+=" ${PKGDB}/${category}/${pn}-${ver}/repository"
+-			done
+-			grep -qe "^${defined_repo}$" ${all_vers} || unset installed
+-			unset all_vers
+-		fi
+-		[[ "${installed_slots}" == "0" ]] && unset installed_slots
+-	fi
++    installed="$(qlist -ICSec "${category}/${pn}" | awk '{print $2}')"
++    if [[ -n "${installed}" ]]; then
++        installed_vers="$(awk -F \: '{print $1}' <<< "${installed}")"
++        installed_min_ver="$(head -n1 <<< "${installed_vers}")"
++        installed_max_ver="$(tail -n1 <<< "`grep -v 9999 <<< "${installed_vers}"`")"
++        installed_live_ver="$(tail -n1 <<< "`grep 9999 <<< "${installed_vers}"`")"
++        installed_slots="$(awk -F \: '{print $2}' <<< "${installed}")"
++        #::repo check
++        full_vers="$(qlist -ICev "${category}/${pn}" | sed "s|${category}/${pn}-||g")"
++        
++        # FIXED: Get line count without whitespace
++        line_count=$(wc -l <<< "${full_vers}" | tr -d '[:space:]')
++        
++        # FIXED: Use numeric comparison without quotes
++        if (( line_count > 1 )); then
++            if [[ -n "${defined_repo}" ]]; then
++                for ver in ${full_vers}; do
++                    all_vers+=" ${PKGDB}/${category}/${pn}-${ver}/repository"
++                done
++                grep -qe "^${defined_repo}$" ${all_vers} || unset installed
++                unset all_vers
++            fi
++        fi
++        [[ "${installed_slots}" == "0" ]] && unset installed_slots
++    fi
+ }
+ 
+ not_if(){
+-	atoms="$(awk '{print $1}' <<< "`grep -v "^#" < ${package}`")"
+-	[[ -n "${IGNORE}" ]] && atoms="$(grep -v "${IGNORE}" <<< "${atoms}")"
+-	echo -e "${underline}Checking${restore} ${contrast}$package${restore}"
+-	if [[ -n "${atoms}" ]];then
+-		while read atom;do
+-			#::repo check
+-			if grep -q "::" <<< "${atom}";then
+-				defined_repo="${atom##*::}"
+-			else
+-				unset defined_repo
+-			fi
+-			[[ -n "${defined_repo}" ]] && atom="${atom%%::${defined_repo}}"
+-			while read category pn ver rev slot;do
+-				sw="$(grep -o "[<>=~]" <<< "${category}" | tr -d $'\n')"
+-				category="${category##${sw}}"
+-
+-				[[ "${category}" == "(null)" || "${pn}" == "(null)" ]] && continue
+-
+-				if [[ -n "${rev}" ]] && [[ -z "${slot}" ]] && `grep -q \: <<< "${rev}"`;then
+-					slot="${rev}"
+-					unset rev
+-				fi
+-				slot="${slot#:}"
+-				pn="${pn%:}"
+-				installed;
+-
+-				if [[ -z "${installed}" ]];then
+-					if [[ -n "${defined_repo}" ]];then
+-						echo -e "${red}Not installed${restore} ${green}${category}/${pn}::${underline}${defined_repo}${restore}"
+-					else
+-						echo -e "${red}Not installed${restore} ${green}${category}/${pn}${restore}"
+-					fi
+-					sed -e "s|.*\<${category}/${pn}\>.*||" -e '/^$/d' -i "${tmp_package}" 2>/dev/null
+-					eend $? 2>/dev/null
+-				fi
+-			done <<< `qatom "${atom}"`
+-		done <<< "${atoms}"
+-	fi
++    atoms="$(awk '{print $1}' <<< "`grep -v "^#" < ${package}`")"
++    [[ -n "${IGNORE}" ]] && atoms="$(grep -v "${IGNORE}" <<< "${atoms}")"
++    echo -e "${underline}Checking${restore} ${contrast}$package${restore}"
++    if [[ -n "${atoms}" ]]; then
++        while read atom; do
++            #::repo check
++            if grep -q "::" <<< "${atom}"; then
++                defined_repo="${atom##*::}"
++            else
++                unset defined_repo
++            fi
++            [[ -n "${defined_repo}" ]] && atom="${atom%%::${defined_repo}}"
++            while read category pn ver rev slot; do
++                sw="$(grep -o "[<>=~]" <<< "${category}" | tr -d $'\n')"
++                category="${category##${sw}}"
++
++                [[ "${category}" == "(null)" || "${pn}" == "(null)" ]] && continue
++
++                if [[ -n "${rev}" ]] && [[ -z "${slot}" ]] && `grep -q \: <<< "${rev}"`; then
++                    slot="${rev}"
++                    unset rev
++                fi
++                slot="${slot#:}"
++                pn="${pn%:}"
++                installed;
++
++                if [[ -z "${installed}" ]]; then
++                    if [[ -n "${defined_repo}" ]]; then
++                        echo -e "${red}Not installed${restore} ${green}${category}/${pn}::${underline}${defined_repo}${restore}"
++                    else
++                        echo -e "${red}Not installed${restore} ${green}${category}/${pn}${restore}"
++                    fi
++                    sed -e "s|.*\<${category}/${pn}\>.*||" -e '/^$/d' -i "${tmp_package}" 2>/dev/null
++                    eend $? 2>/dev/null
++                fi
++            done <<< `qatom "${atom}"`
++        done <<< "${atoms}"
++    fi
+ }
+ 
+ force_not_installed(){
+-	for package in `find ${PORT_ETC}/package* -type f \! -name '*~' \! -name '*.bak'`;do
+-		# Skip package.env directory entirely
+-		if echo "${package}" | grep -q "package\.env"; then
+-			continue
+-		fi
+-		# Skip other ignored paths
+-		should_ignore_path "${package}" && continue
+-		
+-		if [[ -s "${package}" && -n "$(grep -v "^#" < "${package}")" ]];then
+-			tmp_package="$(mktemp)"
+-			cp "${package}" "${tmp_package}"
+-			if ! `grep -q "\.mask" <<< "${package}"`;then
+-				not_if;
+-				eend $? 2>/dev/null
+-			fi
+-			diff_ask "${package}" "${tmp_package}"
+-		else
+-			pack="${package%/*}"
+-			echo -e "${underline}Empty file${restore} ${contrast}${pack}${restore}"
+-			remove_ask "${package}"
+-			eend $? 2>/dev/null
+-		fi
+-	done
+-
+-	for x in `find ${PORT_ETC}/package* -type f`;do
+-		should_ignore_path "${x}" && continue
+-		if [[ ! -s "${x}" ]];then
+-			echo -e "${underline}Empty file${restore} ${contrast}${x}${restore}"
+-			remove_ask "${x}"
+-			eend $? 2>/dev/null
+-		fi
+-	done
++    for package in `find ${PORT_ETC}/package* -type f \! -name '*~' \! -name '*.bak'`; do
++        # Skip package.env directory entirely
++        if echo "${package}" | grep -q "package\.env"; then
++            continue
++        fi
++        # Skip other ignored paths
++        should_ignore_path "${package}" && continue
++        
++        if [[ -s "${package}" && -n "$(grep -v "^#" < "${package}")" ]]; then
++            tmp_package="$(mktemp)"
++            cp "${package}" "${tmp_package}"
++            if ! `grep -q "\.mask" <<< "${package}"`; then
++                not_if;
++                eend $? 2>/dev/null
++            fi
++            diff_ask "${package}" "${tmp_package}"
++        else
++            pack="${package%/*}"
++            echo -e "${underline}Empty file${restore} ${contrast}${pack}${restore}"
++            remove_ask "${package}"
++            eend $? 2>/dev/null
++        fi
++    done
++
++    for x in `find ${PORT_ETC}/package* -type f`; do
++        should_ignore_path "${x}" && continue
++        if [[ ! -s "${x}" ]]; then
++            echo -e "${underline}Empty file${restore} ${contrast}${x}${restore}"
++            remove_ask "${x}"
++            eend $? 2>/dev/null
++        fi
++    done
+ }
+ ############################################################################
+ ################ package.env conf ##########################################
