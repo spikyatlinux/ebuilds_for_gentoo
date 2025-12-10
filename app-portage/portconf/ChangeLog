@@ -2,6 +2,13 @@
 # Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*portconf-1.6.9-r3 (30 Nov 2025)
+
+  30 Nov 2025; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/fix-errors-1.6.9-r3.patch, +files/fix-grep-1.6.9-r2.patch,
+  -files/fix_grep.patch, portconf-1.6.9-r2.ebuild, +portconf-1.6.9-r3.ebuild:
+  Some little updates
+
   03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> portconf-1.6.9-r2.ebuild:
   Fixed header and python deps
 
