@@ -1,5 +1,5 @@
 app-admin/cmd-polkit 0.3.0: Command-line Polkit tool
-app-backup/timeshift 25.07.7: A system restore utility for Linux
+app-backup/timeshift 25.12.1: A system restore utility for Linux
 app-backup/timeshift-autosnap 0.9-r1 0.10.0: Automatically creates a timeshift-snapshot when executed
 app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on the rendering engine of Firefox
 app-emulation/quickemu 4.9.7: Create and run optimised Windows, macOS and Linux desktop virtual machines
@@ -17,7 +17,7 @@ dev-python/cloudscraper 1.2.69-r2: A Python module to bypass Cloudflare's anti-b
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.
 dev-util/android-tools-google 36.0.0: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.11.1: A tool for reengineering 3rd party, closed, binary Android apps
-kde-misc/darkly 0.5.23 9999: A modern style for qt applications
+kde-misc/darkly 0.5.27-r1 9999: A modern style for qt applications
 media-fonts/material-design-icons 7.4.47: mdi/font Dist for Material Design Icons.
 media-fonts/nerd-fonts 3.4.0: Collection of fonts that are patched to include a high number of glyphs (icons).
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
