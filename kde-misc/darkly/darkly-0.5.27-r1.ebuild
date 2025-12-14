@@ -27,7 +27,7 @@ RDEPEND="dev-qt/qtbase:6[dbus,gui,widgets]
 	kde-frameworks/kirigami:6
 	kde-frameworks/kiconthemes:6
 	kde-frameworks/kwindowsystem:6
-	>=kde-plasma/kdecoration-6.3:6
+	>=kde-plasma/kdecoration-6.5:6
 	qt5? (
 		dev-qt/qtcore:5
 		dev-qt/qtgui:5[dbus]
