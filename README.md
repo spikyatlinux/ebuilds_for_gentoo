@@ -32,28 +32,18 @@ I´ve tested all on my local system, without error.
 - I didn´t need it anymore
 - I´ve no time to change/edit it.
 
-#################################################
-
-To use my ebuilds download spikyatlinunx.conf
-in your /etc/portage/repos.conf directory
-and run "emaint sync -r spikyatlinux",
-without quotes of course.
 
 #################################################
 #### Add my repository
 #################################################
-
 ### 🚀 Installation
-
 #### Using eselect (Recommended)
 Add the repository and sync:
 ```
 eselect repository enable spikyatlinux
 emaint sync -r spikyatlinux
 ```
-
 #### if you have eix installed
-
 ```
 sudo eix-update
 ```
