@@ -42,16 +42,6 @@ without quotes of course.
 #################################################
 #### Add my repository
 #################################################
-### 🛠️ Technical Implementation
-
-These profiles utilize Portage's inheritance logic to provide a clean, redundant-free configuration.
-
-* **Inheritance:** Each profile merges the upstream desktop profile with the hardened security branch.
-* **Standards:** All profiles are fully compatible with **EAPI 8**.
-* **Arch:** Optimized for the modern **Gentoo 23.0 profile split** on the **amd64** architecture.
-* **Visibility:** Profiles are registered in `profiles.desc`, making them instantly available via `eselect profile list` once the overlay is added.
-
----
 
 ### 🚀 Installation
 
@@ -68,6 +58,16 @@ emaint sync -r spikyatlinux
 sudo eix-update
 ```
 
+### 🛠️ Technical Implementation
+
+These profiles utilize Portage's inheritance logic to provide a clean, redundant-free configuration.
+
+* **Inheritance:** Each profile merges the upstream desktop profile with the hardened security branch.
+* **Standards:** All profiles are fully compatible with **EAPI 8**.
+* **Arch:** Optimized for the modern **Gentoo 23.0 profile split** on the **amd64** architecture.
+* **Visibility:** Profiles are registered in `profiles.desc`, making them instantly available via `eselect profile list` once the overlay is added.
+
+---
 #################################################
 ### 🐧 Custom Merged Profiles (Gentoo 23.0)
 These profiles provide a clean merge of the official Gentoo desktop environments with the `hardened` security profile, available for both init systems. They leverage multiple inheritance to combine security and desktop functionality seamlessly.
