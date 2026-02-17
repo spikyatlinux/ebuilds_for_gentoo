@@ -15,11 +15,10 @@
 
 ### Unofficial Private Signed Repository
 
+> [!WARNING]
+> **Use at your own risk.** These ebuilds are tested on my local Threadripper production system. I maintain them based on my own workflow and needs.
+
 Welcome to my personal repository. This overlay contains a collection of custom ebuilds, modified packages, and curated tools designed for high-performance Gentoo environments on amd64.
-
-> [!WARNING]> **Use at your own risk.** These ebuilds are tested on my local Threadripper production system. I maintain them based on my own workflow and needs.
-
----
 
 ### Ebuild Collection
 This overlay contains a mix of personal creations and modified ebuilds tailored for my environment.
@@ -27,10 +26,10 @@ This overlay contains a mix of personal creations and modified ebuilds tailored 
 - **Curated Content**: Some ebuilds have been sourced from across the web or other overlays to centralize useful tools.
 - **Stability**: All ebuilds are tested on my local system to ensure they build and run without errors.
 
-> [!NOTE]> Ebuilds may be removed if they are merged into official Gentoo branches, if I no longer require them, or if I lack the time to maintain specific versions.
+> [!NOTE]
+> Ebuilds may be removed if they are merged into official Gentoo branches, if I no longer require them, or if I lack the time to maintain specific versions.
 
 ---
-
 ### Custom Merged Profiles (Gentoo 23.0)
 These profiles provide a clean merge of official Gentoo desktop environments with the `hardened`security profile. They leverage **multiple inheritance** to combine security and desktop functionality seamlessly.
 
@@ -71,18 +70,18 @@ eselect repository enable spikyatlinuxemaint sync -r spikyatlinux
 ``
 **Manual Configuration:**
 Download `spikyatlinux.conf` to your `/etc/portage/repos.conf/` directory and run:
-```bash
+```
 emaint sync -r spikyatlinux
 ```
 
 #### 2. Post-Installation
 If you have `eix` installed, update your cache:
-```bash
+```
 sudo eix-update
 ```
 
 To switch to one of the custom profiles:
-```bash
+```
 eselect profile set spikyatlinux:plasma-gnome-hardened-systemd
 ```
 
