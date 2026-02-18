@@ -65,9 +65,9 @@ These profiles utilize Portage's inheritance logic to combine official Gentoo pr
 
 #### 1. Add the Repository
 **Using eselect (Recommended):**
-``@bash
+```
 eselect repository enable spikyatlinuxemaint sync -r spikyatlinux
-``
+```
 **Manual Configuration:**
 Download `spikyatlinux.conf` to your `/etc/portage/repos.conf/` directory and run:
 ```
