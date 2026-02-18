@@ -46,7 +46,9 @@ These profiles provide a clean merge of official Gentoo desktop environments wit
 - `spikyatlinux:gnome-hardened-systemd` (stable)
 
 #### Combined Environments (Plasma + GNOME)
+- `spikyatlinux:plasma-gnome-openrc` (stable)
 - `spikyatlinux:plasma-gnome-hardened-openrc` (stable)
+- `spikyatlinux:plasma-gnome-systemd` (stable)
 - `spikyatlinux:plasma-gnome-hardened-systemd` (stable)
 
 ---

@@ -4,5 +4,7 @@ amd64 plasma-hardened-openrc stable
 amd64 plasma-hardened-systemd stable
 amd64 gnome-hardened-openrc stable
 amd64 gnome-hardened-systemd stable
+amd64 plasma-gnome-openrc stable
 amd64 plasma-gnome-hardened-openrc stable
+amd64 plasma-gnome-systemd stable
 amd64 plasma-gnome-hardened-systemd stable
