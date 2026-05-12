@@ -2,6 +2,12 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*darkly-0.5.37 (12 May 2026)
+
+  12 May 2026; SpikyAtLinux <spikyatlinux@gmail.com> -darkly-0.5.27-r1.ebuild,
+  +darkly-0.5.37.ebuild:
+  Some little cleanup+updates
+
 *darkly-0.5.27-r1 (14 Dec 2025)
 
   14 Dec 2025; SpikyAtLinux <spikyatlinux@gmail.com> -darkly-0.5.27.ebuild,
