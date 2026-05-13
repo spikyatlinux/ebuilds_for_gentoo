@@ -2,6 +2,9 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  12 May 2026; SpikyAtLinux <spikyatlinux@gmail.com> hibiscus-2.12.4.ebuild:
+  Fixed typo in app-office/hibiscus-2.12.4.ebuild
+
 *hibiscus-2.12.4 (12 May 2026)
 
   12 May 2026; SpikyAtLinux <spikyatlinux@gmail.com> -hibiscus-2.12.2.ebuild,
