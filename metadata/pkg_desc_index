@@ -13,7 +13,7 @@ dev-php/pdlib 1.1.0-r4: PHP bindings for dlib
 dev-php/pecl-mcrypt 1.0.7-r1: Bindings for the libmcrypt library
 dev-python/cloudscraper 1.2.69-r2: A Python module to bypass Cloudflare's anti-bot page
 dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway.
-dev-util/android-tools-google 36.0.0: Android platform-tools same as android-tools, but without sdk from google
+dev-util/android-tools-google 37.0.0: Android platform-tools same as android-tools, but without sdk from google
 dev-util/apktool 2.11.1: A tool for reengineering 3rd party, closed, binary Android apps
 kde-misc/darkly 0.5.37 9999: A modern style for qt applications
 media-fonts/material-design-icons 7.4.47: mdi/font Dist for Material Design Icons.
