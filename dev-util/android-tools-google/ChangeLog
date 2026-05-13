@@ -1,6 +1,12 @@
 # ChangeLog for dev-util/android-tools-google
-# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+*android-tools-google-37.0.0 (13 May 2026)
+
+  13 May 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  -android-tools-google-36.0.0.ebuild, +android-tools-google-37.0.0.ebuild:
+  Updated dev-util/android-tools-google to v37.0.0
 
 *android-tools-google-36.0.0 (24 Nov 2025)
 
