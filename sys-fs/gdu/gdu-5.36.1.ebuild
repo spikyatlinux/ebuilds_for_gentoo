@@ -16,9 +16,13 @@ HOMEPAGE="https://github.com/dundee/gdu"
 SRC_URI="https://github.com/dundee/gdu/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 SRC_URI+=" https://github.com/spikyatlinux/gdu-vendor-files/releases/download/v${PV}/gdu-${PV}-vendor.tar.gz"
 
-LICENSE="Apache-2.0 BSD MIT"
+LICENSE="Apache-2.0 BSD BSD-2 MIT"
 SLOT="0"
 KEYWORDS="~amd64"
+
+BDEPEND=">=dev-lang/go-1.25.0"
+
+DOCS=( README.md gdu.1.md )
 
 src_unpack() {
     default
@@ -31,10 +35,9 @@ src_compile() {
 }
 
 src_install() {
-	einstalldocs
-	dodoc -r README.md gdu.1.md
 	dobin gdu
 	doman gdu.1
+	einstalldocs
 }
 
 src_test() {

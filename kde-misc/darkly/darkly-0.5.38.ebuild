@@ -13,7 +13,7 @@ S="${WORKDIR}/${PN^}-${PV}"
 LICENSE="GPL-2"
 SLOT="6"
 KEYWORDS="~amd64 ~x86"
-IUSE="qt5"
+IUSE="qt5 +qt6"
 
 RDEPEND="dev-qt/qtbase:6[dbus,gui,widgets]
 	dev-qt/qtdeclarative:6
@@ -49,7 +49,7 @@ BDEPEND="kde-frameworks/kcmutils:6
 
 src_configure() {
 	local mycmakeargs=(
-		-DBUILD_QT6=ON
+		-DBUILD_QT6=$(usex qt6 ON OFF)
 		-DBUILD_QT5=$(usex qt5 ON OFF)
 	)
 	ecm_src_configure
