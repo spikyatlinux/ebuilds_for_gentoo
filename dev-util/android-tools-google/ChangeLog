@@ -2,6 +2,10 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  android-tools-google-37.0.0.ebuild:
+  Some little fixes
+
 *android-tools-google-37.0.0 (13 May 2026)
 
   13 May 2026; SpikyAtLinux <spikyatlinux@gmail.com>

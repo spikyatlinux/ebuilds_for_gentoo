@@ -2,6 +2,10 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  networkmanager-dmenu-2.6.2.ebuild:
+  Some little fixes
+
 *networkmanager-dmenu-2.6.2 (12 May 2026)
 
   12 May 2026; SpikyAtLinux <spikyatlinux@gmail.com>

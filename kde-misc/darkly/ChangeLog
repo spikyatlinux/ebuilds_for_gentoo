@@ -2,6 +2,16 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*darkly-0.5.38 (04 Aug 2026)
+
+  04 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> -darkly-0.5.37.ebuild,
+  +darkly-0.5.38.ebuild:
+  Add rewrite of portconf, and some cleanup
+
+  12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com> darkly-0.5.37.ebuild,
+  darkly-9999.ebuild:
+  Some little fixes
+
 *darkly-0.5.37 (12 May 2026)
 
   12 May 2026; SpikyAtLinux <spikyatlinux@gmail.com> -darkly-0.5.27-r1.ebuild,

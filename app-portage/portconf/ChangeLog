@@ -1,0 +1,38 @@
+# ChangeLog for app-portage/portconf
+# Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+  04 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> portconf-1.7.0.ebuild:
+  Fixed ebuild
+
+*portconf-1.7.0 (04 Aug 2026)
+
+  04 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  -files/fix-errors-1.6.9-r3.patch, -files/fix-grep-1.6.9-r2.patch,
+  -portconf-1.6.9-r2.ebuild, -portconf-1.6.9-r3.ebuild,
+  +portconf-1.7.0.ebuild:
+  Add rewrite of portconf, and some cleanup
+
+  12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com> portconf-1.6.9-r2.ebuild,
+  portconf-1.6.9-r3.ebuild:
+  Some little fixes
+
+*portconf-1.6.9-r3 (30 Nov 2025)
+
+  30 Nov 2025; SpikyAtLinux <spikyatlinux@gmail.com>
+  +files/fix-errors-1.6.9-r3.patch, +files/fix-grep-1.6.9-r2.patch,
+  -files/fix_grep.patch, portconf-1.6.9-r2.ebuild, +portconf-1.6.9-r3.ebuild:
+  Some little updates
+
+  03 Jan 2025; SpikyAtLinux <spikyatlinux@gmail.com> portconf-1.6.9-r2.ebuild:
+  Fixed header and python deps
+
+  19 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> -metadata.xml:
+  Updated '2024-02-19-19:19'...
+
+*portconf-1.6.9-r2 (18 Feb 2024)
+
+  18 Feb 2024; SpikyAtLinux <spikyatlinux@gmail.com> +files/fix_grep.patch,
+  +metadata.xml, +portconf-1.6.9-r2.ebuild:
+  Updated '2024-02-18-17:53'...
+

@@ -1,6 +1,10 @@
 # ChangeLog for dev-java/jameica
-# Copyright 1999-2025 Gentoo Foundation; Distributed under the GPL v2
+# Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
+
+  12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com> jameica-2.12.0.ebuild,
+  jameica-9999.ebuild:
+  Some little fixes
 
 *jameica-2.12.0 (29 Oct 2025)
 
