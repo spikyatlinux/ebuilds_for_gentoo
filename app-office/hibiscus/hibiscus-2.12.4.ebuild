@@ -13,35 +13,37 @@ SRC_URI="https://jameica.org/products/${PN}/releases/current/${PN}-${MY_PV}.zip"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="x86 amd64"
+KEYWORDS="amd64 x86"
 RESTRICT="strip"
-S="${WORKDIR}"
 
 RDEPEND=">=dev-java/jameica-2.12.0"
+BDEPEND="app-arch/unzip"
 
 QA_PREBUILT="
-    opt/${PN}/lib/libct.so
-    opt/${PN}/lib/libhbci4java-card-freebsd-64.so
-    opt/${PN}/lib/libhbci4java-card-linux-32.so
-    opt/${PN}/lib/libhbci4java-card-linux-64.so
-    opt/${PN}/lib/libhbci4java-sizrdh-linux-gcc2.so
-    opt/${PN}/lib/libhbci4java-sizrdh-linux-gcc3.so
-    opt/${PN}/lib/libtowitoko-2.0.7-amd64.so
-    opt/${PN}/lib/libtowitoko-2.0.7.so
+	opt/${PN}/lib/libct.so
+	opt/${PN}/lib/libhbci4java-card-freebsd-64.so
+	opt/${PN}/lib/libhbci4java-card-linux-32.so
+	opt/${PN}/lib/libhbci4java-card-linux-64.so
+	opt/${PN}/lib/libhbci4java-sizrdh-linux-gcc2.so
+	opt/${PN}/lib/libhbci4java-sizrdh-linux-gcc3.so
+	opt/${PN}/lib/libtowitoko-2.0.7-amd64.so
+	opt/${PN}/lib/libtowitoko-2.0.7.so
 "
 QA_SONAME="
-    opt/${PN}/lib/libhbci4java-card-freebsd-64.so
-    opt/${PN}/lib/libhbci4java-sizrdh-linux-gcc2.so
+	opt/${PN}/lib/libhbci4java-card-freebsd-64.so
+	opt/${PN}/lib/libhbci4java-sizrdh-linux-gcc2.so
 "
 
-src_prepare() {
-    default
+S="${WORKDIR}"
 
-    rm ${S}/${PN}/lib/libhbci4java-card-freebsd-64.so
-    rm ${S}/${PN}/lib/libhbci4java-sizrdh-linux-gcc2.so
+src_prepare() {
+	default
+
+	rm ${S}/${PN}/lib/libhbci4java-card-freebsd-64.so
+	rm ${S}/${PN}/lib/libhbci4java-sizrdh-linux-gcc2.so
 }
 
 src_install() {
-    dodir /opt/jameica/plugins
+	dodir /opt/jameica/plugins
 	cp -ap "${S}"/* "${D}"/opt/jameica/plugins/hibiscus/
 }

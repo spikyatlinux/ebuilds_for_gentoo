@@ -25,13 +25,16 @@ BDEPEND=">=dev-lang/go-1.25.0"
 DOCS=( README.md gdu.1.md )
 
 src_unpack() {
-    default
-    tar -xvf "${DISTDIR}/gdu-${PV}-vendor.tar.gz" -C "$S"
+	default
+	tar -xvf "${DISTDIR}/gdu-${PV}-vendor.tar.gz" -C "$S"
 }
 
 src_compile() {
-    # Inject the build time, build user, and version into the build flags
-    ego build -ldflags "-s -w -X 'github.com/dundee/gdu/v5/build.Version=${PV}' -X 'github.com/dundee/gdu/v5/build.Time=$(date +%Y-%m-%d\ %H:%M:%S)' -X 'github.com/dundee/gdu/v5/build.User=SpikyAtLinux (ebuilds_for_gentoo)'" -v -x -work -o "${PN}" "./cmd/${PN}"
+	# Inject the build time, build user, and version into the build flags
+	ego build -ldflags "-s -w -X 'github.com/dundee/gdu/v5/build.Version=${PV}' \
+		-X 'github.com/dundee/gdu/v5/build.Time=$(date +%Y-%m-%d\ %H:%M:%S)' \
+		-X 'github.com/dundee/gdu/v5/build.User=SpikyAtLinux (ebuilds_for_gentoo)'" \
+		-v -x -work -o "${PN}" "./cmd/${PN}"
 }
 
 src_install() {

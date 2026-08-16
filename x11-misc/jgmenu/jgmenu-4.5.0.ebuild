@@ -5,7 +5,7 @@ EAPI=8
 
 inherit optfeature
 
-DESCRIPTION="Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking."
+DESCRIPTION="Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking"
 HOMEPAGE="https://github.com/jgmenu"
 SRC_URI="https://github.com/jgmenu/jgmenu/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 

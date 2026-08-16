@@ -1,12 +1,12 @@
+BDEPEND=app-arch/unzip
 DEFINED_PHASES=install prepare
 DESCRIPTION=Official prebuilt nightly HBCI Plugin for Jameica
 EAPI=7
 HOMEPAGE=https://www.willuhn.de/products/hibiscus/
 INHERIT=flag-o-matic toolchain-funcs
 LICENSE=GPL-3
-RDEPEND==dev-java/jameica-9999
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://www.willuhn.de/products/hibiscus/releases/nightly/hibiscus-2.13.0-nightly.zip
-_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db	flag-o-matic	a7afe42e95fb46ce9691605acfb24672
-_md5_=899fe76692c10f1b7d6b004d1793dacc
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	flag-o-matic	fd3558f73f6503093adee69adf41020d
+_md5_=fd8b5e84a32053af9b923302b92fdd09

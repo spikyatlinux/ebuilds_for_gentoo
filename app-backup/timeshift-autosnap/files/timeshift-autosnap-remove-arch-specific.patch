@@ -7,7 +7,7 @@ Author: Lucio Sauer <watermanpaint@posteo.net>
 @@ -53,8 +53,12 @@ if $(get_property "deleteSnapshots" "boolean" "true") ; then
      fi
  fi;
- 
+
 -if $(get_property "updateGrub" "boolean" "true") && [ "$(pacman -Qs ^grub-btrfs$)" ]; then
 -    grub-mkconfig -o /boot/grub/grub.cfg
 -fi;

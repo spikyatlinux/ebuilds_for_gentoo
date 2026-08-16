@@ -12,14 +12,13 @@ SRC_URI="x86? ( https://jameica.org/products/${PN}/releases/nightly/${PN}-${MY_P
 		 https://jameica.org/products/${PN}/releases/nightly/${PN}-linux64-${MY_PV}-nightly.zip -> ${P}-linux64.zip )"
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
-
-S="${WORKDIR}"
 
 DEPEND="app-arch/unzip"
 RDEPEND="${DEPEND}
 >=virtual/jre-1.6.0
-=app-office/hibiscus-9999"
+~app-office/hibiscus-9999"
+
+S="${WORKDIR}"
 
 src_install() {
 	mkdir "${D}/opt"

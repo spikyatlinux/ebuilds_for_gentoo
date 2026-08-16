@@ -3,16 +3,15 @@
 
 EAPI=8
 RESTRICT="mirror"
-inherit optfeature
+inherit shell-completion optfeature
 
-DESCRIPTION="find cruft files not managed by portage"
+DESCRIPTION="A script to find cruft on a Gentoo system"
 HOMEPAGE="https://github.com/vaeth/find_cruft/"
 SRC_URI="https://github.com/vaeth/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc x86"
-IUSE=""
+KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc x86"
 
 RDEPEND=">=dev-lang/perl-5.8"
 #	|| ( >=dev-lang/perl-5.9.4 >=virtual/perl-File-Spec-3.0 )
@@ -30,7 +29,7 @@ src_install() {
 	dodoc README.md
 	insinto /usr/lib/find_cruft
 	doins -r etc/*
-	insinto /usr/share/zsh/site-functions
+	dozshcomp /usr/share/zsh/site-functions
 	doins zsh/_*
 }
 

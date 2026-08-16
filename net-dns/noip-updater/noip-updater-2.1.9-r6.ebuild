@@ -6,24 +6,24 @@ inherit readme.gentoo-r1 systemd toolchain-funcs
 
 MY_P=${P/-updater/}
 DESCRIPTION="no-ip.com dynamic DNS updater"
-HOMEPAGE="http://www.no-ip.com"
-SRC_URI="http://www.no-ip.com/client/linux/${MY_P}.tar.gz"
+HOMEPAGE="https://www.noip.com"
+SRC_URI="https://www.noip.com/client/linux/${MY_P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="alpha amd64 ~arm ~hppa ia64 ~mips ~ppc ppc64 sparc x86"
+KEYWORDS="alpha amd64 ~arm ~hppa ~mips ~ppc ppc64 sparc x86"
 IUSE="ezipupd"
 DEPEND="ezipupd? (
 	acct-group/ez-ipupd
 	acct-user/ez-ipupd
 )"
 
-S=${WORKDIR}/${MY_P}
-
 DOC_CONTENTS="
 	Configuration can be done manually via /usr/sbin/noip2 -C or
 	by using this ebuild's config option.
 "
+
+S=${WORKDIR}/${MY_P}
 
 src_prepare() {
 	eapply "${FILESDIR}"/noip-2.1.9-flags.patch

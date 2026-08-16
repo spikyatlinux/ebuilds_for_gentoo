@@ -4,7 +4,7 @@ diff -ur a/noip2.c b/noip2.c
 @@ -895,16 +895,13 @@
  	char    *err_string;
  	static int startup = 1;
- 
+
 -	x = fork();
 +	x = daemon (0, 0);
  	switch (x) {
@@ -16,6 +16,6 @@ diff -ur a/noip2.c b/noip2.c
 -		exit(0);
  	    case 0:		//child
 -		setsid();
- 		if (get_shm_info() == FATALERR)	
+ 		if (get_shm_info() == FATALERR)
  		    return FATALERR;
  		log2syslog++;

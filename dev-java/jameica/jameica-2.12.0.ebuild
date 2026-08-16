@@ -26,7 +26,7 @@ SRC_URI="x86? ( https://jameica.org/products/${PN}/releases/current/${PN}/${PN}-
 # lib/nanoxml: ZLIB
 LICENSE="Apache-2.0 CPL-1.0 EPL-1.0 GPL-2 LGPL-2 MIT MPL-1.1 MPL-2.0 ZLIB"
 SLOT="0"
-KEYWORDS="x86 amd64"
+KEYWORDS="amd64 x86"
 
 RDEPEND="
 	virtual/jre
@@ -36,10 +36,10 @@ BDEPEND="
 	app-arch/unzip
 "
 
-S="${WORKDIR}/jameica"
-
 JAMEICA_INSFILES=( jameica-icon.png jameica{,-linux64}.jar lib plugin.xml )
 JAMEICA_EXEFILES=( jameicaserver.sh jameica.sh rcjameica-systemd )
+
+S="${WORKDIR}/jameica"
 
 src_install() {
 	dodoc README

@@ -5,7 +5,7 @@ EAPI=8
 
 inherit font
 
-DESCRIPTION="Collection of fonts that are patched to include a high number of glyphs (icons)."
+DESCRIPTION="Collection of fonts that are patched to include a high number of glyphs (icons)"
 HOMEPAGE="https://nerdfonts.com"
 
 LICENSE="MIT"

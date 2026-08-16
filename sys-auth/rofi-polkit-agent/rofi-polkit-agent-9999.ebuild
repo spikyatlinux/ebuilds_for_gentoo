@@ -7,17 +7,16 @@ inherit git-r3
 
 DESCRIPTION="Polkit agent, using rofi for UI"
 HOMEPAGE="https://github.com/czaplicki/rofi-polkit-agent"
-SRC_URI=""
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="dev-vcs/git
-        sys-auth/polkit
-        app-misc/jq
-        x11-misc/rofi
-        app-admin/cmd-polkit"
+		sys-auth/polkit
+		app-misc/jq
+		x11-misc/rofi
+		app-admin/cmd-polkit"
 RDEPEND="${DEPEND}"
 
 # Using git-r3 eclass to handle git sources

@@ -12,8 +12,6 @@ http://bluegriffon.org/BG_files/bluegriffon.png -> ${PN}.png"
 LICENSE="MPL-2.0 GPL-2 LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
-S="${WORKDIR}/bluegriffon/"
 XDG_ECLASS_DESKTOPFILES="${FILESDIR}"
 XDG_ECLASS_ICONFILES="${FILESDIR}"
 
@@ -49,7 +47,8 @@ RDEPEND="${DEPEND}
 	dev-libs/expat
 	media-gfx/graphite2
 	dev-libs/libbsd"
-BDEPEND=""
+
+S="${WORKDIR}/bluegriffon/"
 
 src_install() {
 	dodir /opt/bluegriffon

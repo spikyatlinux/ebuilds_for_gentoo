@@ -44,6 +44,6 @@ index 8345388..12a4eaa 100644
      entry_points={"console_scripts": ["wal=pywal.__main__:main"]},
      python_requires=">=3.5",
      test_suite="tests",
--- 
+--
 2.44.2
 

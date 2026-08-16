@@ -7,12 +7,11 @@ inherit optfeature readme.gentoo-r1
 
 DESCRIPTION="Automatically creates a timeshift-snapshot when executed"
 HOMEPAGE="https://codeberg.org/racehd/timeshift-autosnap"
-SRC_URI="https://codeberg.org/racehd/timeshift-autosnap/archive/${PV}.tar.gz"
+SRC_URI="https://codeberg.org/racehd/timeshift-autosnap/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-S="${WORKDIR}/${PN}"
 
 RDEPEND="app-backup/timeshift"
 
@@ -30,6 +29,8 @@ function pre_pkg_setup() {
 	/usr/bin/timeshift-autosnap ;
 }' >> ${bashrc}"
 
+S="${WORKDIR}/${PN}"
+
 src_install(){
 	dobin timeshift-autosnap
 	insinto /etc
@@ -39,5 +40,4 @@ src_install(){
 
 pkg_postinst() {
 	readme.gentoo_print_elog
-	optfeature "grub-btrfs snapshot support" app-backup/grub-btrfs
 }

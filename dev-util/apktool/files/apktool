@@ -1,7 +1,0 @@
-#!/bin/sh
-
-jarpath="/opt/apktool/apktool.jar"
-
-javaOpts="-Xmx512M -Dfile.encoding=utf-8"
-
-java $javaOpts -jar "$jarpath" "$@"
