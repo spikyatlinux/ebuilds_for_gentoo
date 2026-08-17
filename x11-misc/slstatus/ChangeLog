@@ -2,6 +2,10 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  16 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> +metadata.xml:
+  QA cleanup: fix pkgcheck warnings, auto-generate metadata.xml and drop
+  obsolete packages
+
   12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com> slstatus-1.1.ebuild:
   Some little fixes
 

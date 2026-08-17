@@ -2,6 +2,12 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  16 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  files/noip-2.1.9-daemon.patch, files/noip-2.1.9-flags.patch, +metadata.xml,
+  noip-updater-2.1.9-r6.ebuild:
+  QA cleanup: fix pkgcheck warnings, auto-generate metadata.xml and drop
+  obsolete packages
+
   12 Jun 2026; SpikyAtLinux <spikyatlinux@gmail.com>
   noip-updater-2.1.9-r6.ebuild:
   Some little fixes
