@@ -2,6 +2,12 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+*pwrfzf-2.5 (18 Aug 2026)
+
+  18 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> -pwrfzf-2.4.ebuild,
+  +pwrfzf-2.5.ebuild:
+  Updated app-portage/pwrfzf to v2.5
+
 *pwrfzf-2.4 (17 Aug 2026)
 
   17 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> -pwrfzf-2.3.ebuild,
