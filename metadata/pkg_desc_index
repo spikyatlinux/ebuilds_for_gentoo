@@ -5,7 +5,7 @@ app-editors/bluegriffon-bin 3.1-r1: The Open Source next-gen Web Editor based on
 app-office/hibiscus 2.12.4 9999: Official prebuilt nightly HBCI Plugin for Jameica
 app-portage/find_cruft 5.2: A script to find cruft on a Gentoo system
 app-portage/portconf 1.7.0: /etc/portage cleaner
-app-portage/pwrfzf 2.8: Interactive Gentoo TUI package browser using fzf
+app-portage/pwrfzf 2.8.1: Interactive Gentoo TUI package browser using fzf
 app-portage/pyerge 0.7.2-r1: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 dev-java/jameica 2.12.0 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
