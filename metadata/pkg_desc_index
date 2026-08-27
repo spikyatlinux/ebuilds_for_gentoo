@@ -9,9 +9,6 @@ app-portage/pwrfzf 2.8.3: Interactive Gentoo TUI package browser using fzf
 app-portage/pyerge 0.7.2-r1: Wrapper tool for emerge - it can mount RAM disk and compile packages inside it
 app-portage/showbuild 0.9.1-r1: Script to follow log of running portage builds
 dev-java/jameica 2.12.0 9999: Official prebuilt nightly Jameica Online Banking Software, written in Java
-dev-php/pdlib 1.1.0-r4: PHP bindings for dlib
-dev-php/pecl-mcrypt 1.0.7-r1: Bindings for the libmcrypt library
-dev-python/i3ipc 2.2.1-r1: An improved Python library to control i3wm and sway
 kde-misc/darkly 0.5.38 9999: A modern style for qt applications
 media-fonts/material-design-icons 7.4.47: mdi/font Dist for Material Design Icons.
 media-fonts/nerd-fonts 3.4.0: Collection of fonts that are patched to include a high number of glyphs (icons)

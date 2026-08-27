@@ -2,6 +2,9 @@
 # Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
 # (auto-generated from git log)
 
+  27 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> jameica-9999.ebuild:
+  Regenerate Changelogs and metadata
+
   16 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com> jameica-2.12.0.ebuild,
   jameica-9999.ebuild, +metadata.xml:
   QA cleanup: fix pkgcheck warnings, auto-generate metadata.xml and drop
