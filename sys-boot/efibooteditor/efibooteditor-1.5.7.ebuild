@@ -25,10 +25,10 @@ BDEPEND="
 "
 
 src_prepare() {
-		# Ersetzt hartcodiertes 'DESTINATION lib' durch den korrekten Gentoo-Pfad
+		# Replaces hardcoded 'DESTINATION lib' with the correct Gentoo path
 		sed -i -e 's/DESTINATION lib/DESTINATION ${CMAKE_INSTALL_LIBDIR}/g' CMakeLists.txt || die
 
-		# Entfernt den fest einkompilierten 0.0.0- Fallback und setzt die Ebuild-Version
+		# Removes the hardcoded 0.0.0- fallback and sets the ebuild version
 		sed -i -e "s/\"0.0.0-[^\"]*\"/\"${PV}\"/" CMakeLists.txt || die
 
 		cmake_src_prepare
@@ -47,6 +47,6 @@ src_configure() {
 src_install() {
 		cmake_src_install
 
-		# Entfernt AppImage-spezifische Dateien, die fälschlicherweise im FHS installiert werden
+		# Removes AppImage-specific files that are incorrectly installed into the FHS
 		rm -f "${ED}/usr/AppRun" || die
 }
