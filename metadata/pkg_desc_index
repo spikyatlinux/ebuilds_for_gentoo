@@ -15,6 +15,7 @@ media-fonts/nerd-fonts 3.4.0: Collection of fonts that are patched to include a 
 net-dns/noip-updater 2.1.9-r6: no-ip.com dynamic DNS updater
 net-misc/networkmanager-dmenu 2.6.2: Control networkmanager using DMENU
 sys-auth/rofi-polkit-agent 9999: Polkit agent, using rofi for UI
+sys-boot/efibooteditor 1.5.7: Boot Editor for (U)EFI based systems
 sys-fs/gdu 5.36.1: Disk usage analyzer with console interface written in Go
 x11-misc/jgmenu 4.5.0: Simple, independent and contemporary-looking X11 menu, designed for scripting, ricing and tweaking
 x11-misc/pywal 3.3.0-r1: Generate and change color-schemes on the fly
