@@ -1,0 +1,14 @@
+# ChangeLog for sys-boot/efibooteditor
+# Copyright 1999-2026 Gentoo Foundation; Distributed under the GPL v2
+# (auto-generated from git log)
+
+  29 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  efibooteditor-1.5.7.ebuild:
+  Fixed ebuiÃld translation
+
+*efibooteditor-1.5.7 (29 Aug 2026)
+
+  29 Aug 2026; SpikyAtLinux <spikyatlinux@gmail.com>
+  +efibooteditor-1.5.7.ebuild, +metadata.xml:
+  Add sys-boot/efibooteditor-1.5.7
+
