@@ -14,7 +14,7 @@ LICENSE="GPL-3"
 SLOT="0"
 RESTRICT="strip"
 
-RDEPEND~"~dev-java/jameica-9999"
+RDEPEND="~dev-java/jameica-9999"
 BDEPEND="app-arch/unzip"
 
 QA_PREBUILT="

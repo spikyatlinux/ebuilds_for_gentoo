@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=Script to follow log of running portage builds
+EAPI=8
+HOMEPAGE=https://github.com/junghans/cj-overlay
+KEYWORDS=~amd64 ~arm ~x86 ~x64-macos
+LICENSE=GPL-2
+RDEPEND=app-shells/bash sys-apps/coreutils sys-apps/portage
+SLOT=0
+_md5_=94c59dff2fa477fb19c3d0aec3565135

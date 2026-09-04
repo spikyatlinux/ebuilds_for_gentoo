@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile config install postinst preinst prepare
+DEPEND=ezipupd? ( acct-group/ez-ipupd acct-user/ez-ipupd )
+DESCRIPTION=no-ip.com dynamic DNS updater
+EAPI=8
+HOMEPAGE=https://www.noip.com
+INHERIT=readme.gentoo-r1 systemd toolchain-funcs
+IUSE=ezipupd
+KEYWORDS=alpha amd64 ~arm ~hppa ~mips ~ppc ppc64 sparc x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=https://www.noip.com/client/linux/noip-2.1.9.tar.gz
+_eclasses_=eapi9-pipestatus	d2c134036ac31c3085aebc9147f572bd	readme.gentoo-r1	9ca94b2d607e7454ca6cfb44ab8ce327	systemd	a964c0cbe818b5729da1dbfcee5be861	toolchain-funcs	58a918e3a42d0156f010dcfd43725be5
+_md5_=f094e9ab2361c7258a702ca13251039b
