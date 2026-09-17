@@ -92,6 +92,6 @@ eselect profile set spikyatlinux:plasma-gnome-hardened-systemd
 
 ### Notes & Maintenance
 - Ebuilds may be removed if they are merged into official Gentoo branches, if I no longer require them, or if I lack the time to maintain specific versions.
-- Maintenance is performed as time permits..
+- Maintenance is performed as time permits.
 
 Copyright (c) 2016-2026 SpikyAtLinux
